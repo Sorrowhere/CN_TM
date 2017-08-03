@@ -16,34 +16,52 @@
 // layout
 body{
   background-color: #666;
-  font-size: 13px;
   font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
 }
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #c3c3c3
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent
+}
+
 .wrap{
-  height: 80%;
-  min-height: 600px;
   padding-top: 100px;
 }
 .main{
   width: 1190px;
-  height: 100%;
+  height: 640px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 3px;
+  @include clearfix();
 }
 
 // 左侧面板
+//===============================================================================
 .panel{
   float: left;
   width: 230px;
   background-color: #4498ee;
-}
-.header{
-  padding: 20px;
+  .iconfont{
+    color: #fff;
+  }
+  // 头像
   .avatar{
-    display: table-cell;
+    float: left;
+    margin-left: -40px;
     width: 40px;
     height: 40px;
+    border: 1px solid #fff;
     border-radius: 50%;
     background-color: #fff;
     overflow: hidden;
@@ -53,25 +71,33 @@ body{
       text-align: center;
     }
   }
+  // 用户信息
   .info{
-    display: table-cell;
-    padding-left: 8px;
-    h3{
-      display: inline-block;
+    margin-left: 8px;
+    @include clearfix();
+    .nickname{
+      float: left;
       font-weight: 400;
-      width: 120px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
       word-wrap: normal;
-      color: #fff;
       font-size: 14px;
+      color: #fff;
       vertical-align: top;
-      line-height: 40px;
       text-decoration: none;
+      @include text-clip(110px);
+    }
+  }
+}
+
+// 左侧面板-头部
+.header{
+  padding: 20px 20px 20px 60px;
+  // 用户信息
+  .info{
+    .nickname{
+      line-height: 40px;
     }
     .opt{
-      display: inline-block;
+      float: right;
       margin-top: 8px;
       .iconfont-set{
         display: inline-block;
@@ -81,3 +107,113 @@ body{
     }
   }
 }
+// 左侧面板-搜索
+.search-bar{
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 20px;
+  background-color: #3387dd;
+  .txt{
+    margin-left: 10px;
+    border: none;
+    background-color: #3387dd;
+    color: #fff;
+  }
+}
+
+
+// 左侧面板-聊天对象
+.nav-view{
+  height: 528px;
+  overflow-y: scroll;
+}
+.chat-item{
+  width: 100%;
+  height: 70px;
+  padding: 15px 20px 15px 60px;
+  cursor: pointer;
+  @include clearfix();
+  .avatar{
+    float: left;
+    margin-left: -40px;
+  }
+  .info{
+    padding: 2px 0;
+  }
+  .hd{
+    overflow: hidden;
+    .num{
+      float: right;
+      height: 16px;
+      line-height: 16px;
+      padding: 0 2px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #ff4422;
+      font-size: 11px;
+      color: #fff;
+      b{
+        @include scale(0.6);
+      }
+    }
+  }
+  // 消息
+  .bd{
+    color: #88ccff;
+    .msg{
+      @include text-clip(100px);
+      float: left;
+    }
+    .time{
+      float: right;
+    }
+  }
+}
+.chat-item.on{
+  background-color: #ffb600;
+  .bd{
+    color: #ffeebb;
+  }
+}
+
+
+
+
+// 聊天区域
+//===============================================================================
+.chat-area{
+  float: left;
+  width: 630px;
+}
+
+.chat-area-hd{
+  h2{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: $baseBorder;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

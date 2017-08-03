@@ -144,3 +144,32 @@ ol li {
   float: left;
   margin-right: 10px;
 }
+
+/* line 128, ../../sass/base/common.scss */
+.txt {
+  outline: 0;
+}
+
+/* line 133, ../../sass/base/common.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #b7cceb;
+}
+
+/* line 137, ../../sass/base/common.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #b7cceb;
+}
+
+/* line 141, ../../sass/base/common.scss */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #b7cceb;
+}
+
+/* line 145, ../../sass/base/common.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #b7cceb;
+}

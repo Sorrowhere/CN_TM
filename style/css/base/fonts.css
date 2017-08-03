@@ -13,69 +13,70 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
 }
 
-/* line 18, ../../sass/base/fonts.scss */
+/* line 19, ../../sass/base/fonts.scss */
 .iconfont-back:before {
   content: "\e697";
 }
 
-/* line 20, ../../sass/base/fonts.scss */
+/* line 21, ../../sass/base/fonts.scss */
 .iconfont-category:before {
   content: "\e699";
 }
 
-/* line 22, ../../sass/base/fonts.scss */
+/* line 23, ../../sass/base/fonts.scss */
 .iconfont-close:before {
   content: "\e69a";
 }
 
-/* line 24, ../../sass/base/fonts.scss */
+/* line 25, ../../sass/base/fonts.scss */
 .iconfont-help:before {
   content: "\e6a3";
 }
 
-/* line 26, ../../sass/base/fonts.scss */
+/* line 27, ../../sass/base/fonts.scss */
 .iconfont-information:before {
   content: "\e6a4";
 }
 
-/* line 28, ../../sass/base/fonts.scss */
+/* line 29, ../../sass/base/fonts.scss */
 .iconfont-less:before {
   content: "\e6a5";
 }
 
-/* line 30, ../../sass/base/fonts.scss */
+/* line 31, ../../sass/base/fonts.scss */
 .iconfont-moreunfold:before {
   content: "\e6a6";
 }
 
-/* line 32, ../../sass/base/fonts.scss */
+/* line 33, ../../sass/base/fonts.scss */
 .iconfont-more:before {
   content: "\e6a7";
 }
 
-/* line 34, ../../sass/base/fonts.scss */
+/* line 35, ../../sass/base/fonts.scss */
 .iconfont-refresh:before {
   content: "\e6aa";
 }
 
-/* line 36, ../../sass/base/fonts.scss */
+/* line 37, ../../sass/base/fonts.scss */
 .iconfont-search:before {
   content: "\e6ac";
 }
 
-/* line 38, ../../sass/base/fonts.scss */
+/* line 39, ../../sass/base/fonts.scss */
 .iconfont-set:before {
   content: "\e6ae";
 }
 
-/* line 40, ../../sass/base/fonts.scss */
+/* line 41, ../../sass/base/fonts.scss */
 .iconfont-success:before {
   content: "\e6b1";
 }
 
-/* line 42, ../../sass/base/fonts.scss */
+/* line 43, ../../sass/base/fonts.scss */
 .iconfont-warning:before {
   content: "\e6b6";
 }

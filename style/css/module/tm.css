@@ -216,6 +216,35 @@ ol li {
   margin-right: 10px;
 }
 
+/* line 128, ../../sass/base/common.scss */
+.txt {
+  outline: 0;
+}
+
+/* line 133, ../../sass/base/common.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #b7cceb;
+}
+
+/* line 137, ../../sass/base/common.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #b7cceb;
+}
+
+/* line 141, ../../sass/base/common.scss */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #b7cceb;
+}
+
+/* line 145, ../../sass/base/common.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #b7cceb;
+}
+
 /* color */
 /* line 4, ../../sass/base/atom.scss */
 .red {
@@ -529,69 +558,70 @@ ol li {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
 }
 
-/* line 18, ../../sass/base/fonts.scss */
+/* line 19, ../../sass/base/fonts.scss */
 .iconfont-back:before {
   content: "\e697";
 }
 
-/* line 20, ../../sass/base/fonts.scss */
+/* line 21, ../../sass/base/fonts.scss */
 .iconfont-category:before {
   content: "\e699";
 }
 
-/* line 22, ../../sass/base/fonts.scss */
+/* line 23, ../../sass/base/fonts.scss */
 .iconfont-close:before {
   content: "\e69a";
 }
 
-/* line 24, ../../sass/base/fonts.scss */
+/* line 25, ../../sass/base/fonts.scss */
 .iconfont-help:before {
   content: "\e6a3";
 }
 
-/* line 26, ../../sass/base/fonts.scss */
+/* line 27, ../../sass/base/fonts.scss */
 .iconfont-information:before {
   content: "\e6a4";
 }
 
-/* line 28, ../../sass/base/fonts.scss */
+/* line 29, ../../sass/base/fonts.scss */
 .iconfont-less:before {
   content: "\e6a5";
 }
 
-/* line 30, ../../sass/base/fonts.scss */
+/* line 31, ../../sass/base/fonts.scss */
 .iconfont-moreunfold:before {
   content: "\e6a6";
 }
 
-/* line 32, ../../sass/base/fonts.scss */
+/* line 33, ../../sass/base/fonts.scss */
 .iconfont-more:before {
   content: "\e6a7";
 }
 
-/* line 34, ../../sass/base/fonts.scss */
+/* line 35, ../../sass/base/fonts.scss */
 .iconfont-refresh:before {
   content: "\e6aa";
 }
 
-/* line 36, ../../sass/base/fonts.scss */
+/* line 37, ../../sass/base/fonts.scss */
 .iconfont-search:before {
   content: "\e6ac";
 }
 
-/* line 38, ../../sass/base/fonts.scss */
+/* line 39, ../../sass/base/fonts.scss */
 .iconfont-set:before {
   content: "\e6ae";
 }
 
-/* line 40, ../../sass/base/fonts.scss */
+/* line 41, ../../sass/base/fonts.scss */
 .iconfont-success:before {
   content: "\e6b1";
 }
 
-/* line 42, ../../sass/base/fonts.scss */
+/* line 43, ../../sass/base/fonts.scss */
 .iconfont-warning:before {
   content: "\e6b6";
 }
@@ -599,80 +629,242 @@ ol li {
 /* line 17, ../../sass/module/tm.scss */
 body {
   background-color: #666;
-  font-size: 13px;
   font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, Arial, sans-serif;
 }
 
-/* line 22, ../../sass/module/tm.scss */
+/* line 21, ../../sass/module/tm.scss */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* line 26, ../../sass/module/tm.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #c3c3c3;
+}
+
+/* line 33, ../../sass/module/tm.scss */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* line 37, ../../sass/module/tm.scss */
 .wrap {
-  height: 80%;
-  min-height: 600px;
   padding-top: 100px;
 }
 
-/* line 27, ../../sass/module/tm.scss */
+/* line 40, ../../sass/module/tm.scss */
 .main {
   width: 1190px;
-  height: 100%;
+  height: 640px;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 3px;
 }
+/* line 61, ../../sass/base/_mixin.scss */
+.main:before, .main:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* line 68, ../../sass/base/_mixin.scss */
+.main:after {
+  clear: both;
+}
 
-/* line 36, ../../sass/module/tm.scss */
+/* line 51, ../../sass/module/tm.scss */
 .panel {
   float: left;
   width: 230px;
   background-color: #4498ee;
 }
-
-/* line 41, ../../sass/module/tm.scss */
-.header {
-  padding: 20px;
+/* line 55, ../../sass/module/tm.scss */
+.panel .iconfont {
+  color: #fff;
 }
-/* line 43, ../../sass/module/tm.scss */
-.header .avatar {
-  display: table-cell;
+/* line 59, ../../sass/module/tm.scss */
+.panel .avatar {
+  float: left;
+  margin-left: -40px;
   width: 40px;
   height: 40px;
+  border: 1px solid white;
   border-radius: 50%;
   background-color: #fff;
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 51, ../../sass/module/tm.scss */
-.header .avatar img {
+/* line 69, ../../sass/module/tm.scss */
+.panel .avatar img {
   width: 100%;
   text-align: center;
 }
-/* line 56, ../../sass/module/tm.scss */
-.header .info {
-  display: table-cell;
-  padding-left: 8px;
+/* line 75, ../../sass/module/tm.scss */
+.panel .info {
+  margin-left: 8px;
 }
-/* line 59, ../../sass/module/tm.scss */
-.header .info h3 {
-  display: inline-block;
+/* line 61, ../../sass/base/_mixin.scss */
+.panel .info:before, .panel .info:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* line 68, ../../sass/base/_mixin.scss */
+.panel .info:after {
+  clear: both;
+}
+/* line 78, ../../sass/module/tm.scss */
+.panel .info .nickname {
+  float: left;
   font-weight: 400;
-  width: 120px;
+  word-wrap: normal;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: top;
+  text-decoration: none;
+  width: 110px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  word-wrap: normal;
-  color: #fff;
-  font-size: 14px;
-  vertical-align: top;
-  line-height: 40px;
-  text-decoration: none;
 }
-/* line 73, ../../sass/module/tm.scss */
+
+/* line 92, ../../sass/module/tm.scss */
+.header {
+  padding: 20px 20px 20px 60px;
+}
+/* line 96, ../../sass/module/tm.scss */
+.header .info .nickname {
+  line-height: 40px;
+}
+/* line 99, ../../sass/module/tm.scss */
 .header .info .opt {
-  display: inline-block;
+  float: right;
   margin-top: 8px;
 }
-/* line 76, ../../sass/module/tm.scss */
+/* line 102, ../../sass/module/tm.scss */
 .header .info .opt .iconfont-set {
   display: inline-block;
   color: #fff;
   cursor: pointer;
+}
+
+/* line 111, ../../sass/module/tm.scss */
+.search-bar {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 20px;
+  background-color: #3387dd;
+}
+/* line 117, ../../sass/module/tm.scss */
+.search-bar .txt {
+  margin-left: 10px;
+  border: none;
+  background-color: #3387dd;
+  color: #fff;
+}
+
+/* line 127, ../../sass/module/tm.scss */
+.nav-view {
+  height: 528px;
+  overflow-y: scroll;
+}
+
+/* line 131, ../../sass/module/tm.scss */
+.chat-item {
+  width: 100%;
+  height: 70px;
+  padding: 15px 20px 15px 60px;
+  cursor: pointer;
+}
+/* line 61, ../../sass/base/_mixin.scss */
+.chat-item:before, .chat-item:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* line 68, ../../sass/base/_mixin.scss */
+.chat-item:after {
+  clear: both;
+}
+/* line 137, ../../sass/module/tm.scss */
+.chat-item .avatar {
+  float: left;
+  margin-left: -40px;
+}
+/* line 141, ../../sass/module/tm.scss */
+.chat-item .info {
+  padding: 2px 0;
+}
+/* line 144, ../../sass/module/tm.scss */
+.chat-item .hd {
+  overflow: hidden;
+}
+/* line 146, ../../sass/module/tm.scss */
+.chat-item .hd .num {
+  float: right;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 2px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff4422;
+  font-size: 11px;
+  color: #fff;
+}
+/* line 156, ../../sass/module/tm.scss */
+.chat-item .hd .num b {
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+/* line 162, ../../sass/module/tm.scss */
+.chat-item .bd {
+  color: #88ccff;
+}
+/* line 164, ../../sass/module/tm.scss */
+.chat-item .bd .msg {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+/* line 168, ../../sass/module/tm.scss */
+.chat-item .bd .time {
+  float: right;
+}
+
+/* line 173, ../../sass/module/tm.scss */
+.chat-item.on {
+  background-color: #ffb600;
+}
+/* line 175, ../../sass/module/tm.scss */
+.chat-item.on .bd {
+  color: #ffeebb;
+}
+
+/* line 185, ../../sass/module/tm.scss */
+.chat-area {
+  float: left;
+  width: 630px;
+}
+
+/* line 191, ../../sass/module/tm.scss */
+.chat-area-hd h2 {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 16px;
 }
