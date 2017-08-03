@@ -1,0 +1,215 @@
+// pager scss
+// required: _setting.scss, css3.scss
+@import "../base/lib";
+
+// variables
+$pagerClass: pager !default;
+$pagerNavClass: pager-nav !default;
+$pagerNumClass: pager-num !default;
+
+// width, height, backgroundColor, borderColor, startColor, endColor
+$pagerNavLink: 33px 33px #fbfbfb #ccc rgba(251,251,251,1) rgba(244,244,244,1);
+
+
+//pager base style
+.#{$pagerClass}{
+	margin: 40px 0;
+	text-align: center;
+}
+
+.#{$pagerNavClass}{
+	$linkWidth: nth($pagerNavLink,1);
+	$linkHeight: nth($pagerNavLink,2);
+	$linkBackgroundColor: nth($pagerNavLink,3);
+	$linkBorderColor: nth($pagerNavLink,4);
+	$startColor: nth($pagerNavLink,5);
+	$endColor: nth($pagerNavLink,6);
+	a{
+		display: inline-block;
+		width: $linkWidth;
+		height: $linkHeight;
+		line-height: $linkHeight;
+		margin-right: 2px;
+		border: 1px solid $linkBorderColor;
+		background-color: $linkBackgroundColor;
+		@include gradient-vertical($startColor 0,$endColor 100%);
+		&:link,
+		&:visited{color: $grayDarker}
+		&:hover{
+			background-color: darken($linkBackgroundColor,3%);
+			@include gradient-vertical(darken($startColor,3%) 0, darken($endColor,3%) 100%);
+		}
+	}
+	.#{$pagerClass}-pre,
+	.#{$pagerClass}-next{
+		width: 63px;
+		@if $lte7{
+			*position: relative;
+			*bottom: 1px;
+		}
+	}
+	a.current{
+		border-color: #dc4f53;
+		background-color: #ed5258;
+		background-image: none;
+		font-weight: bold;
+		&:link,
+		&:visited{color: #fff}
+		&:hover{background-color: #ed5258;cursor: default;}
+	}
+	.split{
+		display: inline-block;
+		width: 25px;
+		height: $linkHeight + 2;
+		line-height: $linkHeight + 2;
+		color: $textColor;
+		font-weight: bold;
+	}
+}
+
+.#{$pagerNumClass}{
+	margin: 10px 0;
+	a{
+		margin-left: 5px;
+		&:link,
+		&:visited{color:$grayDark}
+		&:hover{color:$linkHoverColor}
+	}
+	.current{font-weight: bold;}
+}
+
+
+/* vo pagenav */
+//variables
+$pageBaseClass: page !default;
+$pageNavClass: page-nav !default;
+
+.page{
+	margin: 10px auto;
+	color: #666;
+	overflow: hidden;
+	@if $lte7{zoom:1;}
+	a:link,
+	a:visited{color: #666}
+	a:hover{color :#05c;text-decoration: none;}
+
+	.pageAmount{
+		float: left;
+		height: 26px;
+		line-height: 26px;
+		.now{
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			line-height: 18px;
+			text-align: center;
+			border: 1px solid #d9d9d9;
+			background-color: #f0f0f0;
+			@if $lte7{*vertical-align: -1px;}
+		}
+	}
+	#pageCountNumber{
+		margin-left: 5px;
+		@if $ie6{_vertical-align: 2px;}
+	}
+}
+
+.page-nav-lst{
+	float: right;
+	height: 26px;
+	line-height: 26px;
+	margin-right: 10px;
+	word-spacing: -4px;
+	display: table;
+	a{
+		display: inline-block;
+		height: 24px;
+		line-height: 24px;
+		padding: 0 9px;
+		margin-left: -1px;
+		text-align: center;
+		font-family: Arial;
+		border: 1px solid #dadada;
+		border-right: none;
+		background-color: #f6f6f6;
+		font-weight: bold;
+		word-spacing: 0;
+		vertical-align: middle;
+		@if $lte7{
+			*display: inline;
+			*margin-left: 0;
+			*height: 23px;
+			*line-height: 23px;
+			*zoom:1;
+		}
+	}
+	a:hover,
+	.now{
+		background-color: #1770b4;
+		color: #fff;
+		border-color: #1770b4;
+	}
+	.now{
+		&:link,
+		&:visited{color: #fff;cursor: default;}
+		&:hover{text-decoration: none;}
+	}
+	.nextPage,
+	.prePage{
+		background-color: #f6f6f6;
+		border: 1px solid #dadada;
+		font-weight: normal;
+	}
+	.nextPage:hover,
+	.prePage:hover{
+		background-color: #f6f6f6;
+		color: #05c;
+		border-color: #dadada;
+	}
+	.prePage{
+		@if $lte7{*margin-right: -3px;}
+	}
+}
+
+.page-nav{
+	.pageBtn{
+		background-color: #f6f6f6;
+		border: 1px solid #dadada;
+		font-weight: normal;
+		&:hover{
+			background-color: #f6f6f6;
+			color: #05c;
+			border-color: #dadada;
+		}
+	}
+}
+
+.page-nav-form{
+	float: right;
+	line-height: 26px;
+	vertical-align: middle;
+	.txt-mini{
+		width: 28px;
+		margin: 0 3px;
+	}
+	.pageBtn{
+		display: inline-block;
+		height: 24px;
+		line-height: 24px;
+		padding: 0 6px;
+		margin: 0;
+		color :#666;
+		cursor: pointer;
+		@if $lte7{*overflow: visible;}
+		&:hover{
+			color: #05c;
+			text-decoration: underline;
+		}
+	}
+	.text{
+		height: 22px;
+		border: 1px solid #ccc;
+		overflow: hidden;
+		padding: 0 2px;
+	}
+}

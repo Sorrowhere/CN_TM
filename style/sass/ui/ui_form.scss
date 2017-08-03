@@ -1,0 +1,90 @@
+// form element list
+// base:
+// _mixin.scss, _setting.scss
+@import "../base/lib";
+
+// variable
+$titleWidth: 90px !default;
+$verticalSpace: 10px !default;
+
+// form element
+.txt{
+	height: 14px;
+	line-height: 14px;
+	padding: 5px 4px;
+}
+.txt,textarea,select{
+	border: 1px solid #ccc;
+	&:focus{
+		outline: none;
+		border: 1px solid #b9c9e3;
+	}
+}
+label input{
+	margin: -1px 3px 0 0;
+	height: 16px;
+	vertical-align: middle;
+}
+select{
+	height: 26px;
+	line-height: 20px;
+	padding: 2px 1px;
+}
+// element group
+.field,
+.field-bd{
+	@include bfc;
+}
+.field{
+	padding: $verticalSpace 0 $verticalSpace  $titleWidth;
+}
+.field-tit{
+	float: left;
+	width: $titleWidth;
+	margin-left: -$titleWidth;
+	text-align: right;
+	line-height: 23px;
+}
+.field-bd{
+	padding-left: 10px;
+	// element help text
+	& .text-before,
+	& .text-after{
+		color: $grayLight;
+		margin: 5px 0;
+	}
+	& .text-before{
+		margin: 4px 0 6px;
+	}
+	// radio and checkbox group
+	& .choose-group{
+		margin-left: 15px;
+		& label{
+			margin-right: 10px;
+		}
+	}
+	// phone
+	& .txt-phone-nation{
+		width: 30px;
+	}
+	& .txt-phone-zone{
+		width: 70px;
+	}
+	& .txt-phone-number{
+		width: 150px;
+	}
+
+	// error
+	.form-error{
+		margin-top: 6px;
+		color: $red;
+		padding-left: 20px;
+		& .icon{
+			margin-left: -20px;
+			float: left;
+		}
+		& p{
+			margin: 0;
+		}
+	}
+}

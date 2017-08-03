@@ -1,0 +1,96 @@
+// animation scss
+// required( _setting.scss, css3.scss
+
+@import "../base/lib";
+
+/* 淡入 */
+@include keyframes(fadeIn){
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* 右侧淡入 */
+@include keyframes(fadeInR){
+	0%   {opacity: 0;@include transform(translateX(100px))}
+	100% {opacity: 1;@include transform(translateX(0px))}
+}
+
+/* 淡出 */
+@include keyframes(fadeOut){
+	0%   {opacity: 1;}
+	100% {opacity: 0;}
+}
+ 
+/* 下侧淡出 */
+@include keyframes(fadeOutB){
+	0%   {opacity: 1;@include transform(translateY(0px))}
+	100% {opacity: 0;@include transform(translateY(100px))}
+}
+
+/* 闪烁 */
+@include keyframes(flash){
+	0%,50%,100%  {opacity: 1;}
+	25%,75% {opacity: 0;}
+}
+
+/* 弹跳 */
+@include keyframes(bounce){
+	0%,20%,50%,80%,100% { @include transform(translateY(0));}
+	40%{ @include transform(translateY(-30px));}
+	60%{ @include transform(translateY(-15px));}
+}
+
+/* 震颤 */
+@include keyframes(shake){
+    0%,100%{ @include transform(translateX(0));}
+    10%,30%,50%,70%,90%{@include transform(translateX(-10px));}
+    20%,40%,60%,80%{@include transform(translateX(10px));}
+}
+
+/* 振铃 */
+@include keyframes(ring){
+	0%       { @include transform(scale(1));}
+	10%,20%  { @include transform(scale(1.1) rotate(-3deg));}
+	30%,50%,70%,90%  { @include transform( scale(1.1) rotate(3deg));}
+	40%,60%,80%  { @include transform( scale(1.1) rotate(-3deg));}
+	100%     { @include transform( scale(1) rotate(0deg));}
+}
+
+/* 摇摆 */
+@include keyframes(swing){
+	20%  { @include transform(rotate(15deg));}
+	40%  { @include transform(rotate(-10deg));}
+    60%  { @include transform(rotate(5deg));}
+    80%  { @include transform(rotate(-5deg));}
+    100% { @include transform(rotate(0deg));}
+}
+
+/* Y轴旋转 */
+@include keyframes(flipY){
+	0%    { @include transform(rotateY(0deg));}
+	50%   { @include transform(rotateY(180deg));}
+	100%  { @include transform(rotateY(360deg));}
+}
+
+/* 进度条 */
+@include keyframes (progressBar){
+	0%   {background-position: 0 0;}
+	100% {background-position: 60px 0;}
+}
+.progress-bar{
+	width: 40%;
+	height: 25px;
+}
+.progress-bar .bar{
+	display: block;
+	height: 100%;
+	border-radius: 3px;
+	background-color: #33a6b8;
+	background-image: -webkit-linear-gradient(135deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(135deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(135deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent); 
+	
+	@include background-size(30px 30px);
+	@include animation(progressBar linear 3s infinite);
+}

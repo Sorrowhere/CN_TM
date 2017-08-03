@@ -1,0 +1,78 @@
+// des: normal layout sets
+// author: liw
+
+// variables
+$baseClass: 'layout';
+
+$fullWidth: 1190px !default;
+$gutterWidth: 10px !default;
+$sideWidth: 190px !default;
+$mainWidth: $fullWidth - $sideWidth - $gutterWidth;
+
+$leftSideWidth: 190px !default;
+$rightSideWidth: 190px !default;
+
+// fixed two column layout
+.layout{
+	width: $fullWidth;
+	overflow: hidden;
+	*zoom: 1;
+}
+.main{
+	float: left;
+	width: $mainWidth;
+	margin-right: $gutterWidth;
+}
+.side{
+	float: left;
+	width: $sideWidth;
+}
+
+// adaptive two column layout
+// the main column width is adaptive, and the side column width is fixed
+
+
+.layout-adapt{}
+.main-flex{
+	padding-right: $sideWidth + $gutterWidth;
+	overflow: hidden;
+	*zoom: 1;
+
+	.layout-adapt-rtl &{
+		padding-left: $sideWidth + $gutterWidth;
+		padding-right: 0;
+	}
+	.layout-adapt-tri &{
+		padding: 0 ($rightSideWidth + $gutterWidth) 0 ($leftSideWidth + $gutterWidth);
+	}
+
+}
+.main-flex-bd{
+	width: 100%;
+	float: left;
+	.layout-adapt-rtl &{
+		float: right;
+	}
+}
+.side-flex{
+	width: $sideWidth;
+	float: right;
+	margin: 0 (-($sideWidth + $gutterWidth)) 0 0;
+
+	.layout-adapt-rtl &{
+		margin: 0 0 0 (-($sideWidth + $gutterWidth));
+		float: left;
+	}
+}
+
+// adaptive three column layout
+.side-flex-lt{
+	float: left;
+	width: $leftSideWidth;
+	margin: 0 0 0 (-($leftSideWidth + $gutterWidth));
+}
+.side-flex-rt{
+	float: right;
+	width: $rightSideWidth;
+	margin: 0 (-($rightSideWidth + $gutterWidth)) 0 0;
+}

@@ -1,0 +1,245 @@
+// pop scss
+// required: _setting.scss, css3.scss
+
+@import "../base/lib";
+
+//variables
+$imgPath: '../../../images/' !default;
+$iconBaseClass: icon !default;
+// : iconClass, imageName
+$iconNormal: nor 'icon-32.png' 32px 32px !default;
+$iconBig: big 'icon-48.png' 48px 48px !default;
+$iconSignal: signal 'icon-signal.png' null null !default;
+
+$iconGroup: $iconNormal,$iconBig,$iconSignal;
+
+
+$iconNormalClass: unquote($iconBaseClass+'-'+nth($iconNormal,1));
+$iconBigClass: unquote($iconBaseClass+'-'+nth($iconBig,1));
+$iconSignalClass: unquote($iconBaseClass+'-'+nth($iconSignal,1));
+
+.#{$iconBaseClass},
+.#{$iconNormalClass},
+.#{$iconBigClass},
+.#{$iconSignalClass}{
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	font-size: 0;
+	height: 16px;
+	width: 16px;
+	background: url(unquote($imgPath + 'icon-16.png'));
+}
+
+@each $iconItem in $iconGroup{
+	$iconClass: unquote($iconBaseClass+'-'+nth($iconItem,1));
+	.#{$iconClass}{
+		background: url(unquote($imgPath+nth($iconItem,2))) no-repeat;
+		@if nth($iconItem,3) != null{
+			width: nth($iconItem,3);
+		}
+		@if nth($iconItem,4) != null{
+			height: nth($iconItem,3);
+		}
+	}
+}
+
+@mixin bgpos($posX: 0,$posY: 0){
+	background-position: $posX $posY;
+}
+
+/*-------------icon default-------------*/
+.#{$iconBaseClass}-warn{
+	@include bgpos;
+}
+.#{$iconBaseClass}-succ{
+	@include bgpos(-16px,0);
+}
+.#{$iconBaseClass}-stop{
+	@include bgpos(-80px,0);
+}
+.#{$iconBaseClass}-info{
+	@include bgpos(-32px,0);
+}
+.#{$iconBaseClass}-ques{
+	@include bgpos(-48px,0);
+}
+.#{$iconBaseClass}-error{
+	@include bgpos(-64px,-32px);
+}
+.#{$iconBaseClass}-close{
+	width:15px;
+	height:15px;
+	@include bgpos(-48px,-80px);
+	cursor:pointer;
+	&:hover{
+		@include bgpos(-64px,-80px);
+	}
+}
+.#{$iconBaseClass}-edit{
+	@include bgpos(-80px,-32px);
+}
+.#{$iconBaseClass}-noread{
+	@include bgpos(0,-48px);
+}
+.#{$iconBaseClass}-read{
+	@include bgpos(-16px,-48px);
+}
+.#{$iconBaseClass}-reply{
+	@include bgpos(-32px,-48px);
+}
+.#{$iconBaseClass}-alert{
+	@include bgpos(-48px,-48px);
+}
+.#{$iconBaseClass}-pass{
+	@include bgpos(-64px,-48px);
+}
+.#{$iconBaseClass}-phone-gray{
+	width:14px;
+	height:12px;
+	@include bgpos(-49px,-66px);
+}
+.#{$iconBaseClass}-msg{
+	width:14px;
+	height:14px;
+	@include bgpos(-65px,-65px);
+}
+.#{$iconBaseClass}-worker{
+	width:14px;
+	height:14px;
+	@include bgpos(-81px,-65px);
+}
+.#{$iconBaseClass}-warn-gray{
+	width:12px;
+	height:12px;
+	@include bgpos(-34px,-66px);
+}
+.#{$iconBaseClass}-add{
+	width:12px;
+	height:12px;
+	@include bgpos(0,-84px);
+}
+.#{$iconBaseClass}-plus{
+	width:12px;
+	height:12px;
+	@include bgpos(-16px,-84px);
+}
+.#{$iconBaseClass}-gt{
+	width:5px;
+	height:9px;
+	@include bgpos(-22px,-100px);
+}
+.#{$iconBaseClass}-star-16{
+	@include bgpos(-48px,-96px);
+}
+.#{$iconBaseClass}-star-14{
+	width:12px;
+	height:14px;
+	@include bgpos(-66px,-97px);
+}
+/*-------------icon certification-------------*/
+.cert-sign{
+	.#{$iconBaseClass}{
+		margin-right:3px;
+	}
+} 
+.#{$iconBaseClass}-basic{
+	@include bgpos(-16px,-16px);
+}
+.#{$iconBaseClass}-ccic{
+	@include bgpos(-32px,-16px);
+}
+.#{$iconBaseClass}-senior{
+	@include bgpos(-48px,-16px);
+}
+.#{$iconBaseClass}-addr{
+	@include bgpos(-32px,-32px);
+}
+.#{$iconBaseClass}-id{
+	@include bgpos(-64px,-16px);
+}
+.#{$iconBaseClass}-b-buyer{
+	width:18px;
+	height:18px;
+	@include bgpos(0,-64px);
+}
+.#{$iconBaseClass}-pay{
+	@include bgpos(-32px,-80px);
+}
+.#{$iconBaseClass}-report{
+	@include bgpos(0,-112px);
+}
+.#{$iconBaseClass}-report-history{
+	@include bgpos(-16px,-112px);
+}
+.#{$iconBaseClass}-honest{
+	@include bgpos(-32px,-112px);
+}
+/*-------------icon normal 32X32-------------*/
+// .#{$iconNormalClass}{
+// 	background-image:url(unquote($imgPath+'icon-32.png'));
+// 	width:32px;
+// 	height:32px;
+// }
+.#{$iconNormalClass}-error{
+	@include bgpos(0,0);
+}
+.#{$iconNormalClass}-info{
+	@include bgpos(-64px,0);
+}
+.#{$iconNormalClass}-warn{
+	@include bgpos(-64px,-32px);
+}
+.#{$iconNormalClass}-succ{
+	@include bgpos(-32px,0);
+}
+.#{$iconNormalClass}-ques{
+	@include bgpos(0,-32px);
+}
+.#{$iconNormalClass}-stop{
+	@include bgpos(-32px,-32px);
+}
+/*-------------icon big 48X48-------------*/
+// .#{$iconBigClass}{
+// 	background-image:url(unquote($imgPath+'icon-48.png'));
+// 	width:48px;
+// 	height:48px;
+// }
+.#{$iconBigClass}-warn{
+	@include bgpos(0,0);
+}
+.#{$iconBigClass}-succ{
+	@include bgpos(-48px,0);
+}
+.#{$iconBigClass}-info{
+	@include bgpos(-96px,0);
+}
+.#{$iconBigClass}-error{
+	@include bgpos(0,-48px);
+}
+.#{$iconBigClass}-stop{
+	@include bgpos(-48px,-48px);
+}
+.#{$iconBigClass}-ques{
+	@include bgpos(-96px,-48px);
+}
+
+/*-------------icon signal -------------*/
+// .#{$iconSignalClass}{
+// 	background-image:url(unquote($imgPath+'icon-signal.png'));
+// }
+.#{$iconBaseClass}-manual-check{
+	@include bgpos(0,-12px);
+	height:16px;
+	width:50px;
+}
+.#{$iconBaseClass}-invite{
+	@include bgpos(0,-28px);
+	height:16px;
+	width:50px;
+}
+.#{$iconBaseClass}-new{
+	width:20px;
+	height:12px;
+	@include bgpos(0,0);
+}

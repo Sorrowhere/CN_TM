@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// grid
+$gridColumns: 30 !default;
+$gridColumnWidth: 30px !default;
+$gridGulterWidth: 10px !default;
+$gridRealWidth: $gridColumns * 30 + ($gridColumns - 1) * 10;
+$gridSystemWidth: $gridRealWidth + 10;
+
+
+// class span1-$gridColumns 
+@for $i from 1 through $gridColumns {
+  	.col-#{$i} { 
+    	float: left;
+    	width: $gridColumnWidth * $i + $gridGulterWidth * ($i - 1);
+  	}
+} 

@@ -1,0 +1,114 @@
+@import "lib";
+
+/* color */
+.red{
+	color: $red;
+}
+.green{
+	color: $green;
+}
+.org{
+	color: $org;
+}
+.gray{
+	color: $gray;
+}
+.gray-light{
+	color: $grayLight;
+}
+/* box model */
+@for $i from 1 through 4{
+	$numfix: $i * 5;
+	.mt#{$numfix}{
+		margin-top: $numfix + px;
+	}
+	.mr#{$numfix}{
+		margin-right: $numfix + px;
+	}
+	.mb#{$numfix}{
+		margin-bottom: $numfix + px;
+	}
+	.ml#{$numfix}{
+		margin-left: $numfix + px;
+	}
+	.pt#{$numfix}{
+		padding-top: $numfix + px;
+	}
+	.pr#{$numfix}{
+		padding-right: $numfix + px;
+	}
+	.pb#{$numfix}{
+		padding-bottom: $numfix + px;
+	}
+	.pl#{$numfix}{
+		padding-left: $numfix + px;
+	}
+}
+
+/* layout */
+.posr{
+	position: relative;
+}
+.posa{
+	position: absolute;
+}
+.poss{
+	position: static;
+}
+.hidden{
+	visibility: hidden;
+}
+.visible{
+	visibility: visible;
+}
+.db{
+	display: block;
+}
+.di{
+	display: inline;
+}
+.dib{
+	display: inline-block;
+}
+.dtb{
+	display: table;
+}
+.vat{
+	vertical-align: top;
+}
+.vam{
+	vertical-align: middle;
+}
+.vab{
+	vertical-align: bottom;
+}
+.vatt{
+	vertical-align: text-top;
+}
+.vatb{
+	vertical-align: text-bottom;
+}
+.tal{
+	text-align: left;
+}
+.tac{
+	text-align: center;
+}
+.tar{
+	text-align: right;
+}
+.fll{
+	float: left;
+}
+.flr{
+	float: right;
+}
+.fln{
+	float: none;
+}
+.fwn{
+	font-weight: normal;
+}
+.fwb{
+	font-weight: bold;
+}

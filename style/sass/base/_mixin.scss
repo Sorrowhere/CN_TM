@@ -1,0 +1,56 @@
+//global mixin
+
+// opacity
+@mixin opacity($opacityValue: .5){
+	opacity: $opacityValue;
+	filter: alpha(opacity = $opacityValue * 100);
+}
+
+
+// mask layer property
+@mixin mask{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+// Center-align a block level element
+@mixin center-block{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Sizing
+@mixin size($width, $height){
+	width: $width;
+	height: $height;
+}
+
+// Text clip, width must be set
+@mixin text-clip($width){
+	width: $width;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// Min height
+@mixin min-height($height){
+	min-height: $height;
+	height: auto !important;
+	@if($ie6){
+		_height: $height;
+	}
+}
+
+// generate block formatting context
+// IE hasLayout
+@mixin bfc{
+	overflow: hidden;
+	@if $lte7{
+		*zoom:1;
+	}
+}

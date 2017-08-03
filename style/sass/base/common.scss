@@ -1,0 +1,123 @@
+@import "lib";
+
+/*========== normal style ==========*/
+body{
+	background-color: $white;
+	color: $textColor;
+	font: unquote($f12 +'/'+$baseLineHeight) $baseFontFamily;
+} 
+button, 
+input, 
+select, 
+textarea{
+	font-family: inherit;
+	vertical-align: middle;
+}
+button{
+	cursor: pointer;
+}
+table{
+	width: 100%;
+}
+img{
+	vertical-align: middle;
+}
+/*========== text ==========*/
+// head
+h1,h2,h3,h4,h5,strong{
+	font-weight: bold;
+}
+// link
+a{
+	text-decoration: none;
+	&:link,
+	&:visited{
+		color: $linkColor;
+	}
+	&:hover{
+		color: $linkHoverColor;
+		text-decoration: underline;
+	}
+}
+// text 
+ol{
+	margin-left: 1.6em;
+	@if $lte7{
+		*margin-left: 2em;
+	}
+	& li{
+		list-style-type: decimal;
+	}
+}
+.fms{
+	font-family: $fontYaHei;
+}
+.fcn{
+	font-family: $fontCN;
+}
+.v-sep{
+	color: $grayLighter;
+	margin: 0 5px;
+}
+.space{
+	margin: 0 3px;
+}
+/*=========== solution =========*/
+// clearfix
+.clearfix {
+	@if $ie7 {
+		*zoom: 1;
+	}
+	&:before,
+	&:after {
+		content: " ";
+		display: block;
+		height: 0;
+		visibility: hidden;
+		font-size: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// block element vertical align
+.sl-vam{
+	display: table;
+	border-collapse: collapse;
+	position: relative;
+	@if $lte7{
+		*overflow: hidden;
+	}
+}
+.sl-vam-outer{
+	display: table-cell;
+	vertical-align: middle;
+	@if $lte7{
+		*display: block;
+		*position: absolute;
+		*top: 50%;
+		*left: 50%;
+	}
+}
+.sl-vam-inner{
+	text-align: center;
+	margin: 0 auto;
+	@if $lte7{
+		*position: relative;
+		*top: -50%;
+		*left: -50%;
+	}
+}
+
+// image and text block
+.img-txt{
+	@include bfc;
+	.img{
+		float: left;
+		margin-right: 10px;
+	}
+	.txt{
+		@extend .img-txt;
+	}
+}

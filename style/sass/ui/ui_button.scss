@@ -1,0 +1,248 @@
+// button scss
+// required: _setting.scss, css3.scss
+
+@import "../base/lib";
+
+// variables
+$btnBaseClass: btn !default;
+$btnDisabledClass: disabled !default;
+
+// button size class
+//             className, height, padding, fontSize
+$btnSizeMini:  mini       22px    10px     12px  !default;
+$btnSizeSmall: small      26px    15px     12px  !default;
+$btnSizeMid:   mid        30px    20px     14px  !default;
+$btnSizeBig:   big        34px    25px     16px  !default;
+$btnSizeBiger: biger      38px    25px     18px  !default;
+$btnSizeGroup: $btnSizeMini, $btnSizeSmall, $btnSizeMid, $btnSizeBig, $btnSizeBiger !default;
+// button color class 
+//               className,   borderColor, fontColor, backgroundColor, startColor,           endColor
+$btnColorRed:    red          #b32b24      #fff       #e0463e          rgba(230,77,69,1)     rgba(217,63,54,1);
+$btnColorYellow: yellow       #e6c317      #674800    #ffdb1a          rgba(255,226,38,1)    rgba(255,210,11,1);
+$btnColorBlue:   blue         #216ca6      #fff       #1c8fe8          rgba(24,148,242,1)    rgba(32,137,217,1);
+$btnColorGray:   gray         #ccc         #666       #f4f4f4          rgba(244,244,244,1)   rgba(224,224,224,1);
+$btnColorGroup:  $btnColorRed $btnColorYellow $btnColorBlue $btnColorGray !default;
+
+
+// button base style
+
+.#{$btnBaseClass}{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	@include border-radius(2px);
+	@if $ie6 {
+		_margin-bottom:1px;
+	}
+}
+button.#{$btnBaseClass},
+input.#{$btnBaseClass}{
+	margin: 0;
+	@if $lte7 {
+		*overflow: visible;
+		*filter: chroma(color=$black);
+	}
+	// for firefox
+	&::-moz-focus-inner{
+		border: none;
+		padding: 0;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+a.#{$btnBaseClass}:hover{
+	text-decoration: none;
+}
+
+// button color style
+@each $colorItem in $btnColorGroup{
+	$colorClass: nth($colorItem,1);
+	$borderColor: nth($colorItem,2);
+	$fontColor: nth($colorItem,3);
+	$backgroundColor: nth($colorItem,4);
+	$startColor: nth($colorItem,5);
+	$endColor: nth($colorItem,6);
+
+	$btnColorClass: $btnBaseClass+'-'+$colorClass;
+
+	.#{$btnColorClass}{
+		border: 1px solid  $backgroundColor;
+		border-bottom: 1px solid $borderColor;
+		color: $fontColor;
+		background-color: $backgroundColor;
+		@include gradient-vertical($startColor 0,$endColor 100%);
+		&:link,
+		&:visited{
+			color: $fontColor;
+		}
+		&:hover{
+			border-bottom-color: darken($borderColor,5%);
+			background-color: darken($backgroundColor,5%);
+			@include gradient-vertical(darken($startColor,5%) 0,darken($endColor,5%) 100%);
+			color: $fontColor;
+		}
+		&:active{
+			@include gradient-vertical(darken($endColor,5%) 0,darken($startColor,5%) 100%);
+		}
+		@if $btnColorClass == 'btn-gray'{
+			border: 1px solid #e0e0e0;
+			border-bottom-color: #c9c9c9;
+		}
+	}
+}
+
+// button size style
+@each $sizeItem in $btnSizeGroup{
+	$sizeClass: nth($sizeItem,1);
+	$height: nth($sizeItem,2);
+	$padding: nth($sizeItem,3);
+	$fontSize: nth($sizeItem,4);
+
+	$btnSizeClass: $btnBaseClass+'-'+$sizeClass;
+
+	.#{$btnSizeClass}{
+		height: $height - 2;
+		line-height: $height - 2;
+		padding: 0 $padding;
+		font-size: $fontSize;
+		@if $height > 26{
+			font-family: $fontYaHei;
+		}
+	}
+	button.#{$btnSizeClass},
+	input.#{$btnSizeClass}{
+		height: $height;
+		@if $ie6{
+			@if $sizeClass != 'mini'{
+				_height: $height - 5;
+			}@else{
+				_line-height: $height - 5;
+			}
+		}
+		@if $ie7{
+			@if $sizeClass != 'mini'{
+				*line-height: $height - 5;
+			}
+		}
+		
+	}
+}
+// button disabled
+.#{$btnDisabledClass}{
+	background-color: #f0f0f0;
+	@include gradient-vertical(#f2f2f2 0,#ddd 100%);
+	border: 1px solid #d8d8d8;
+	border-bottom-color: #bbb;
+	color: $grayLight;
+	cursor: not-allowed;
+	@include opacity(.8);
+	@include text-shadow(1px 1px 0 #f0f1f2);
+}
+a.#{$btnDisabledClass}{
+	color: $grayLight;
+}
+// button with icon
+.btn-icon{
+	padding-left: 26px;
+	padding-right: 10px;
+	position: relative;
+}
+.btn-icon .icon{
+	position: absolute;
+	left: 10px;
+	top: 6px;
+	_display:block;
+	_top: 4px;
+}
+// button drop
+// textWidth: width with padding
+// 2px is border width
+$textWidth: 42px;
+$padding: 5px;
+$arrowWidth: 17px;
+$dropDownWidth: $textWidth + $arrowWidth +$padding * 2;
+$dropWidth: $dropDownWidth + 2px;
+
+.btn-drop{
+	display: inline-block;
+	_display: inline;
+	width: $dropDownWidth + 2px;
+}
+.btn-drop-current{
+	cursor: pointer;
+	border: 1px solid #bfbfbf;
+	height: 17px;
+	width: $dropDownWidth;
+	@include border-radius(2px);
+}
+.btn-drop-current a{
+	float: left;
+	line-height: 18px;
+	padding: 0 5px;
+	width: $textWidth;
+}
+.btn-drop-arrow{
+	float: left;
+	width: 16px;
+	height: $arrowWidth;
+	border-left: 1px solid #bfbfbf;
+	background-color: #fff;
+	position: relative;
+}
+.btn-drop-arrow i{
+	position: absolute;
+	height: 0;
+	width: 1px;
+	font-size: 0;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 3px 3px 0;
+	border-color: #808080 #fff #fff #fff;
+	background-color: #808080;
+	top: 7px;
+	left: 4px;
+}
+.btn-drop-current:hover{
+	background-color: #4078bb;
+	border-color: #3c7ac7 #4078bd #1f5699;
+}
+.btn-drop-current:hover .btn-drop-arrow{
+	border-left: 1px solid #216ca6;
+	background-color: transparent;
+}
+.btn-drop-current:hover .btn-drop-arrow i{
+	border-color: #fff #4078bb #4078bb #4078bb;
+}
+.btn-drop-current:hover a:link,
+.btn-drop-current:hover a:visited,
+.btn-drop-current:hover a:hover{
+	color: #fff;
+}
+.btn-drop-down{
+	position: absolute;
+	border: 1px solid #ccc;
+	border-top: none;
+	z-index: 9;
+	width: $dropDownWidth;
+}
+.btn-drop-down ul{
+	margin: 0 !important;
+}
+.btn-drop-down a{
+	display: block;
+	height: 19px;
+	line-height: 19px;
+	padding: 0 5px;
+}
+.btn-drop-down a:link,
+.btn-drop-down a:visited{
+	color: #666;
+}
+.btn-drop-down a:hover{
+	color: #333;
+	background-color: #dfecf5;
+}

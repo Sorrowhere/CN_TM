@@ -1,0 +1,57 @@
+//global variables define 
+
+// browser support settings
+// support for IE6
+$ie6: true !default;
+// support for IE7
+$ie7: true !default;
+// support for IE8
+$ie8: true !default;
+$lte7: $ie6 and $ie7;
+$ie: $ie6 or $ie7 or $ie8;
+
+
+// color
+$red: #e04b43 !default;
+$green: #229900 !default;
+$org: #c79528 !default;
+$blue: #06d !default;
+$black: #000 !default;
+
+$grayDarker: #333 !default;
+$grayDark: #4d4d4d !default;
+$gray: #666 !default;
+$grayLight: #999 !default;
+$grayLighter: #ccc !default;
+$white: #fff !default;
+
+
+// font
+$baseFontSize: 16px !default;
+$baseLineHeight: 1.5 !default;
+$baseFontFamily: Arial, Helvetica, SimSun, sans-serif !default;
+$fontTahoma: tahoma,arial,sans-serif !default;
+$fontYaHei: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif !default;
+$fontCN: SimSun;
+$fontHeiTi: SimHei;
+
+$f12: $baseFontSize * .75;
+$f14: $baseFontSize * .875;
+$f16: $baseFontSize * 1;
+$f18: $baseFontSize * 1.125;
+$f20: $baseFontSize * 1.25;
+$f24: $baseFontSize * 1.5;
+$f30: $baseFontSize * 1.875;
+$f32: $baseFontSize * 2;
+$f36: $baseFontSize * 2.25;
+$f42: $baseFontSize * 2.625;
+$f48: $baseFontSize * 3;
+
+// base
+$bodyBgColor: $white !default;
+$linkColor: $blue !default;
+$linkHoverColor: $red !default;
+$textColor: $grayDark !default;
+$headColor: $grayDarker !default;
+
+
