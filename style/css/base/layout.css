@@ -1,0 +1,71 @@
+/* line 16, ../../sass/base/layout.scss */
+.layout {
+  width: 1190px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 21, ../../sass/base/layout.scss */
+.main {
+  float: left;
+  width: 990px;
+  margin-right: 10px;
+}
+
+/* line 26, ../../sass/base/layout.scss */
+.side {
+  float: left;
+  width: 190px;
+}
+
+/* line 36, ../../sass/base/layout.scss */
+.main-flex {
+  padding-right: 200px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 41, ../../sass/base/layout.scss */
+.layout-adapt-rtl .main-flex {
+  padding-left: 200px;
+  padding-right: 0;
+}
+/* line 45, ../../sass/base/layout.scss */
+.layout-adapt-tri .main-flex {
+  padding: 0 200px 0 200px;
+}
+
+/* line 50, ../../sass/base/layout.scss */
+.main-flex-bd {
+  width: 100%;
+  float: left;
+}
+/* line 53, ../../sass/base/layout.scss */
+.layout-adapt-rtl .main-flex-bd {
+  float: right;
+}
+
+/* line 57, ../../sass/base/layout.scss */
+.side-flex {
+  width: 190px;
+  float: right;
+  margin: 0 -200px 0 0;
+}
+/* line 62, ../../sass/base/layout.scss */
+.layout-adapt-rtl .side-flex {
+  margin: 0 0 0 -200px;
+  float: left;
+}
+
+/* line 69, ../../sass/base/layout.scss */
+.side-flex-lt {
+  float: left;
+  width: 190px;
+  margin: 0 0 0 -200px;
+}
+
+/* line 74, ../../sass/base/layout.scss */
+.side-flex-rt {
+  float: right;
+  width: 190px;
+  margin: 0 -200px 0 0;
+}

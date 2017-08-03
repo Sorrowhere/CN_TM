@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*========== normal style ==========*/
+/* line 4, ../../sass/base/common.scss */
+body {
+  background-color: white;
+  color: #4d4d4d;
+  font: 12px/1.5 Arial, Helvetica, SimSun, sans-serif;
+}
+
+/* line 12, ../../sass/base/common.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  vertical-align: middle;
+}
+
+/* line 16, ../../sass/base/common.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 19, ../../sass/base/common.scss */
+table {
+  width: 100%;
+}
+
+/* line 22, ../../sass/base/common.scss */
+img {
+  vertical-align: middle;
+}
+
+/*========== text ==========*/
+/* line 27, ../../sass/base/common.scss */
+h1, h2, h3, h4, h5, strong {
+  font-weight: bold;
+}
+
+/* line 31, ../../sass/base/common.scss */
+a {
+  text-decoration: none;
+}
+/* line 34, ../../sass/base/common.scss */
+a:link, a:visited {
+  color: #0066dd;
+}
+/* line 37, ../../sass/base/common.scss */
+a:hover {
+  color: #e04b43;
+  text-decoration: underline;
+}
+
+/* line 43, ../../sass/base/common.scss */
+ol {
+  margin-left: 1.6em;
+  *margin-left: 2em;
+}
+/* line 48, ../../sass/base/common.scss */
+ol li {
+  list-style-type: decimal;
+}
+
+/* line 52, ../../sass/base/common.scss */
+.fms {
+  font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+/* line 55, ../../sass/base/common.scss */
+.fcn {
+  font-family: SimSun;
+}
+
+/* line 58, ../../sass/base/common.scss */
+.v-sep {
+  color: #cccccc;
+  margin: 0 5px;
+}
+
+/* line 62, ../../sass/base/common.scss */
+.space {
+  margin: 0 3px;
+}
+
+/*=========== solution =========*/
+/* line 67, ../../sass/base/common.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 72, ../../sass/base/common.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* line 79, ../../sass/base/common.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 85, ../../sass/base/common.scss */
+.sl-vam {
+  display: table;
+  border-collapse: collapse;
+  position: relative;
+  *overflow: hidden;
+}
+
+/* line 93, ../../sass/base/common.scss */
+.sl-vam-outer {
+  display: table-cell;
+  vertical-align: middle;
+  *display: block;
+  *position: absolute;
+  *top: 50%;
+  *left: 50%;
+}
+
+/* line 103, ../../sass/base/common.scss */
+.sl-vam-inner {
+  text-align: center;
+  margin: 0 auto;
+  *position: relative;
+  *top: -50%;
+  *left: -50%;
+}
+
+/* line 114, ../../sass/base/common.scss */
+.img-txt, .img-txt .txt {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 116, ../../sass/base/common.scss */
+.img-txt .img {
+  float: left;
+  margin-right: 10px;
+}

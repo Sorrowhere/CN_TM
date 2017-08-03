@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* line 11, ../../sass/ui/ui_form.scss */
+.txt {
+  height: 14px;
+  line-height: 14px;
+  padding: 5px 4px;
+}
+
+/* line 16, ../../sass/ui/ui_form.scss */
+.txt, textarea, select {
+  border: 1px solid #cccccc;
+}
+/* line 18, ../../sass/ui/ui_form.scss */
+.txt:focus, textarea:focus, select:focus {
+  outline: none;
+  border: 1px solid #b9c9e3;
+}
+
+/* line 23, ../../sass/ui/ui_form.scss */
+label input {
+  margin: -1px 3px 0 0;
+  height: 16px;
+  vertical-align: middle;
+}
+
+/* line 28, ../../sass/ui/ui_form.scss */
+select {
+  height: 26px;
+  line-height: 20px;
+  padding: 2px 1px;
+}
+
+/* line 35, ../../sass/ui/ui_form.scss */
+.field,
+.field-bd {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 38, ../../sass/ui/ui_form.scss */
+.field {
+  padding: 10px 0 10px 90px;
+}
+
+/* line 41, ../../sass/ui/ui_form.scss */
+.field-tit {
+  float: left;
+  width: 90px;
+  margin-left: -90px;
+  text-align: right;
+  line-height: 23px;
+}
+
+/* line 48, ../../sass/ui/ui_form.scss */
+.field-bd {
+  padding-left: 10px;
+}
+/* line 52, ../../sass/ui/ui_form.scss */
+.field-bd .text-before, .field-bd .text-after {
+  color: #999999;
+  margin: 5px 0;
+}
+/* line 56, ../../sass/ui/ui_form.scss */
+.field-bd .text-before {
+  margin: 4px 0 6px;
+}
+/* line 60, ../../sass/ui/ui_form.scss */
+.field-bd .choose-group {
+  margin-left: 15px;
+}
+/* line 62, ../../sass/ui/ui_form.scss */
+.field-bd .choose-group label {
+  margin-right: 10px;
+}
+/* line 67, ../../sass/ui/ui_form.scss */
+.field-bd .txt-phone-nation {
+  width: 30px;
+}
+/* line 70, ../../sass/ui/ui_form.scss */
+.field-bd .txt-phone-zone {
+  width: 70px;
+}
+/* line 73, ../../sass/ui/ui_form.scss */
+.field-bd .txt-phone-number {
+  width: 150px;
+}
+/* line 78, ../../sass/ui/ui_form.scss */
+.field-bd .form-error {
+  margin-top: 6px;
+  color: #e04b43;
+  padding-left: 20px;
+}
+/* line 82, ../../sass/ui/ui_form.scss */
+.field-bd .form-error .icon {
+  margin-left: -20px;
+  float: left;
+}
+/* line 86, ../../sass/ui/ui_form.scss */
+.field-bd .form-error p {
+  margin: 0;
+}
