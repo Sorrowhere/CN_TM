@@ -54,3 +54,18 @@
 		*zoom:1;
 	}
 }
+
+// BFC
+@mixin clearfix(){
+  &:before,
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}

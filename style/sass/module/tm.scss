@@ -10,3 +10,74 @@
 @import "../base/reset";
 @import "../base/common";
 @import "../base/atom";
+@import "../base/fonts";
+
+
+// layout
+body{
+  background-color: #666;
+  font-size: 13px;
+  font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+}
+.wrap{
+  height: 80%;
+  min-height: 600px;
+  padding-top: 100px;
+}
+.main{
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+// 左侧面板
+.panel{
+  float: left;
+  width: 230px;
+  background-color: #4498ee;
+}
+.header{
+  padding: 20px;
+  .avatar{
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    img{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .info{
+    display: table-cell;
+    padding-left: 8px;
+    h3{
+      display: inline-block;
+      font-weight: 400;
+      width: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      color: #fff;
+      font-size: 14px;
+      vertical-align: top;
+      line-height: 40px;
+      text-decoration: none;
+    }
+    .opt{
+      display: inline-block;
+      margin-top: 8px;
+      .iconfont-set{
+        display: inline-block;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}

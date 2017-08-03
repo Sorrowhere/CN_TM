@@ -72,13 +72,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*========== normal style ==========*/
 /* line 4, ../../sass/base/common.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../../sass/base/common.scss */
 body {
   background-color: white;
   color: #4d4d4d;
   font: 12px/1.5 Arial, Helvetica, SimSun, sans-serif;
 }
 
-/* line 12, ../../sass/base/common.scss */
+/* line 15, ../../sass/base/common.scss */
 button,
 input,
 select,
@@ -87,78 +94,78 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 16, ../../sass/base/common.scss */
+/* line 19, ../../sass/base/common.scss */
 button {
   cursor: pointer;
 }
 
-/* line 19, ../../sass/base/common.scss */
+/* line 22, ../../sass/base/common.scss */
 table {
   width: 100%;
 }
 
-/* line 22, ../../sass/base/common.scss */
+/* line 25, ../../sass/base/common.scss */
 img {
   vertical-align: middle;
 }
 
 /*========== text ==========*/
-/* line 27, ../../sass/base/common.scss */
+/* line 30, ../../sass/base/common.scss */
 h1, h2, h3, h4, h5, strong {
   font-weight: bold;
 }
 
-/* line 31, ../../sass/base/common.scss */
+/* line 34, ../../sass/base/common.scss */
 a {
   text-decoration: none;
 }
-/* line 34, ../../sass/base/common.scss */
+/* line 37, ../../sass/base/common.scss */
 a:link, a:visited {
   color: #0066dd;
 }
-/* line 37, ../../sass/base/common.scss */
+/* line 40, ../../sass/base/common.scss */
 a:hover {
   color: #e04b43;
   text-decoration: underline;
 }
 
-/* line 43, ../../sass/base/common.scss */
+/* line 46, ../../sass/base/common.scss */
 ol {
   margin-left: 1.6em;
   *margin-left: 2em;
 }
-/* line 48, ../../sass/base/common.scss */
+/* line 51, ../../sass/base/common.scss */
 ol li {
   list-style-type: decimal;
 }
 
-/* line 52, ../../sass/base/common.scss */
+/* line 55, ../../sass/base/common.scss */
 .fms {
   font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 }
 
-/* line 55, ../../sass/base/common.scss */
+/* line 58, ../../sass/base/common.scss */
 .fcn {
   font-family: SimSun;
 }
 
-/* line 58, ../../sass/base/common.scss */
+/* line 61, ../../sass/base/common.scss */
 .v-sep {
   color: #cccccc;
   margin: 0 5px;
 }
 
-/* line 62, ../../sass/base/common.scss */
+/* line 65, ../../sass/base/common.scss */
 .space {
   margin: 0 3px;
 }
 
 /*=========== solution =========*/
-/* line 67, ../../sass/base/common.scss */
+/* line 70, ../../sass/base/common.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 72, ../../sass/base/common.scss */
+/* line 75, ../../sass/base/common.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: block;
@@ -166,12 +173,12 @@ ol li {
   visibility: hidden;
   font-size: 0;
 }
-/* line 79, ../../sass/base/common.scss */
+/* line 82, ../../sass/base/common.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 85, ../../sass/base/common.scss */
+/* line 88, ../../sass/base/common.scss */
 .sl-vam {
   display: table;
   border-collapse: collapse;
@@ -179,7 +186,7 @@ ol li {
   *overflow: hidden;
 }
 
-/* line 93, ../../sass/base/common.scss */
+/* line 96, ../../sass/base/common.scss */
 .sl-vam-outer {
   display: table-cell;
   vertical-align: middle;
@@ -189,7 +196,7 @@ ol li {
   *left: 50%;
 }
 
-/* line 103, ../../sass/base/common.scss */
+/* line 106, ../../sass/base/common.scss */
 .sl-vam-inner {
   text-align: center;
   margin: 0 auto;
@@ -198,12 +205,12 @@ ol li {
   *left: -50%;
 }
 
-/* line 114, ../../sass/base/common.scss */
+/* line 117, ../../sass/base/common.scss */
 .img-txt, .img-txt .txt {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 116, ../../sass/base/common.scss */
+/* line 119, ../../sass/base/common.scss */
 .img-txt .img {
   float: left;
   margin-right: 10px;
@@ -505,4 +512,167 @@ ol li {
 /* line 112, ../../sass/base/atom.scss */
 .fwb {
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../../../fonts/iconfont.eot?t=1501730305739");
+  /* IE9*/
+  src: url("../../../fonts/iconfont.eot?t=1501730305739#iefix") format("embedded-opentype"), url("../../../fonts/iconfont.woff?t=1501730305739") format("woff"), url("../../../fonts/iconfont.ttf?t=1501730305739") format("truetype"), url("../../../fonts/iconfont.svg?t=1501730305739#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+/* line 10, ../../sass/base/fonts.scss */
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 18, ../../sass/base/fonts.scss */
+.iconfont-back:before {
+  content: "\e697";
+}
+
+/* line 20, ../../sass/base/fonts.scss */
+.iconfont-category:before {
+  content: "\e699";
+}
+
+/* line 22, ../../sass/base/fonts.scss */
+.iconfont-close:before {
+  content: "\e69a";
+}
+
+/* line 24, ../../sass/base/fonts.scss */
+.iconfont-help:before {
+  content: "\e6a3";
+}
+
+/* line 26, ../../sass/base/fonts.scss */
+.iconfont-information:before {
+  content: "\e6a4";
+}
+
+/* line 28, ../../sass/base/fonts.scss */
+.iconfont-less:before {
+  content: "\e6a5";
+}
+
+/* line 30, ../../sass/base/fonts.scss */
+.iconfont-moreunfold:before {
+  content: "\e6a6";
+}
+
+/* line 32, ../../sass/base/fonts.scss */
+.iconfont-more:before {
+  content: "\e6a7";
+}
+
+/* line 34, ../../sass/base/fonts.scss */
+.iconfont-refresh:before {
+  content: "\e6aa";
+}
+
+/* line 36, ../../sass/base/fonts.scss */
+.iconfont-search:before {
+  content: "\e6ac";
+}
+
+/* line 38, ../../sass/base/fonts.scss */
+.iconfont-set:before {
+  content: "\e6ae";
+}
+
+/* line 40, ../../sass/base/fonts.scss */
+.iconfont-success:before {
+  content: "\e6b1";
+}
+
+/* line 42, ../../sass/base/fonts.scss */
+.iconfont-warning:before {
+  content: "\e6b6";
+}
+
+/* line 17, ../../sass/module/tm.scss */
+body {
+  background-color: #666;
+  font-size: 13px;
+  font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, Arial, sans-serif;
+}
+
+/* line 22, ../../sass/module/tm.scss */
+.wrap {
+  height: 80%;
+  min-height: 600px;
+  padding-top: 100px;
+}
+
+/* line 27, ../../sass/module/tm.scss */
+.main {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/* line 36, ../../sass/module/tm.scss */
+.panel {
+  float: left;
+  width: 230px;
+  background-color: #4498ee;
+}
+
+/* line 41, ../../sass/module/tm.scss */
+.header {
+  padding: 20px;
+}
+/* line 43, ../../sass/module/tm.scss */
+.header .avatar {
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+  vertical-align: middle;
+}
+/* line 51, ../../sass/module/tm.scss */
+.header .avatar img {
+  width: 100%;
+  text-align: center;
+}
+/* line 56, ../../sass/module/tm.scss */
+.header .info {
+  display: table-cell;
+  padding-left: 8px;
+}
+/* line 59, ../../sass/module/tm.scss */
+.header .info h3 {
+  display: inline-block;
+  font-weight: 400;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  color: #fff;
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 40px;
+  text-decoration: none;
+}
+/* line 73, ../../sass/module/tm.scss */
+.header .info .opt {
+  display: inline-block;
+  margin-top: 8px;
+}
+/* line 76, ../../sass/module/tm.scss */
+.header .info .opt .iconfont-set {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
 }

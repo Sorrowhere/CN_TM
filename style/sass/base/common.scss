@@ -1,6 +1,9 @@
 @import "lib";
 
 /*========== normal style ==========*/
+*{
+  @include box-sizing(border-box);
+}
 body{
 	background-color: $white;
 	color: $textColor;
