@@ -69,3 +69,33 @@
     clear: both;
   }
 }
+
+
+// Triangle
+@mixin triangle($borderWidth){
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-style: dashed;
+  border-color: transparent;
+  border-width: $borderWidth;
+}
+
+@mixin triangle-top($borderWidth, $borderColor){
+  @include triangle($borderWidth);
+  border-bottom: $borderWidth solid $borderColor;
+}
+@mixin triangle-right($borderWidth, $borderColor){
+  @include triangle($borderWidth);
+  border-left:  $borderWidth solid $borderColor;
+}
+@mixin triangle-bottom($borderWidth, $borderColor){
+  @include triangle($borderWidth);
+  border-top:  $borderWidth solid $borderColor;
+}
+@mixin triangle-left($borderWidth, $borderColor){
+  @include triangle($borderWidth);
+  border-right:  $borderWidth solid $borderColor;
+}

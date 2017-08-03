@@ -45,6 +45,20 @@ body{
   border-radius: 3px;
   @include clearfix();
 }
+.avatar{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  img{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 
 // 左侧面板
 //===============================================================================
@@ -59,17 +73,6 @@ body{
   .avatar{
     float: left;
     margin-left: -40px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background-color: #fff;
-    overflow: hidden;
-    vertical-align: middle;
-    img{
-      width: 100%;
-      text-align: center;
-    }
   }
   // 用户信息
   .info{
@@ -185,16 +188,145 @@ body{
 .chat-area{
   float: left;
   width: 630px;
+  border-right: $baseBorder;
 }
 
+// chat-area-hd
 .chat-area-hd{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-bottom: $baseBorder;
+  overflow: hidden;
   h2{
-    height: 50px;
-    line-height: 50px;
-    border-bottom: $baseBorder;
+    display: inline-block;
     font-size: 16px;
+    font-weight: normal;
+  }
+  .status{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+    border-radius: 50%;
+    background-color: #44cc00;
+  }
+  .status-off{
+    background-color: #ccc;
   }
 }
+
+// chat-area-bd
+.chat-area-bd{
+  height: 425px;
+  padding: 10px 20px;
+  border-bottom: $baseBorder;
+  overflow-y: scroll;
+  font-size: 14px;
+  .msg-system{
+    position: relative;
+    margin: 10px auto;
+    max-width: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    clear: both;
+  }
+  .msg-system-his{
+    margin-top: 20px;
+    .line{
+      position: absolute;
+      top: 8px;
+      width: 40px;
+      border-top: $baseBorder;
+    }
+    .line-left{
+      left: 55px;
+    }
+    .line-right{
+      right: 55px;
+    }
+  }
+}
+
+// 预置消息
+.msg-pre{
+  display: inline-block;
+  width: 240px;
+  padding: 10px 14px;
+  margin: 10px 0;
+  border: $baseBorder;
+  background-color: #f2f2f2;
+  dt{
+    margin-bottom: 3px;
+  }
+}
+
+// 聊天消息
+.msg{
+  overflow: hidden;
+  margin: 5px 0;
+  .content{
+    position: relative;
+    max-width: 300px;
+    padding: 10px;
+    line-height: 21px;
+    border-radius: 3px;
+  }
+}
+
+.msg-in{
+  padding-left: 50px;
+  float: left;
+  text-align: left;
+  clear: left;
+  .avatar{
+    float: left;
+    margin-left: -50px;
+  }
+  .content{
+    display: inline-block;
+    background-color: #ffeecc;
+
+    &:before{
+      position: absolute;
+      top: 13px;
+      left: -16px;
+      content: "";
+      @include triangle-left(8px,#ffeecc);
+    }
+  }
+}
+
+.msg-out{
+  padding-right: 50px;
+  float: right;
+  text-align: right;
+  clear: right;
+  .avatar{
+    float: right;
+    margin-right: -50px;
+  }
+  .content{
+    background-color: #ddeeff;
+    &:after{
+      position: absolute;
+      top: 13px;
+      right: -16px;
+      content: "";
+      @include triangle-right(8px,#ddeeff);
+    }
+  }
+  .msg-failed{
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: left;
+    .iconfont-information{
+      color: red;
+    }
+  }
+}
+
 
 
 
