@@ -626,19 +626,362 @@ textarea:-ms-input-placeholder {
   content: "\e6b6";
 }
 
-/* line 17, ../../sass/module/tm.scss */
+/* line 30, ../../sass/ui/ui_button.scss */
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  _margin-bottom: 1px;
+}
+
+/* line 43, ../../sass/ui/ui_button.scss */
+button.btn,
+input.btn {
+  margin: 0;
+  *overflow: visible;
+  *filter: chroma(color=black);
+}
+/* line 50, ../../sass/ui/ui_button.scss */
+button.btn::-moz-focus-inner,
+input.btn::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 54, ../../sass/ui/ui_button.scss */
+button.btn:focus,
+input.btn:focus {
+  outline: none;
+}
+
+/* line 58, ../../sass/ui/ui_button.scss */
+a.btn:hover {
+  text-decoration: none;
+}
+
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-primary {
+  color: white;
+  background-color: #e0463e;
+}
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-primary:link, .btn-primary:visited {
+  color: white;
+}
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-primary:hover {
+  background-color: #dc3128;
+  color: white;
+}
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-primary:active {
+  background-color: #e45b54;
+}
+
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-warn {
+  color: #674800;
+  background-color: #ffdb1a;
+}
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-warn:link, .btn-warn:visited {
+  color: #674800;
+}
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-warn:hover {
+  background-color: gold;
+  color: #674800;
+}
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-warn:active {
+  background-color: #ffdf34;
+}
+
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-info {
+  color: white;
+  background-color: #4499ee;
+}
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-info:link, .btn-info:visited {
+  color: white;
+}
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-info:hover {
+  background-color: #2d8cec;
+  color: white;
+}
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-info:active {
+  background-color: #5ba6f0;
+}
+
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-defalut {
+  color: #666666;
+  background-color: #f4f4f4;
+}
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-defalut:link, .btn-defalut:visited {
+  color: #666666;
+}
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-defalut:hover {
+  background-color: #e7e7e7;
+  color: #666666;
+}
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-defalut:active {
+  background-color: white;
+}
+
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-xs {
+  height: 20px;
+  line-height: 20px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-xs,
+input.btn-xs {
+  height: 22px;
+  _height: 17px;
+  *line-height: 17px;
+}
+
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-s {
+  height: 24px;
+  line-height: 24px;
+  padding: 0 15px;
+  font-size: 12px;
+}
+
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-s,
+input.btn-s {
+  height: 26px;
+  _height: 21px;
+  *line-height: 21px;
+}
+
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-m {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-m,
+input.btn-m {
+  height: 30px;
+  _height: 25px;
+  *line-height: 25px;
+}
+
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-l {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 25px;
+  font-size: 14px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-l,
+input.btn-l {
+  height: 34px;
+  _height: 29px;
+  *line-height: 29px;
+}
+
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-xl {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 25px;
+  font-size: 18px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-xl,
+input.btn-xl {
+  height: 38px;
+  _height: 33px;
+  *line-height: 33px;
+}
+
+/* line 127, ../../sass/ui/ui_button.scss */
+.disabled {
+  background-color: #f0f0f0;
+  background-image: -moz-linear-gradient(top, #f2f2f2 0, #dddddd 100%);
+  background-image: -webkit-linear-gradient(top, #f2f2f2 0, #dddddd 100%);
+  background-image: -o-linear-gradient(top, #f2f2f2 0, #dddddd 100%);
+  background-image: linear-gradient(to bottom, #f2f2f2 0%, #dddddd 100%);
+  border: 1px solid #d8d8d8;
+  border-bottom-color: #bbb;
+  color: #999999;
+  cursor: not-allowed;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  text-shadow: 1px 1px 0 #f0f1f2;
+}
+
+/* line 137, ../../sass/ui/ui_button.scss */
+a.disabled {
+  color: #999999;
+}
+
+/* line 141, ../../sass/ui/ui_button.scss */
+.btn-icon {
+  padding-left: 26px;
+  padding-right: 10px;
+  position: relative;
+}
+
+/* line 146, ../../sass/ui/ui_button.scss */
+.btn-icon .icon {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  _display: block;
+  _top: 4px;
+}
+
+/* line 162, ../../sass/ui/ui_button.scss */
+.btn-drop {
+  display: inline-block;
+  _display: inline;
+  width: 71px;
+}
+
+/* line 167, ../../sass/ui/ui_button.scss */
+.btn-drop-current {
+  cursor: pointer;
+  border: 1px solid #bfbfbf;
+  height: 17px;
+  width: 69px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 174, ../../sass/ui/ui_button.scss */
+.btn-drop-current a {
+  float: left;
+  line-height: 18px;
+  padding: 0 5px;
+  width: 42px;
+}
+
+/* line 180, ../../sass/ui/ui_button.scss */
+.btn-drop-arrow {
+  float: left;
+  width: 16px;
+  height: 17px;
+  border-left: 1px solid #bfbfbf;
+  background-color: #fff;
+  position: relative;
+}
+
+/* line 188, ../../sass/ui/ui_button.scss */
+.btn-drop-arrow i {
+  position: absolute;
+  height: 0;
+  width: 1px;
+  font-size: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 3px 3px 0;
+  border-color: gray white white white;
+  background-color: #808080;
+  top: 7px;
+  left: 4px;
+}
+
+/* line 201, ../../sass/ui/ui_button.scss */
+.btn-drop-current:hover {
+  background-color: #4078bb;
+  border-color: #3c7ac7 #4078bd #1f5699;
+}
+
+/* line 205, ../../sass/ui/ui_button.scss */
+.btn-drop-current:hover .btn-drop-arrow {
+  border-left: 1px solid #216ca6;
+  background-color: transparent;
+}
+
+/* line 209, ../../sass/ui/ui_button.scss */
+.btn-drop-current:hover .btn-drop-arrow i {
+  border-color: white #4078bb #4078bb #4078bb;
+}
+
+/* line 214, ../../sass/ui/ui_button.scss */
+.btn-drop-current:hover a:link,
+.btn-drop-current:hover a:visited,
+.btn-drop-current:hover a:hover {
+  color: #fff;
+}
+
+/* line 217, ../../sass/ui/ui_button.scss */
+.btn-drop-down {
+  position: absolute;
+  border: 1px solid #cccccc;
+  border-top: none;
+  z-index: 9;
+  width: 69px;
+}
+
+/* line 224, ../../sass/ui/ui_button.scss */
+.btn-drop-down ul {
+  margin: 0 !important;
+}
+
+/* line 227, ../../sass/ui/ui_button.scss */
+.btn-drop-down a {
+  display: block;
+  height: 19px;
+  line-height: 19px;
+  padding: 0 5px;
+}
+
+/* line 234, ../../sass/ui/ui_button.scss */
+.btn-drop-down a:link,
+.btn-drop-down a:visited {
+  color: #666;
+}
+
+/* line 237, ../../sass/ui/ui_button.scss */
+.btn-drop-down a:hover {
+  color: #333;
+  background-color: #dfecf5;
+}
+
+/* line 22, ../../sass/module/tm.scss */
 body {
   background-color: #666;
   font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, Arial, sans-serif;
 }
 
-/* line 21, ../../sass/module/tm.scss */
+/* line 26, ../../sass/module/tm.scss */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-/* line 26, ../../sass/module/tm.scss */
+/* line 31, ../../sass/module/tm.scss */
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -646,17 +989,17 @@ body {
   background-color: #c3c3c3;
 }
 
-/* line 33, ../../sass/module/tm.scss */
+/* line 38, ../../sass/module/tm.scss */
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-/* line 37, ../../sass/module/tm.scss */
+/* line 42, ../../sass/module/tm.scss */
 .wrap {
   padding-top: 100px;
 }
 
-/* line 40, ../../sass/module/tm.scss */
+/* line 45, ../../sass/module/tm.scss */
 .main {
   width: 1190px;
   height: 640px;
@@ -677,7 +1020,7 @@ body {
   clear: both;
 }
 
-/* line 48, ../../sass/module/tm.scss */
+/* line 53, ../../sass/module/tm.scss */
 .avatar {
   width: 40px;
   height: 40px;
@@ -686,28 +1029,28 @@ body {
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 55, ../../sass/module/tm.scss */
+/* line 60, ../../sass/module/tm.scss */
 .avatar img {
   width: 100%;
   text-align: center;
 }
 
-/* line 65, ../../sass/module/tm.scss */
+/* line 70, ../../sass/module/tm.scss */
 .panel {
   float: left;
   width: 230px;
   background-color: #4498ee;
 }
-/* line 69, ../../sass/module/tm.scss */
+/* line 74, ../../sass/module/tm.scss */
 .panel .iconfont {
   color: #fff;
 }
-/* line 73, ../../sass/module/tm.scss */
+/* line 78, ../../sass/module/tm.scss */
 .panel .avatar {
   float: left;
   margin-left: -40px;
 }
-/* line 78, ../../sass/module/tm.scss */
+/* line 83, ../../sass/module/tm.scss */
 .panel .info {
   margin-left: 8px;
 }
@@ -723,7 +1066,7 @@ body {
 .panel .info:after {
   clear: both;
 }
-/* line 81, ../../sass/module/tm.scss */
+/* line 86, ../../sass/module/tm.scss */
 .panel .info .nickname {
   float: left;
   font-weight: 400;
@@ -739,27 +1082,27 @@ body {
   width: 90px\0;
 }
 
-/* line 98, ../../sass/module/tm.scss */
+/* line 103, ../../sass/module/tm.scss */
 .header {
   padding: 20px 20px 20px 60px;
 }
-/* line 102, ../../sass/module/tm.scss */
+/* line 107, ../../sass/module/tm.scss */
 .header .info .nickname {
   line-height: 40px;
 }
-/* line 105, ../../sass/module/tm.scss */
+/* line 110, ../../sass/module/tm.scss */
 .header .info .opt {
   float: right;
   margin-top: 8px;
 }
-/* line 108, ../../sass/module/tm.scss */
+/* line 113, ../../sass/module/tm.scss */
 .header .info .opt .iconfont-set {
   display: inline-block;
   color: #fff;
   cursor: pointer;
 }
 
-/* line 117, ../../sass/module/tm.scss */
+/* line 122, ../../sass/module/tm.scss */
 .search-bar {
   width: 100%;
   height: 32px;
@@ -767,7 +1110,7 @@ body {
   padding-left: 20px;
   background-color: #3387dd;
 }
-/* line 123, ../../sass/module/tm.scss */
+/* line 128, ../../sass/module/tm.scss */
 .search-bar .txt {
   margin-left: 10px;
   border: none;
@@ -775,13 +1118,13 @@ body {
   color: #fff;
 }
 
-/* line 133, ../../sass/module/tm.scss */
+/* line 138, ../../sass/module/tm.scss */
 .nav-view {
   height: 528px;
   overflow-y: scroll;
 }
 
-/* line 137, ../../sass/module/tm.scss */
+/* line 142, ../../sass/module/tm.scss */
 .chat-item {
   width: 100%;
   height: 70px;
@@ -800,20 +1143,20 @@ body {
 .chat-item:after {
   clear: both;
 }
-/* line 143, ../../sass/module/tm.scss */
+/* line 148, ../../sass/module/tm.scss */
 .chat-item .avatar {
   float: left;
   margin-left: -40px;
 }
-/* line 147, ../../sass/module/tm.scss */
+/* line 152, ../../sass/module/tm.scss */
 .chat-item .info {
   padding: 2px 0;
 }
-/* line 150, ../../sass/module/tm.scss */
+/* line 155, ../../sass/module/tm.scss */
 .chat-item .hd {
   overflow: hidden;
 }
-/* line 152, ../../sass/module/tm.scss */
+/* line 157, ../../sass/module/tm.scss */
 .chat-item .hd .num {
   float: right;
   height: 16px;
@@ -826,7 +1169,7 @@ body {
   font-size: 11px;
   color: #fff;
 }
-/* line 163, ../../sass/module/tm.scss */
+/* line 168, ../../sass/module/tm.scss */
 .chat-item .hd .num b {
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -834,12 +1177,12 @@ body {
   -o-transform: scale(0.6);
   transform: scale(0.6);
 }
-/* line 169, ../../sass/module/tm.scss */
+/* line 174, ../../sass/module/tm.scss */
 .chat-item .bd {
   color: #88ccff;
   overflow: hidden;
 }
-/* line 172, ../../sass/module/tm.scss */
+/* line 177, ../../sass/module/tm.scss */
 .chat-item .bd .msg {
   width: 100px;
   overflow: hidden;
@@ -848,28 +1191,28 @@ body {
   width: 90px\0;
   float: left;
 }
-/* line 179, ../../sass/module/tm.scss */
+/* line 184, ../../sass/module/tm.scss */
 .chat-item .bd .time {
   float: right;
 }
 
-/* line 184, ../../sass/module/tm.scss */
+/* line 189, ../../sass/module/tm.scss */
 .chat-item.on {
   background-color: #ffb600;
 }
-/* line 186, ../../sass/module/tm.scss */
+/* line 191, ../../sass/module/tm.scss */
 .chat-item.on .bd {
   color: #ffeebb;
 }
 
-/* line 196, ../../sass/module/tm.scss */
+/* line 201, ../../sass/module/tm.scss */
 .chat-area {
   float: left;
   width: 630px;
   border-right: 1px solid #e6e6e6;
 }
 
-/* line 204, ../../sass/module/tm.scss */
+/* line 209, ../../sass/module/tm.scss */
 .chat-area-hd {
   height: 50px;
   line-height: 50px;
@@ -888,13 +1231,13 @@ body {
 .chat-area-hd:after {
   clear: both;
 }
-/* line 210, ../../sass/module/tm.scss */
+/* line 215, ../../sass/module/tm.scss */
 .chat-area-hd h2 {
   display: inline-block;
   font-size: 16px;
   font-weight: normal;
 }
-/* line 215, ../../sass/module/tm.scss */
+/* line 220, ../../sass/module/tm.scss */
 .chat-area-hd .status {
   display: inline-block;
   width: 10px;
@@ -903,12 +1246,12 @@ body {
   border-radius: 50%;
   background-color: #44cc00;
 }
-/* line 223, ../../sass/module/tm.scss */
+/* line 228, ../../sass/module/tm.scss */
 .chat-area-hd .status-off {
   background-color: #ccc;
 }
 
-/* line 230, ../../sass/module/tm.scss */
+/* line 235, ../../sass/module/tm.scss */
 .chat-tip {
   width: 100%;
   height: 30px;
@@ -918,13 +1261,13 @@ body {
   font-size: 12px;
   overflow: hidden;
 }
-/* line 238, ../../sass/module/tm.scss */
+/* line 243, ../../sass/module/tm.scss */
 .chat-tip .iconfont-close {
   float: right;
   cursor: pointer;
 }
 
-/* line 245, ../../sass/module/tm.scss */
+/* line 250, ../../sass/module/tm.scss */
 .chat-area-bd {
   position: relative;
   max-height: 425px;
@@ -934,7 +1277,7 @@ body {
   overflow-y: scroll;
   font-size: 14px;
 }
-/* line 254, ../../sass/module/tm.scss */
+/* line 259, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system {
   position: relative;
   margin: 10px auto;
@@ -944,26 +1287,26 @@ body {
   color: #999;
   clear: both;
 }
-/* line 263, ../../sass/module/tm.scss */
+/* line 268, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his {
   margin-top: 20px;
 }
-/* line 265, ../../sass/module/tm.scss */
+/* line 270, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his .line {
   position: absolute;
   top: 8px;
   width: 40px;
   border-top: 1px solid #e6e6e6;
 }
-/* line 271, ../../sass/module/tm.scss */
+/* line 276, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his .line-left {
   left: 55px;
 }
-/* line 274, ../../sass/module/tm.scss */
+/* line 279, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his .line-right {
   right: 55px;
 }
-/* line 279, ../../sass/module/tm.scss */
+/* line 284, ../../sass/module/tm.scss */
 .chat-area-bd .msg-pre {
   display: inline-block;
   width: 240px;
@@ -972,16 +1315,16 @@ body {
   border: 1px solid #e6e6e6;
   background-color: #f2f2f2;
 }
-/* line 286, ../../sass/module/tm.scss */
+/* line 291, ../../sass/module/tm.scss */
 .chat-area-bd .msg-pre dt {
   margin-bottom: 3px;
 }
-/* line 292, ../../sass/module/tm.scss */
+/* line 297, ../../sass/module/tm.scss */
 .chat-area-bd .msg {
   overflow: hidden;
   margin: 5px 0;
 }
-/* line 295, ../../sass/module/tm.scss */
+/* line 300, ../../sass/module/tm.scss */
 .chat-area-bd .msg .content {
   position: relative;
   max-width: 300px;
@@ -989,24 +1332,24 @@ body {
   line-height: 21px;
   border-radius: 3px;
 }
-/* line 305, ../../sass/module/tm.scss */
+/* line 310, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in {
   padding-left: 50px;
   float: left;
   text-align: left;
   clear: left;
 }
-/* line 310, ../../sass/module/tm.scss */
+/* line 315, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in .avatar {
   float: left;
   margin-left: -50px;
 }
-/* line 314, ../../sass/module/tm.scss */
+/* line 319, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in .content {
   display: inline-block;
   background-color: #ffeecc;
 }
-/* line 318, ../../sass/module/tm.scss */
+/* line 323, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in .content:before {
   position: absolute;
   top: 13px;
@@ -1022,23 +1365,23 @@ body {
   border-width: 8px;
   border-right: 8px solid #ffeecc;
 }
-/* line 329, ../../sass/module/tm.scss */
+/* line 334, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out {
   padding-right: 50px;
   float: right;
   text-align: right;
   clear: right;
 }
-/* line 334, ../../sass/module/tm.scss */
+/* line 339, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .avatar {
   float: right;
   margin-right: -50px;
 }
-/* line 338, ../../sass/module/tm.scss */
+/* line 343, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .content {
   background-color: #ddeeff;
 }
-/* line 340, ../../sass/module/tm.scss */
+/* line 345, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .content:after {
   position: absolute;
   top: 13px;
@@ -1054,23 +1397,46 @@ body {
   border-width: 8px;
   border-left: 8px solid #ddeeff;
 }
-/* line 348, ../../sass/module/tm.scss */
+/* line 353, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .msg-failed {
   margin-top: 5px;
   font-size: 12px;
   text-align: left;
 }
-/* line 352, ../../sass/module/tm.scss */
+/* line 357, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .msg-failed .iconfont-information {
   color: red;
 }
 
-/* line 365, ../../sass/module/tm.scss */
+/* line 369, ../../sass/module/tm.scss */
+.chat-edit {
+  position: relative;
+  height: 165px;
+}
+/* line 374, ../../sass/module/tm.scss */
 .chat-edit .toolbar {
   padding: 4px 17px;
 }
-/* line 367, ../../sass/module/tm.scss */
+/* line 376, ../../sass/module/tm.scss */
 .chat-edit .toolbar .iconfont {
   margin-right: 5px;
   cursor: pointer;
+}
+/* line 383, ../../sass/module/tm.scss */
+.chat-edit .edit-box {
+  height: 80px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 20px;
+  outline: none;
+  border: 0;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+/* line 397, ../../sass/module/tm.scss */
+.chat-edit .action {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }

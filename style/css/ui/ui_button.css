@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 29, ../../sass/ui/ui_button.scss */
+/* line 30, ../../sass/ui/ui_button.scss */
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -13,197 +13,140 @@
   _margin-bottom: 1px;
 }
 
-/* line 42, ../../sass/ui/ui_button.scss */
+/* line 43, ../../sass/ui/ui_button.scss */
 button.btn,
 input.btn {
   margin: 0;
   *overflow: visible;
   *filter: chroma(color=black);
 }
-/* line 49, ../../sass/ui/ui_button.scss */
+/* line 50, ../../sass/ui/ui_button.scss */
 button.btn::-moz-focus-inner,
 input.btn::-moz-focus-inner {
   border: none;
   padding: 0;
 }
-/* line 53, ../../sass/ui/ui_button.scss */
+/* line 54, ../../sass/ui/ui_button.scss */
 button.btn:focus,
 input.btn:focus {
   outline: none;
 }
 
-/* line 57, ../../sass/ui/ui_button.scss */
+/* line 58, ../../sass/ui/ui_button.scss */
 a.btn:hover {
   text-decoration: none;
 }
 
-/* line 72, ../../sass/ui/ui_button.scss */
-.btn-red {
-  border: 1px solid #e0463e;
-  border-bottom: 1px solid #b32b24;
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-primary {
   color: white;
   background-color: #e0463e;
-  background-image: -moz-linear-gradient(top, #e64d45 0, #d93f36 100%);
-  background-image: -webkit-linear-gradient(top, #e64d45 0, #d93f36 100%);
-  background-image: -o-linear-gradient(top, #e64d45 0, #d93f36 100%);
-  background-image: linear-gradient(to bottom, #e64d45 0%, #d93f36 100%);
 }
-/* line 79, ../../sass/ui/ui_button.scss */
-.btn-red:link, .btn-red:visited {
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-primary:link, .btn-primary:visited {
   color: white;
 }
-/* line 82, ../../sass/ui/ui_button.scss */
-.btn-red:hover {
-  border-bottom-color: #9e2620;
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-primary:hover {
   background-color: #dc3128;
-  background-image: -moz-linear-gradient(top, #e3372f 0, #ce3027 100%);
-  background-image: -webkit-linear-gradient(top, #e3372f 0, #ce3027 100%);
-  background-image: -o-linear-gradient(top, #e3372f 0, #ce3027 100%);
-  background-image: linear-gradient(to bottom, #e3372f 0%, #ce3027 100%);
   color: white;
 }
-/* line 88, ../../sass/ui/ui_button.scss */
-.btn-red:active {
-  background-image: -moz-linear-gradient(top, #ce3027 0, #e3372f 100%);
-  background-image: -webkit-linear-gradient(top, #ce3027 0, #e3372f 100%);
-  background-image: -o-linear-gradient(top, #ce3027 0, #e3372f 100%);
-  background-image: linear-gradient(to bottom, #ce3027 0%, #e3372f 100%);
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-primary:active {
+  background-color: #e45b54;
 }
 
-/* line 72, ../../sass/ui/ui_button.scss */
-.btn-yellow {
-  border: 1px solid #ffdb1a;
-  border-bottom: 1px solid #e6c317;
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-warn {
   color: #674800;
   background-color: #ffdb1a;
-  background-image: -moz-linear-gradient(top, #ffe226 0, #ffd20b 100%);
-  background-image: -webkit-linear-gradient(top, #ffe226 0, #ffd20b 100%);
-  background-image: -o-linear-gradient(top, #ffe226 0, #ffd20b 100%);
-  background-image: linear-gradient(to bottom, #ffe226 0%, #ffd20b 100%);
 }
-/* line 79, ../../sass/ui/ui_button.scss */
-.btn-yellow:link, .btn-yellow:visited {
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-warn:link, .btn-warn:visited {
   color: #674800;
 }
-/* line 82, ../../sass/ui/ui_button.scss */
-.btn-yellow:hover {
-  border-bottom-color: #cfaf15;
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-warn:hover {
   background-color: gold;
-  background-image: -moz-linear-gradient(top, #ffdf0c 0, #f1c400 100%);
-  background-image: -webkit-linear-gradient(top, #ffdf0c 0, #f1c400 100%);
-  background-image: -o-linear-gradient(top, #ffdf0c 0, #f1c400 100%);
-  background-image: linear-gradient(to bottom, #ffdf0c 0%, #f1c400 100%);
   color: #674800;
 }
-/* line 88, ../../sass/ui/ui_button.scss */
-.btn-yellow:active {
-  background-image: -moz-linear-gradient(top, #f1c400 0, #ffdf0c 100%);
-  background-image: -webkit-linear-gradient(top, #f1c400 0, #ffdf0c 100%);
-  background-image: -o-linear-gradient(top, #f1c400 0, #ffdf0c 100%);
-  background-image: linear-gradient(to bottom, #f1c400 0%, #ffdf0c 100%);
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-warn:active {
+  background-color: #ffdf34;
 }
 
-/* line 72, ../../sass/ui/ui_button.scss */
-.btn-blue {
-  border: 1px solid #1c8fe8;
-  border-bottom: 1px solid #216ca6;
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-info {
   color: white;
-  background-color: #1c8fe8;
-  background-image: -moz-linear-gradient(top, #1894f2 0, #2089d9 100%);
-  background-image: -webkit-linear-gradient(top, #1894f2 0, #2089d9 100%);
-  background-image: -o-linear-gradient(top, #1894f2 0, #2089d9 100%);
-  background-image: linear-gradient(to bottom, #1894f2 0%, #2089d9 100%);
+  background-color: #4499ee;
 }
-/* line 79, ../../sass/ui/ui_button.scss */
-.btn-blue:link, .btn-blue:visited {
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-info:link, .btn-info:visited {
   color: white;
 }
-/* line 82, ../../sass/ui/ui_button.scss */
-.btn-blue:hover {
-  border-bottom-color: #1d5e91;
-  background-color: #1681d5;
-  background-image: -moz-linear-gradient(top, #0d87e4 0, #1d7bc3 100%);
-  background-image: -webkit-linear-gradient(top, #0d87e4 0, #1d7bc3 100%);
-  background-image: -o-linear-gradient(top, #0d87e4 0, #1d7bc3 100%);
-  background-image: linear-gradient(to bottom, #0d87e4 0%, #1d7bc3 100%);
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-info:hover {
+  background-color: #2d8cec;
   color: white;
 }
-/* line 88, ../../sass/ui/ui_button.scss */
-.btn-blue:active {
-  background-image: -moz-linear-gradient(top, #1d7bc3 0, #0d87e4 100%);
-  background-image: -webkit-linear-gradient(top, #1d7bc3 0, #0d87e4 100%);
-  background-image: -o-linear-gradient(top, #1d7bc3 0, #0d87e4 100%);
-  background-image: linear-gradient(to bottom, #1d7bc3 0%, #0d87e4 100%);
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-info:active {
+  background-color: #5ba6f0;
 }
 
-/* line 72, ../../sass/ui/ui_button.scss */
-.btn-gray {
-  border: 1px solid #f4f4f4;
-  border-bottom: 1px solid #cccccc;
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-defalut {
   color: #666666;
   background-color: #f4f4f4;
-  background-image: -moz-linear-gradient(top, #f4f4f4 0, #e0e0e0 100%);
-  background-image: -webkit-linear-gradient(top, #f4f4f4 0, #e0e0e0 100%);
-  background-image: -o-linear-gradient(top, #f4f4f4 0, #e0e0e0 100%);
-  background-image: linear-gradient(to bottom, #f4f4f4 0%, #e0e0e0 100%);
-  border: 1px solid #e0e0e0;
-  border-bottom-color: #c9c9c9;
 }
-/* line 79, ../../sass/ui/ui_button.scss */
-.btn-gray:link, .btn-gray:visited {
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-defalut:link, .btn-defalut:visited {
   color: #666666;
 }
-/* line 82, ../../sass/ui/ui_button.scss */
-.btn-gray:hover {
-  border-bottom-color: #bfbfbf;
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-defalut:hover {
   background-color: #e7e7e7;
-  background-image: -moz-linear-gradient(top, #e7e7e7 0, lightgrey 100%);
-  background-image: -webkit-linear-gradient(top, #e7e7e7 0, lightgrey 100%);
-  background-image: -o-linear-gradient(top, #e7e7e7 0, lightgrey 100%);
-  background-image: linear-gradient(to bottom, #e7e7e7 0%, #d3d3d3 100%);
   color: #666666;
 }
-/* line 88, ../../sass/ui/ui_button.scss */
-.btn-gray:active {
-  background-image: -moz-linear-gradient(top, lightgrey 0, #e7e7e7 100%);
-  background-image: -webkit-linear-gradient(top, lightgrey 0, #e7e7e7 100%);
-  background-image: -o-linear-gradient(top, lightgrey 0, #e7e7e7 100%);
-  background-image: linear-gradient(to bottom, #d3d3d3 0%, #e7e7e7 100%);
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-defalut:active {
+  background-color: white;
 }
 
-/* line 107, ../../sass/ui/ui_button.scss */
-.btn-mini {
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-xs {
   height: 20px;
   line-height: 20px;
   padding: 0 10px;
   font-size: 12px;
 }
 
-/* line 117, ../../sass/ui/ui_button.scss */
-button.btn-mini,
-input.btn-mini {
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-xs,
+input.btn-xs {
   height: 22px;
-  _line-height: 17px;
+  _height: 17px;
+  *line-height: 17px;
 }
 
-/* line 107, ../../sass/ui/ui_button.scss */
-.btn-small {
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-s {
   height: 24px;
   line-height: 24px;
   padding: 0 15px;
   font-size: 12px;
 }
 
-/* line 117, ../../sass/ui/ui_button.scss */
-button.btn-small,
-input.btn-small {
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-s,
+input.btn-s {
   height: 26px;
   _height: 21px;
   *line-height: 21px;
 }
 
-/* line 107, ../../sass/ui/ui_button.scss */
-.btn-mid {
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-m {
   height: 28px;
   line-height: 28px;
   padding: 0 20px;
@@ -211,33 +154,33 @@ input.btn-small {
   font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 }
 
-/* line 117, ../../sass/ui/ui_button.scss */
-button.btn-mid,
-input.btn-mid {
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-m,
+input.btn-m {
   height: 30px;
   _height: 25px;
   *line-height: 25px;
 }
 
-/* line 107, ../../sass/ui/ui_button.scss */
-.btn-big {
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-l {
   height: 32px;
   line-height: 32px;
   padding: 0 25px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 }
 
-/* line 117, ../../sass/ui/ui_button.scss */
-button.btn-big,
-input.btn-big {
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-l,
+input.btn-l {
   height: 34px;
   _height: 29px;
   *line-height: 29px;
 }
 
-/* line 107, ../../sass/ui/ui_button.scss */
-.btn-biger {
+/* line 99, ../../sass/ui/ui_button.scss */
+.btn-xl {
   height: 36px;
   line-height: 36px;
   padding: 0 25px;
@@ -245,15 +188,15 @@ input.btn-big {
   font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 }
 
-/* line 117, ../../sass/ui/ui_button.scss */
-button.btn-biger,
-input.btn-biger {
+/* line 109, ../../sass/ui/ui_button.scss */
+button.btn-xl,
+input.btn-xl {
   height: 38px;
   _height: 33px;
   *line-height: 33px;
 }
 
-/* line 135, ../../sass/ui/ui_button.scss */
+/* line 127, ../../sass/ui/ui_button.scss */
 .disabled {
   background-color: #f0f0f0;
   background-image: -moz-linear-gradient(top, #f2f2f2 0, #dddddd 100%);
@@ -269,19 +212,19 @@ input.btn-biger {
   text-shadow: 1px 1px 0 #f0f1f2;
 }
 
-/* line 145, ../../sass/ui/ui_button.scss */
+/* line 137, ../../sass/ui/ui_button.scss */
 a.disabled {
   color: #999999;
 }
 
-/* line 149, ../../sass/ui/ui_button.scss */
+/* line 141, ../../sass/ui/ui_button.scss */
 .btn-icon {
   padding-left: 26px;
   padding-right: 10px;
   position: relative;
 }
 
-/* line 154, ../../sass/ui/ui_button.scss */
+/* line 146, ../../sass/ui/ui_button.scss */
 .btn-icon .icon {
   position: absolute;
   left: 10px;
@@ -290,14 +233,14 @@ a.disabled {
   _top: 4px;
 }
 
-/* line 170, ../../sass/ui/ui_button.scss */
+/* line 162, ../../sass/ui/ui_button.scss */
 .btn-drop {
   display: inline-block;
   _display: inline;
   width: 71px;
 }
 
-/* line 175, ../../sass/ui/ui_button.scss */
+/* line 167, ../../sass/ui/ui_button.scss */
 .btn-drop-current {
   cursor: pointer;
   border: 1px solid #bfbfbf;
@@ -308,7 +251,7 @@ a.disabled {
   border-radius: 2px;
 }
 
-/* line 182, ../../sass/ui/ui_button.scss */
+/* line 174, ../../sass/ui/ui_button.scss */
 .btn-drop-current a {
   float: left;
   line-height: 18px;
@@ -316,7 +259,7 @@ a.disabled {
   width: 42px;
 }
 
-/* line 188, ../../sass/ui/ui_button.scss */
+/* line 180, ../../sass/ui/ui_button.scss */
 .btn-drop-arrow {
   float: left;
   width: 16px;
@@ -326,7 +269,7 @@ a.disabled {
   position: relative;
 }
 
-/* line 196, ../../sass/ui/ui_button.scss */
+/* line 188, ../../sass/ui/ui_button.scss */
 .btn-drop-arrow i {
   position: absolute;
   height: 0;
@@ -341,31 +284,31 @@ a.disabled {
   left: 4px;
 }
 
-/* line 209, ../../sass/ui/ui_button.scss */
+/* line 201, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover {
   background-color: #4078bb;
   border-color: #3c7ac7 #4078bd #1f5699;
 }
 
-/* line 213, ../../sass/ui/ui_button.scss */
+/* line 205, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover .btn-drop-arrow {
   border-left: 1px solid #216ca6;
   background-color: transparent;
 }
 
-/* line 217, ../../sass/ui/ui_button.scss */
+/* line 209, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover .btn-drop-arrow i {
   border-color: white #4078bb #4078bb #4078bb;
 }
 
-/* line 222, ../../sass/ui/ui_button.scss */
+/* line 214, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover a:link,
 .btn-drop-current:hover a:visited,
 .btn-drop-current:hover a:hover {
   color: #fff;
 }
 
-/* line 225, ../../sass/ui/ui_button.scss */
+/* line 217, ../../sass/ui/ui_button.scss */
 .btn-drop-down {
   position: absolute;
   border: 1px solid #cccccc;
@@ -374,12 +317,12 @@ a.disabled {
   width: 69px;
 }
 
-/* line 232, ../../sass/ui/ui_button.scss */
+/* line 224, ../../sass/ui/ui_button.scss */
 .btn-drop-down ul {
   margin: 0 !important;
 }
 
-/* line 235, ../../sass/ui/ui_button.scss */
+/* line 227, ../../sass/ui/ui_button.scss */
 .btn-drop-down a {
   display: block;
   height: 19px;
@@ -387,13 +330,13 @@ a.disabled {
   padding: 0 5px;
 }
 
-/* line 242, ../../sass/ui/ui_button.scss */
+/* line 234, ../../sass/ui/ui_button.scss */
 .btn-drop-down a:link,
 .btn-drop-down a:visited {
   color: #666;
 }
 
-/* line 245, ../../sass/ui/ui_button.scss */
+/* line 237, ../../sass/ui/ui_button.scss */
 .btn-drop-down a:hover {
   color: #333;
   background-color: #dfecf5;

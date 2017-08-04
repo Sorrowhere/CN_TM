@@ -9,18 +9,19 @@ $btnDisabledClass: disabled !default;
 
 // button size class
 //             className, height, padding, fontSize
-$btnSizeMini:  mini       22px    10px     12px  !default;
-$btnSizeSmall: small      26px    15px     12px  !default;
-$btnSizeMid:   mid        30px    20px     14px  !default;
-$btnSizeBig:   big        34px    25px     16px  !default;
-$btnSizeBiger: biger      38px    25px     18px  !default;
+$btnSizeMini:  xs       22px    10px     12px  !default;
+$btnSizeSmall: s      26px    15px     12px  !default;
+$btnSizeMid:   m        30px    20px     14px  !default;
+$btnSizeBig:   l        34px    25px     14px  !default;
+$btnSizeBiger: xl      38px    25px     18px  !default;
 $btnSizeGroup: $btnSizeMini, $btnSizeSmall, $btnSizeMid, $btnSizeBig, $btnSizeBiger !default;
 // button color class 
-//               className,   borderColor, fontColor, backgroundColor, startColor,           endColor
-$btnColorRed:    red          #b32b24      #fff       #e0463e          rgba(230,77,69,1)     rgba(217,63,54,1);
-$btnColorYellow: yellow       #e6c317      #674800    #ffdb1a          rgba(255,226,38,1)    rgba(255,210,11,1);
-$btnColorBlue:   blue         #216ca6      #fff       #1c8fe8          rgba(24,148,242,1)    rgba(32,137,217,1);
-$btnColorGray:   gray         #ccc         #666       #f4f4f4          rgba(244,244,244,1)   rgba(224,224,224,1);
+//               className,   fontColor, backgroundColor
+$btnColorRed:    primary      #fff       #e0463e;
+$btnColorYellow: warn         #674800    #ffdb1a;
+$btnColorBlue:   info         #fff       #49e;
+$btnColorGray:   defalut      #666       #f4f4f4;
+$btnColorWhite:  blank        #333       #fff;
 $btnColorGroup:  $btnColorRed $btnColorYellow $btnColorBlue $btnColorGray !default;
 
 
@@ -61,36 +62,27 @@ a.#{$btnBaseClass}:hover{
 // button color style
 @each $colorItem in $btnColorGroup{
 	$colorClass: nth($colorItem,1);
-	$borderColor: nth($colorItem,2);
-	$fontColor: nth($colorItem,3);
-	$backgroundColor: nth($colorItem,4);
-	$startColor: nth($colorItem,5);
-	$endColor: nth($colorItem,6);
+	$fontColor: nth($colorItem,2);
+	$backgroundColor: nth($colorItem,3);
 
 	$btnColorClass: $btnBaseClass+'-'+$colorClass;
 
 	.#{$btnColorClass}{
-		border: 1px solid  $backgroundColor;
-		border-bottom: 1px solid $borderColor;
 		color: $fontColor;
 		background-color: $backgroundColor;
-		@include gradient-vertical($startColor 0,$endColor 100%);
 		&:link,
 		&:visited{
 			color: $fontColor;
 		}
 		&:hover{
-			border-bottom-color: darken($borderColor,5%);
 			background-color: darken($backgroundColor,5%);
-			@include gradient-vertical(darken($startColor,5%) 0,darken($endColor,5%) 100%);
 			color: $fontColor;
 		}
 		&:active{
-			@include gradient-vertical(darken($endColor,5%) 0,darken($startColor,5%) 100%);
+            background-color: lighten($backgroundColor,5%);
 		}
-		@if $btnColorClass == 'btn-gray'{
+		@if $btnColorClass == 'btn-blank'{
 			border: 1px solid #e0e0e0;
-			border-bottom-color: #c9c9c9;
 		}
 	}
 }

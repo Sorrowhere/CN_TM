@@ -12,6 +12,11 @@
 @import "../base/atom";
 @import "../base/fonts";
 
+// import ui css
+@import "../ui/ui_button";
+
+
+
 
 // layout
 body{
@@ -362,6 +367,10 @@ body{
 // 输入区域
 //===============================================================================
 .chat-edit{
+  position: relative;
+  height: 165px;
+
+  // 工具栏
   .toolbar{
     padding: 4px 17px;
     .iconfont{
@@ -369,6 +378,29 @@ body{
       cursor: pointer;
     }
   }
+
+  // 编辑区域
+  .edit-box{
+    height: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 20px;
+    outline: none;
+    border: 0;
+    font-size: 14px;
+
+    white-space: pre-wrap;
+    word-break: normal;
+  }
+
+  // 发送按钮
+  .action{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+
 }
 
 

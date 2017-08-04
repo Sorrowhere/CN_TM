@@ -238,7 +238,7 @@
 
 
             <!-- S 离线提示-->
-            <div class="chat-tip">
+            <div class="chat-tip" style="display:none;">
                 对方离线，您可以向他（她）发送离线消息。
                 <i class="iconfont iconfont-close"></i>
             </div>
@@ -311,6 +311,7 @@
 
 
             <div class="chat-edit">
+
                 <div class="toolbar">
                     <span class="toolbar-item">
                         <i class="iconfont iconfont-category"></i>
@@ -321,12 +322,18 @@
                      <span class="toolbar-item flr">
                         <i class="iconfont iconfont-set"></i>
                     </span>
-                </div>
-                <div class="chat-edit-area">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-            </div>
+                </div><!-- /toolbar -->
 
+                <div class="chat-edit-area">
+                    <pre class="edit-box" contenteditable="true"></pre>
+                </div><!-- /edit-box -->
+
+                <div class="action">
+                    <span class="desc">按下Ctrl+Enter换行</span>
+                    <a class="btn btn-l btn-info" href="">发送</a>
+                </div>
+
+            </div>
 
         </div>
         <!-- E chat-area-->
