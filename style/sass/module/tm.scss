@@ -528,6 +528,8 @@ body{
     }
   }
   .pager{
+    position: relative;
+    z-index: 9;
     padding: 5px 15px;
     background-color: #f2f2f2;
     @include clearfix();
@@ -622,5 +624,5 @@ body{
 }
 .fadeOutB{
   opacity: 0;
-  @include transform(translateY(58px));
+  @include transform(translateY(30px));
 }
