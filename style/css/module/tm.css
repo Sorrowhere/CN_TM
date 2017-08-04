@@ -735,6 +735,26 @@ a.btn:hover {
   background-color: white;
 }
 
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-blank {
+  color: #333333;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-blank:link, .btn-blank:visited {
+  color: #333333;
+}
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-blank:hover {
+  background-color: #f2f2f2;
+  color: #333333;
+}
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-blank:active {
+  background-color: white;
+}
+
 /* line 99, ../../sass/ui/ui_button.scss */
 .btn-xs {
   height: 20px;
@@ -753,8 +773,8 @@ input.btn-xs {
 
 /* line 99, ../../sass/ui/ui_button.scss */
 .btn-s {
-  height: 24px;
-  line-height: 24px;
+  height: 22px;
+  line-height: 22px;
   padding: 0 15px;
   font-size: 12px;
 }
@@ -762,9 +782,9 @@ input.btn-xs {
 /* line 109, ../../sass/ui/ui_button.scss */
 button.btn-s,
 input.btn-s {
-  height: 26px;
-  _height: 21px;
-  *line-height: 21px;
+  height: 24px;
+  _height: 19px;
+  *line-height: 19px;
 }
 
 /* line 99, ../../sass/ui/ui_button.scss */
@@ -1432,15 +1452,15 @@ body {
   border: 1px solid white;
   border-radius: 2px;
   text-align: center;
+  cursor: pointer;
 }
-/* line 394, ../../sass/module/tm.scss */
+/* line 395, ../../sass/module/tm.scss */
 .chat-edit .toolbar .toolbar-item:hover {
   border: 1px solid #999999;
 }
-/* line 399, ../../sass/module/tm.scss */
+/* line 400, ../../sass/module/tm.scss */
 .chat-edit .toolbar .iconfont {
   margin-right: 5px;
-  cursor: pointer;
 }
 /* line 406, ../../sass/module/tm.scss */
 .chat-edit .edit-box {
@@ -1541,4 +1561,90 @@ body {
 /* line 488, ../../sass/module/tm.scss */
 .msg-history .record .record-txt-hd {
   color: #999;
+}
+/* line 494, ../../sass/module/tm.scss */
+.msg-history .filter {
+  padding: 7px 15px 5px;
+  background-color: #f2f2f2;
+}
+/* line 498, ../../sass/module/tm.scss */
+.msg-history .filter-area {
+  line-height: 24px;
+}
+/* line 501, ../../sass/module/tm.scss */
+.msg-history .filter-area select,
+.msg-history .filter-area input {
+  width: 80px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 3px;
+  border: 1px solid #e6e6e6;
+  font-size: 12px;
+}
+/* line 509, ../../sass/module/tm.scss */
+.msg-history .filter-area select {
+  margin-right: 15px;
+}
+/* line 513, ../../sass/module/tm.scss */
+.msg-history .pager {
+  margin-top: 5px;
+}
+/* line 61, ../../sass/base/_mixin.scss */
+.msg-history .pager:before, .msg-history .pager:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* line 68, ../../sass/base/_mixin.scss */
+.msg-history .pager:after {
+  clear: both;
+}
+/* line 516, ../../sass/module/tm.scss */
+.msg-history .pager .search {
+  float: left;
+  width: 56px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+}
+/* line 525, ../../sass/module/tm.scss */
+.msg-history .pager .search .iconfont-search {
+  margin-right: 5px;
+  font-size: 14px;
+}
+/* line 529, ../../sass/module/tm.scss */
+.msg-history .pager .search:hover {
+  border: 1px solid #999999;
+}
+/* line 533, ../../sass/module/tm.scss */
+.msg-history .pager .pager-nav {
+  float: right;
+}
+/* line 535, ../../sass/module/tm.scss */
+.msg-history .pager .pager-nav input {
+  height: 20px;
+  line-height: 20px;
+  width: 40px;
+  padding: 0 3px;
+  border: 1px solid #e6e6e6;
+  font-size: 12px;
+}
+/* line 543, ../../sass/module/tm.scss */
+.msg-history .pager .pager-nav .iconfont {
+  display: inline-block;
+  padding: 0 3px;
+  margin-left: -3px;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* line 551, ../../sass/module/tm.scss */
+.msg-history .pager .pager-nav .iconfont:hover {
+  border: 1px solid #999999;
 }

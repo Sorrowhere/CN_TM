@@ -10,7 +10,7 @@ $btnDisabledClass: disabled !default;
 // button size class
 //             className, height, padding, fontSize
 $btnSizeMini:  xs       22px    10px     12px  !default;
-$btnSizeSmall: s      26px    15px     12px  !default;
+$btnSizeSmall: s      24px    15px     12px  !default;
 $btnSizeMid:   m        30px    20px     14px  !default;
 $btnSizeBig:   l        34px    25px     14px  !default;
 $btnSizeBiger: xl      38px    25px     18px  !default;
@@ -22,7 +22,7 @@ $btnColorYellow: warn         #674800    #ffdb1a;
 $btnColorBlue:   info         #fff       #49e;
 $btnColorGray:   defalut      #666       #f4f4f4;
 $btnColorWhite:  blank        #333       #fff;
-$btnColorGroup:  $btnColorRed $btnColorYellow $btnColorBlue $btnColorGray !default;
+$btnColorGroup:  $btnColorRed $btnColorYellow $btnColorBlue $btnColorGray $btnColorWhite!default;
 
 
 // button base style

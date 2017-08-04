@@ -113,6 +113,26 @@ a.btn:hover {
   background-color: white;
 }
 
+/* line 70, ../../sass/ui/ui_button.scss */
+.btn-blank {
+  color: #333333;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+/* line 74, ../../sass/ui/ui_button.scss */
+.btn-blank:link, .btn-blank:visited {
+  color: #333333;
+}
+/* line 77, ../../sass/ui/ui_button.scss */
+.btn-blank:hover {
+  background-color: #f2f2f2;
+  color: #333333;
+}
+/* line 81, ../../sass/ui/ui_button.scss */
+.btn-blank:active {
+  background-color: white;
+}
+
 /* line 99, ../../sass/ui/ui_button.scss */
 .btn-xs {
   height: 20px;
@@ -131,8 +151,8 @@ input.btn-xs {
 
 /* line 99, ../../sass/ui/ui_button.scss */
 .btn-s {
-  height: 24px;
-  line-height: 24px;
+  height: 22px;
+  line-height: 22px;
   padding: 0 15px;
   font-size: 12px;
 }
@@ -140,9 +160,9 @@ input.btn-xs {
 /* line 109, ../../sass/ui/ui_button.scss */
 button.btn-s,
 input.btn-s {
-  height: 26px;
-  _height: 21px;
-  *line-height: 21px;
+  height: 24px;
+  _height: 19px;
+  *line-height: 19px;
 }
 
 /* line 99, ../../sass/ui/ui_button.scss */

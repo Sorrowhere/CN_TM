@@ -391,6 +391,7 @@ body{
       border: 1px solid #fff;
       border-radius: 2px;
       text-align: center;
+      cursor: pointer;
       &:hover{
         border: 1px solid #999;
       }
@@ -398,7 +399,6 @@ body{
     }
     .iconfont{
       margin-right: 5px;
-      cursor: pointer;
     }
   }
 
@@ -487,6 +487,71 @@ body{
     }
     .record-txt-hd{
       color: #999;
+    }
+  }
+
+  // filter
+  .filter{
+    padding: 7px 15px 5px;
+    background-color: #f2f2f2;
+  }
+  .filter-area{
+    line-height: 24px;
+    select,
+    input{
+      width: 80px;
+      height: 24px;
+      line-height: 24px;
+      padding: 0 3px;
+      border: $baseBorder;
+      font-size: 12px;
+    }
+    select{
+      margin-right: 15px;
+    }
+  }
+  .pager{
+    margin-top: 5px;
+    @include clearfix();
+    .search{
+      float: left;
+      width: 56px;
+      height: 23px;
+      line-height: 23px;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #f2f2f2;
+      border-radius: 2px;
+      .iconfont-search{
+        margin-right: 5px;
+        font-size: 14px;
+      }
+      &:hover{
+        border: 1px solid #999;
+      }
+    }
+    .pager-nav{
+      float: right;
+      input{
+        height: 20px;
+        line-height: 20px;
+        width: 40px;
+        padding: 0 3px;
+        border: $baseBorder;
+        font-size: 12px;
+      }
+      .iconfont{
+        display: inline-block;
+        padding: 0 3px;
+        margin-left: -3px;
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 14px;
+        &:hover{
+          border: 1px solid #999;
+        }
+      }
     }
   }
 
