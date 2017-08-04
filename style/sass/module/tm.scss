@@ -32,7 +32,7 @@ body{
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #c3c3c3
+  background-color: rgba(0,0,0,0.3);
 }
 
 ::-webkit-scrollbar-track {
@@ -458,7 +458,7 @@ body{
   .msg-history-hd{
     height: 50px;
     line-height: 50px;
-    padding: 0 30px;
+    padding: 0 20px 0 30px;
     border-bottom: $baseBorder;
     @include clearfix();
     h2{
@@ -509,13 +509,11 @@ body{
     width: 100%;
   }
   // filter
-  .filter{
-    padding: 7px 15px 5px;
-    background-color: #f2f2f2;
-  }
   .filter-area{
-    margin-bottom: 5px;
+    padding: 5px 15px 0;
     line-height: 24px;
+    background-color: #f2f2f2;
+    @include transition(all ease .3s);
     select,
     input{
       width: 80px;
@@ -530,6 +528,8 @@ body{
     }
   }
   .pager{
+    padding: 5px 15px;
+    background-color: #f2f2f2;
     @include clearfix();
     .search{
       float: left;
@@ -605,12 +605,22 @@ body{
 }
 
 
-/* 左侧淡入 */
-.fadeIn{
+// 左侧淡入
+.fadeInL{
   opacity: 1;
   @include transform(translateX(0px));
 }
-.fadeOut{
+.fadeOutL{
   opacity: 0;
   @include transform(translateX(-330px));
+}
+
+// 底部淡入
+.fadeInB{
+  opacity: 1;
+  @include transform(translateY(0px));
+}
+.fadeOutB{
+  opacity: 0;
+  @include transform(translateY(58px));
 }

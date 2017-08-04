@@ -1001,7 +1001,7 @@ body {
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #c3c3c3;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* line 38, ../../sass/module/tm.scss */
@@ -1513,7 +1513,7 @@ body {
 .msg-history .msg-history-hd {
   height: 50px;
   line-height: 50px;
-  padding: 0 30px;
+  padding: 0 20px 0 30px;
   border-bottom: 1px solid #e6e6e6;
 }
 /* line 61, ../../sass/base/_mixin.scss */
@@ -1578,16 +1578,16 @@ body {
   width: 100%;
 }
 /* line 512, ../../sass/module/tm.scss */
-.msg-history .filter {
-  padding: 7px 15px 5px;
-  background-color: #f2f2f2;
-}
-/* line 516, ../../sass/module/tm.scss */
 .msg-history .filter-area {
-  margin-bottom: 5px;
+  padding: 5px 15px 0;
   line-height: 24px;
+  background-color: #f2f2f2;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
-/* line 520, ../../sass/module/tm.scss */
+/* line 518, ../../sass/module/tm.scss */
 .msg-history .filter-area select,
 .msg-history .filter-area input {
   width: 80px;
@@ -1597,9 +1597,14 @@ body {
   border: 1px solid #e6e6e6;
   font-size: 12px;
 }
-/* line 528, ../../sass/module/tm.scss */
+/* line 526, ../../sass/module/tm.scss */
 .msg-history .filter-area select {
   margin-right: 15px;
+}
+/* line 530, ../../sass/module/tm.scss */
+.msg-history .pager {
+  padding: 5px 15px;
+  background-color: #f2f2f2;
 }
 /* line 61, ../../sass/base/_mixin.scss */
 .msg-history .pager:before, .msg-history .pager:after {
@@ -1693,9 +1698,8 @@ body {
   transform: rotate(180deg);
 }
 
-/* 左侧淡入 */
 /* line 609, ../../sass/module/tm.scss */
-.fadeIn {
+.fadeInL {
   opacity: 1;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
@@ -1705,11 +1709,31 @@ body {
 }
 
 /* line 613, ../../sass/module/tm.scss */
-.fadeOut {
+.fadeOutL {
   opacity: 0;
   -webkit-transform: translateX(-330px);
   -moz-transform: translateX(-330px);
   -ms-transform: translateX(-330px);
   -o-transform: translateX(-330px);
   transform: translateX(-330px);
+}
+
+/* line 619, ../../sass/module/tm.scss */
+.fadeInB {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* line 623, ../../sass/module/tm.scss */
+.fadeOutB {
+  opacity: 0;
+  -webkit-transform: translateY(58px);
+  -moz-transform: translateY(58px);
+  -ms-transform: translateY(58px);
+  -o-transform: translateY(58px);
+  transform: translateY(58px);
 }
