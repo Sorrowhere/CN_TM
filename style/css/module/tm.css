@@ -562,68 +562,63 @@ textarea:-ms-input-placeholder {
 }
 
 /* line 19, ../../sass/base/fonts.scss */
-.iconfont-back:before {
-  content: "\e697";
+.iconfont-error:before {
+  content: "\e66b";
 }
 
 /* line 21, ../../sass/base/fonts.scss */
-.iconfont-category:before {
-  content: "\e699";
+.iconfont-infomation:before {
+  content: "\e66c";
 }
 
 /* line 23, ../../sass/base/fonts.scss */
 .iconfont-close:before {
-  content: "\e69a";
+  content: "\e761";
 }
 
 /* line 25, ../../sass/base/fonts.scss */
-.iconfont-help:before {
-  content: "\e6a3";
+.iconfont-set:before {
+  content: "\e77f";
 }
 
 /* line 27, ../../sass/base/fonts.scss */
-.iconfont-information:before {
-  content: "\e6a4";
+.iconfont-search:before {
+  content: "\e780";
 }
 
 /* line 29, ../../sass/base/fonts.scss */
-.iconfont-less:before {
-  content: "\e6a5";
+.iconfont-img:before {
+  content: "\e781";
 }
 
 /* line 31, ../../sass/base/fonts.scss */
-.iconfont-moreunfold:before {
-  content: "\e6a6";
+.iconfont-emoji:before {
+  content: "\e782";
 }
 
 /* line 33, ../../sass/base/fonts.scss */
-.iconfont-more:before {
-  content: "\e6a7";
+.iconfont-clock:before {
+  content: "\e783";
 }
 
 /* line 35, ../../sass/base/fonts.scss */
-.iconfont-refresh:before {
-  content: "\e6aa";
+.iconfont-pre:before {
+  content: "\e784";
 }
 
 /* line 37, ../../sass/base/fonts.scss */
-.iconfont-search:before {
-  content: "\e6ac";
+.iconfont-next:before {
+  content: "\e785";
 }
 
 /* line 39, ../../sass/base/fonts.scss */
-.iconfont-set:before {
-  content: "\e6ae";
+.iconfont-arrow-left:before {
+  content: "\e786";
 }
 
 /* line 41, ../../sass/base/fonts.scss */
-.iconfont-success:before {
-  content: "\e6b1";
-}
-
-/* line 43, ../../sass/base/fonts.scss */
-.iconfont-warning:before {
-  content: "\e6b6";
+.iconfont-arrow-right:before {
+  content: "\e787";
 }
 
 /* line 30, ../../sass/ui/ui_button.scss */
@@ -1454,4 +1449,79 @@ body {
   font-size: 12px;
   margin-left: 10px;
   margin-right: 7px;
+}
+
+/* line 423, ../../sass/module/tm.scss */
+.sidebar {
+  float: left;
+  width: 330px;
+  position: relative;
+}
+
+/* line 428, ../../sass/module/tm.scss */
+.msg-history {
+  position: absolute;
+  width: 330px;
+  height: 640px;
+}
+/* line 432, ../../sass/module/tm.scss */
+.msg-history .msg-history-hd {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 61, ../../sass/base/_mixin.scss */
+.msg-history .msg-history-hd:before, .msg-history .msg-history-hd:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+/* line 68, ../../sass/base/_mixin.scss */
+.msg-history .msg-history-hd:after {
+  clear: both;
+}
+/* line 438, ../../sass/module/tm.scss */
+.msg-history .msg-history-hd h2 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* line 443, ../../sass/module/tm.scss */
+.msg-history .msg-history-hd .iconfont-close {
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 449, ../../sass/module/tm.scss */
+.msg-history .msg-history-bd {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* line 455, ../../sass/module/tm.scss */
+.msg-history .record {
+  padding: 30px 0;
+}
+/* line 457, ../../sass/module/tm.scss */
+.msg-history .record .record-time {
+  margin: 0 30px;
+  margin-bottom: 7px;
+  font-weight: bold;
+  line-height: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 465, ../../sass/module/tm.scss */
+.msg-history .record .record-lst li {
+  padding: 0 30px;
+  margin-bottom: 10px;
+}
+/* line 468, ../../sass/module/tm.scss */
+.msg-history .record .record-lst li:hover {
+  background-color: #f2f2f2;
+}
+/* line 472, ../../sass/module/tm.scss */
+.msg-history .record .record-txt-hd {
+  color: #999;
 }
