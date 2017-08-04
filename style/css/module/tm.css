@@ -1035,7 +1035,7 @@ body {
   clear: both;
 }
 
-/* line 53, ../../sass/module/tm.scss */
+/* line 56, ../../sass/module/tm.scss */
 .avatar {
   width: 40px;
   height: 40px;
@@ -1044,28 +1044,28 @@ body {
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 60, ../../sass/module/tm.scss */
+/* line 63, ../../sass/module/tm.scss */
 .avatar img {
   width: 100%;
   text-align: center;
 }
 
-/* line 70, ../../sass/module/tm.scss */
+/* line 73, ../../sass/module/tm.scss */
 .panel {
   float: left;
   width: 230px;
   background-color: #4498ee;
 }
-/* line 74, ../../sass/module/tm.scss */
+/* line 77, ../../sass/module/tm.scss */
 .panel .iconfont {
   color: #fff;
 }
-/* line 78, ../../sass/module/tm.scss */
+/* line 81, ../../sass/module/tm.scss */
 .panel .avatar {
   float: left;
   margin-left: -40px;
 }
-/* line 83, ../../sass/module/tm.scss */
+/* line 86, ../../sass/module/tm.scss */
 .panel .info {
   margin-left: 8px;
 }
@@ -1081,7 +1081,7 @@ body {
 .panel .info:after {
   clear: both;
 }
-/* line 86, ../../sass/module/tm.scss */
+/* line 89, ../../sass/module/tm.scss */
 .panel .info .nickname {
   float: left;
   font-weight: 400;
@@ -1097,27 +1097,27 @@ body {
   width: 90px\0;
 }
 
-/* line 103, ../../sass/module/tm.scss */
+/* line 106, ../../sass/module/tm.scss */
 .header {
   padding: 20px 20px 20px 60px;
 }
-/* line 107, ../../sass/module/tm.scss */
+/* line 110, ../../sass/module/tm.scss */
 .header .info .nickname {
   line-height: 40px;
 }
-/* line 110, ../../sass/module/tm.scss */
+/* line 113, ../../sass/module/tm.scss */
 .header .info .opt {
   float: right;
   margin-top: 8px;
 }
-/* line 113, ../../sass/module/tm.scss */
+/* line 116, ../../sass/module/tm.scss */
 .header .info .opt .iconfont-set {
   display: inline-block;
   color: #fff;
   cursor: pointer;
 }
 
-/* line 122, ../../sass/module/tm.scss */
+/* line 125, ../../sass/module/tm.scss */
 .search-bar {
   width: 100%;
   height: 32px;
@@ -1125,7 +1125,7 @@ body {
   padding-left: 20px;
   background-color: #3387dd;
 }
-/* line 128, ../../sass/module/tm.scss */
+/* line 131, ../../sass/module/tm.scss */
 .search-bar .txt {
   margin-left: 10px;
   border: none;
@@ -1133,12 +1133,12 @@ body {
   color: #fff;
 }
 
-/* line 138, ../../sass/module/tm.scss */
+/* line 141, ../../sass/module/tm.scss */
 .nav-view {
   height: 528px;
   overflow-y: scroll;
 }
-/* line 141, ../../sass/module/tm.scss */
+/* line 144, ../../sass/module/tm.scss */
 .nav-view .nav-view-tip {
   margin-top: 90px;
   text-align: center;
@@ -1147,7 +1147,7 @@ body {
   color: #fff;
 }
 
-/* line 149, ../../sass/module/tm.scss */
+/* line 152, ../../sass/module/tm.scss */
 .chat-item {
   width: 100%;
   height: 70px;
@@ -1166,20 +1166,20 @@ body {
 .chat-item:after {
   clear: both;
 }
-/* line 155, ../../sass/module/tm.scss */
+/* line 158, ../../sass/module/tm.scss */
 .chat-item .avatar {
   float: left;
   margin-left: -40px;
 }
-/* line 159, ../../sass/module/tm.scss */
+/* line 162, ../../sass/module/tm.scss */
 .chat-item .info {
   padding: 2px 0;
 }
-/* line 162, ../../sass/module/tm.scss */
+/* line 165, ../../sass/module/tm.scss */
 .chat-item .hd {
   overflow: hidden;
 }
-/* line 164, ../../sass/module/tm.scss */
+/* line 167, ../../sass/module/tm.scss */
 .chat-item .hd .num {
   float: right;
   height: 16px;
@@ -1192,7 +1192,7 @@ body {
   font-size: 11px;
   color: #fff;
 }
-/* line 175, ../../sass/module/tm.scss */
+/* line 178, ../../sass/module/tm.scss */
 .chat-item .hd .num b {
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -1200,12 +1200,12 @@ body {
   -o-transform: scale(0.6);
   transform: scale(0.6);
 }
-/* line 181, ../../sass/module/tm.scss */
+/* line 184, ../../sass/module/tm.scss */
 .chat-item .bd {
   color: #88ccff;
   overflow: hidden;
 }
-/* line 184, ../../sass/module/tm.scss */
+/* line 187, ../../sass/module/tm.scss */
 .chat-item .bd .msg {
   width: 100px;
   overflow: hidden;
@@ -1214,28 +1214,31 @@ body {
   width: 90px\0;
   float: left;
 }
-/* line 191, ../../sass/module/tm.scss */
+/* line 194, ../../sass/module/tm.scss */
 .chat-item .bd .time {
   float: right;
 }
 
-/* line 196, ../../sass/module/tm.scss */
+/* line 199, ../../sass/module/tm.scss */
 .chat-item.on {
   background-color: #ffb600;
 }
-/* line 198, ../../sass/module/tm.scss */
+/* line 201, ../../sass/module/tm.scss */
 .chat-item.on .bd {
   color: #ffeebb;
 }
 
-/* line 208, ../../sass/module/tm.scss */
+/* line 211, ../../sass/module/tm.scss */
 .chat-area {
+  position: relative;
+  z-index: 99;
   float: left;
   width: 630px;
   border-right: 1px solid #e6e6e6;
+  background-color: #fff;
 }
 
-/* line 216, ../../sass/module/tm.scss */
+/* line 221, ../../sass/module/tm.scss */
 .chat-area-hd {
   height: 50px;
   line-height: 50px;
@@ -1254,13 +1257,13 @@ body {
 .chat-area-hd:after {
   clear: both;
 }
-/* line 222, ../../sass/module/tm.scss */
+/* line 227, ../../sass/module/tm.scss */
 .chat-area-hd h2 {
   display: inline-block;
   font-size: 16px;
   font-weight: normal;
 }
-/* line 227, ../../sass/module/tm.scss */
+/* line 232, ../../sass/module/tm.scss */
 .chat-area-hd .status {
   display: inline-block;
   width: 10px;
@@ -1269,12 +1272,12 @@ body {
   border-radius: 50%;
   background-color: #44cc00;
 }
-/* line 235, ../../sass/module/tm.scss */
+/* line 240, ../../sass/module/tm.scss */
 .chat-area-hd .status-off {
   background-color: #ccc;
 }
 
-/* line 242, ../../sass/module/tm.scss */
+/* line 247, ../../sass/module/tm.scss */
 .chat-tip {
   width: 100%;
   height: 30px;
@@ -1284,13 +1287,13 @@ body {
   font-size: 12px;
   overflow: hidden;
 }
-/* line 250, ../../sass/module/tm.scss */
+/* line 255, ../../sass/module/tm.scss */
 .chat-tip .iconfont-close {
   float: right;
   cursor: pointer;
 }
 
-/* line 257, ../../sass/module/tm.scss */
+/* line 262, ../../sass/module/tm.scss */
 .chat-area-bd {
   position: relative;
   max-height: 425px;
@@ -1300,7 +1303,7 @@ body {
   overflow-y: scroll;
   font-size: 14px;
 }
-/* line 266, ../../sass/module/tm.scss */
+/* line 271, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system {
   position: relative;
   margin: 10px auto;
@@ -1310,26 +1313,26 @@ body {
   color: #999;
   clear: both;
 }
-/* line 275, ../../sass/module/tm.scss */
+/* line 280, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his {
   margin-top: 20px;
 }
-/* line 277, ../../sass/module/tm.scss */
+/* line 282, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his .line {
   position: absolute;
   top: 8px;
   width: 40px;
   border-top: 1px solid #e6e6e6;
 }
-/* line 283, ../../sass/module/tm.scss */
+/* line 288, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his .line-left {
   left: 55px;
 }
-/* line 286, ../../sass/module/tm.scss */
+/* line 291, ../../sass/module/tm.scss */
 .chat-area-bd .msg-system-his .line-right {
   right: 55px;
 }
-/* line 291, ../../sass/module/tm.scss */
+/* line 296, ../../sass/module/tm.scss */
 .chat-area-bd .msg-pre {
   display: inline-block;
   width: 240px;
@@ -1338,16 +1341,16 @@ body {
   border: 1px solid #e6e6e6;
   background-color: #f2f2f2;
 }
-/* line 298, ../../sass/module/tm.scss */
+/* line 303, ../../sass/module/tm.scss */
 .chat-area-bd .msg-pre dt {
   margin-bottom: 3px;
 }
-/* line 304, ../../sass/module/tm.scss */
+/* line 309, ../../sass/module/tm.scss */
 .chat-area-bd .msg {
   overflow: hidden;
   margin: 5px 0;
 }
-/* line 307, ../../sass/module/tm.scss */
+/* line 312, ../../sass/module/tm.scss */
 .chat-area-bd .msg .content {
   position: relative;
   max-width: 300px;
@@ -1355,24 +1358,24 @@ body {
   line-height: 21px;
   border-radius: 3px;
 }
-/* line 317, ../../sass/module/tm.scss */
+/* line 322, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in {
   padding-left: 50px;
   float: left;
   text-align: left;
   clear: left;
 }
-/* line 322, ../../sass/module/tm.scss */
+/* line 327, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in .avatar {
   float: left;
   margin-left: -50px;
 }
-/* line 326, ../../sass/module/tm.scss */
+/* line 331, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in .content {
   display: inline-block;
   background-color: #ffeecc;
 }
-/* line 330, ../../sass/module/tm.scss */
+/* line 335, ../../sass/module/tm.scss */
 .chat-area-bd .msg-in .content:before {
   position: absolute;
   top: 13px;
@@ -1388,24 +1391,24 @@ body {
   border-width: 8px;
   border-right: 8px solid #ffeecc;
 }
-/* line 341, ../../sass/module/tm.scss */
+/* line 346, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out {
   padding-right: 50px;
   float: right;
   text-align: right;
   clear: right;
 }
-/* line 346, ../../sass/module/tm.scss */
+/* line 351, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .avatar {
   float: right;
   margin-right: -50px;
 }
-/* line 350, ../../sass/module/tm.scss */
+/* line 355, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .content {
   background-color: #ddeeff;
   text-align: left;
 }
-/* line 353, ../../sass/module/tm.scss */
+/* line 358, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .content:after {
   position: absolute;
   top: 13px;
@@ -1421,28 +1424,28 @@ body {
   border-width: 8px;
   border-left: 8px solid #ddeeff;
 }
-/* line 361, ../../sass/module/tm.scss */
+/* line 366, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .msg-failed {
   margin-top: 5px;
   font-size: 12px;
   text-align: left;
 }
-/* line 365, ../../sass/module/tm.scss */
+/* line 370, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .msg-failed .iconfont-information {
   color: red;
   vertical-align: -1px;
 }
 
-/* line 378, ../../sass/module/tm.scss */
+/* line 383, ../../sass/module/tm.scss */
 .chat-edit {
   position: relative;
   height: 165px;
 }
-/* line 383, ../../sass/module/tm.scss */
+/* line 388, ../../sass/module/tm.scss */
 .chat-edit .toolbar {
   padding: 4px 17px;
 }
-/* line 385, ../../sass/module/tm.scss */
+/* line 390, ../../sass/module/tm.scss */
 .chat-edit .toolbar .toolbar-item {
   display: inline-block;
   width: 24px;
@@ -1454,15 +1457,15 @@ body {
   text-align: center;
   cursor: pointer;
 }
-/* line 395, ../../sass/module/tm.scss */
+/* line 400, ../../sass/module/tm.scss */
 .chat-edit .toolbar .toolbar-item:hover {
   border: 1px solid #999999;
 }
-/* line 400, ../../sass/module/tm.scss */
+/* line 405, ../../sass/module/tm.scss */
 .chat-edit .toolbar .iconfont {
   margin-right: 5px;
 }
-/* line 406, ../../sass/module/tm.scss */
+/* line 411, ../../sass/module/tm.scss */
 .chat-edit .edit-box {
   height: 80px;
   overflow-y: auto;
@@ -1474,13 +1477,13 @@ body {
   white-space: pre-wrap;
   word-break: normal;
 }
-/* line 420, ../../sass/module/tm.scss */
+/* line 425, ../../sass/module/tm.scss */
 .chat-edit .action {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
-/* line 424, ../../sass/module/tm.scss */
+/* line 429, ../../sass/module/tm.scss */
 .chat-edit .action .desc {
   color: #999;
   font-size: 12px;
@@ -1488,20 +1491,25 @@ body {
   margin-right: 7px;
 }
 
-/* line 439, ../../sass/module/tm.scss */
+/* line 444, ../../sass/module/tm.scss */
 .sidebar {
   float: left;
   width: 330px;
   position: relative;
 }
 
-/* line 444, ../../sass/module/tm.scss */
+/* line 452, ../../sass/module/tm.scss */
 .msg-history {
   position: absolute;
   width: 330px;
   height: 640px;
+  background: #fff;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
-/* line 448, ../../sass/module/tm.scss */
+/* line 458, ../../sass/module/tm.scss */
 .msg-history .msg-history-hd {
   height: 50px;
   line-height: 50px;
@@ -1520,58 +1528,66 @@ body {
 .msg-history .msg-history-hd:after {
   clear: both;
 }
-/* line 454, ../../sass/module/tm.scss */
+/* line 464, ../../sass/module/tm.scss */
 .msg-history .msg-history-hd h2 {
   display: inline-block;
   font-size: 14px;
   font-weight: normal;
 }
-/* line 459, ../../sass/module/tm.scss */
+/* line 469, ../../sass/module/tm.scss */
 .msg-history .msg-history-hd .iconfont-close {
   float: right;
   font-size: 16px;
   cursor: pointer;
 }
-/* line 465, ../../sass/module/tm.scss */
+/* line 475, ../../sass/module/tm.scss */
 .msg-history .msg-history-bd {
   height: 525px;
   padding: 20px 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
-/* line 473, ../../sass/module/tm.scss */
+/* line 483, ../../sass/module/tm.scss */
 .msg-history .record {
   margin-bottom: 10px;
 }
-/* line 475, ../../sass/module/tm.scss */
+/* line 485, ../../sass/module/tm.scss */
 .msg-history .record .record-time {
   margin: 0 30px;
   font-weight: bold;
   line-height: 24px;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 482, ../../sass/module/tm.scss */
+/* line 492, ../../sass/module/tm.scss */
 .msg-history .record .record-lst li {
   padding: 7px 30px;
 }
-/* line 484, ../../sass/module/tm.scss */
+/* line 494, ../../sass/module/tm.scss */
 .msg-history .record .record-lst li:hover {
   background-color: #f2f2f2;
 }
-/* line 488, ../../sass/module/tm.scss */
+/* line 498, ../../sass/module/tm.scss */
 .msg-history .record .record-txt-hd {
   color: #999;
 }
-/* line 494, ../../sass/module/tm.scss */
+/* line 504, ../../sass/module/tm.scss */
+.msg-history .msg-history-ft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 512, ../../sass/module/tm.scss */
 .msg-history .filter {
   padding: 7px 15px 5px;
   background-color: #f2f2f2;
 }
-/* line 498, ../../sass/module/tm.scss */
+/* line 516, ../../sass/module/tm.scss */
 .msg-history .filter-area {
+  margin-bottom: 5px;
   line-height: 24px;
 }
-/* line 501, ../../sass/module/tm.scss */
+/* line 520, ../../sass/module/tm.scss */
 .msg-history .filter-area select,
 .msg-history .filter-area input {
   width: 80px;
@@ -1581,13 +1597,9 @@ body {
   border: 1px solid #e6e6e6;
   font-size: 12px;
 }
-/* line 509, ../../sass/module/tm.scss */
+/* line 528, ../../sass/module/tm.scss */
 .msg-history .filter-area select {
   margin-right: 15px;
-}
-/* line 513, ../../sass/module/tm.scss */
-.msg-history .pager {
-  margin-top: 5px;
 }
 /* line 61, ../../sass/base/_mixin.scss */
 .msg-history .pager:before, .msg-history .pager:after {
@@ -1601,7 +1613,7 @@ body {
 .msg-history .pager:after {
   clear: both;
 }
-/* line 516, ../../sass/module/tm.scss */
+/* line 534, ../../sass/module/tm.scss */
 .msg-history .pager .search {
   float: left;
   width: 56px;
@@ -1612,20 +1624,20 @@ body {
   border: 1px solid #f2f2f2;
   border-radius: 2px;
 }
-/* line 525, ../../sass/module/tm.scss */
+/* line 543, ../../sass/module/tm.scss */
 .msg-history .pager .search .iconfont-search {
   margin-right: 5px;
   font-size: 14px;
 }
-/* line 529, ../../sass/module/tm.scss */
+/* line 547, ../../sass/module/tm.scss */
 .msg-history .pager .search:hover {
   border: 1px solid #999999;
 }
-/* line 533, ../../sass/module/tm.scss */
+/* line 551, ../../sass/module/tm.scss */
 .msg-history .pager .pager-nav {
   float: right;
 }
-/* line 535, ../../sass/module/tm.scss */
+/* line 553, ../../sass/module/tm.scss */
 .msg-history .pager .pager-nav input {
   height: 20px;
   line-height: 20px;
@@ -1634,7 +1646,7 @@ body {
   border: 1px solid #e6e6e6;
   font-size: 12px;
 }
-/* line 543, ../../sass/module/tm.scss */
+/* line 561, ../../sass/module/tm.scss */
 .msg-history .pager .pager-nav .iconfont {
   display: inline-block;
   padding: 0 3px;
@@ -1644,7 +1656,60 @@ body {
   cursor: pointer;
   font-size: 14px;
 }
-/* line 551, ../../sass/module/tm.scss */
+/* line 569, ../../sass/module/tm.scss */
 .msg-history .pager .pager-nav .iconfont:hover {
   border: 1px solid #999999;
+}
+
+/* line 594, ../../sass/module/tm.scss */
+.iconfont-set {
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+}
+/* line 596, ../../sass/module/tm.scss */
+.iconfont-set:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 600, ../../sass/module/tm.scss */
+.iconfont-close {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+/* line 602, ../../sass/module/tm.scss */
+.iconfont-close:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* 左侧淡入 */
+/* line 609, ../../sass/module/tm.scss */
+.fadeIn {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+/* line 613, ../../sass/module/tm.scss */
+.fadeOut {
+  opacity: 0;
+  -webkit-transform: translateX(-330px);
+  -moz-transform: translateX(-330px);
+  -ms-transform: translateX(-330px);
+  -o-transform: translateX(-330px);
+  transform: translateX(-330px);
 }

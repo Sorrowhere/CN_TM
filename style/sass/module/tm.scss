@@ -50,6 +50,9 @@ body{
   border-radius: 3px;
   @include clearfix();
 }
+
+
+// common style
 .avatar{
   width: 40px;
   height: 40px;
@@ -206,10 +209,12 @@ body{
 // 聊天区域
 //===============================================================================
 .chat-area{
+  position: relative;
+  z-index: 99;
   float: left;
   width: 630px;
   border-right: $baseBorder;
-
+  background-color: #fff;
 }
 
 // chat-area-hd
@@ -441,10 +446,15 @@ body{
   width: 330px;
   position: relative;
 }
+
+
+
 .msg-history{
   position: absolute;
   width: 330px;
   height: 640px;
+  background: #fff;
+  @include transition(all ease .5s);
   .msg-history-hd{
     height: 50px;
     line-height: 50px;
@@ -490,12 +500,21 @@ body{
     }
   }
 
+
+  .msg-history-ft{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+  }
   // filter
   .filter{
     padding: 7px 15px 5px;
     background-color: #f2f2f2;
   }
   .filter-area{
+    margin-bottom: 5px;
     line-height: 24px;
     select,
     input{
@@ -511,7 +530,6 @@ body{
     }
   }
   .pager{
-    margin-top: 5px;
     @include clearfix();
     .search{
       float: left;
@@ -571,3 +589,28 @@ body{
 
 
 
+
+// animate
+.iconfont-set{
+  @include transition(all ease 1s);
+  &:hover{
+    @include transform(rotate(180deg));
+  }
+}
+.iconfont-close{
+  @include transition(all ease .5s);
+  &:hover{
+    @include transform(rotate(180deg));
+  }
+}
+
+
+/* 左侧淡入 */
+.fadeIn{
+  opacity: 1;
+  @include transform(translateX(0px));
+}
+.fadeOut{
+  opacity: 0;
+  @include transform(translateX(-330px));
+}
