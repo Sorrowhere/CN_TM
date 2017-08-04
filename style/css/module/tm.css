@@ -567,7 +567,7 @@ textarea:-ms-input-placeholder {
 }
 
 /* line 21, ../../sass/base/fonts.scss */
-.iconfont-infomation:before {
+.iconfont-information:before {
   content: "\e66c";
 }
 
@@ -1383,8 +1383,9 @@ body {
 /* line 350, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .content {
   background-color: #ddeeff;
+  text-align: left;
 }
-/* line 352, ../../sass/module/tm.scss */
+/* line 353, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .content:after {
   position: absolute;
   top: 13px;
@@ -1400,32 +1401,48 @@ body {
   border-width: 8px;
   border-left: 8px solid #ddeeff;
 }
-/* line 360, ../../sass/module/tm.scss */
+/* line 361, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .msg-failed {
   margin-top: 5px;
   font-size: 12px;
   text-align: left;
 }
-/* line 364, ../../sass/module/tm.scss */
+/* line 365, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .msg-failed .iconfont-information {
   color: red;
+  vertical-align: -1px;
 }
 
-/* line 376, ../../sass/module/tm.scss */
+/* line 378, ../../sass/module/tm.scss */
 .chat-edit {
   position: relative;
   height: 165px;
 }
-/* line 381, ../../sass/module/tm.scss */
+/* line 383, ../../sass/module/tm.scss */
 .chat-edit .toolbar {
   padding: 4px 17px;
 }
-/* line 383, ../../sass/module/tm.scss */
+/* line 385, ../../sass/module/tm.scss */
+.chat-edit .toolbar .toolbar-item {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 16px;
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 2px;
+  text-align: center;
+}
+/* line 394, ../../sass/module/tm.scss */
+.chat-edit .toolbar .toolbar-item:hover {
+  border: 1px solid #999999;
+}
+/* line 399, ../../sass/module/tm.scss */
 .chat-edit .toolbar .iconfont {
   margin-right: 5px;
   cursor: pointer;
 }
-/* line 390, ../../sass/module/tm.scss */
+/* line 406, ../../sass/module/tm.scss */
 .chat-edit .edit-box {
   height: 80px;
   overflow-y: auto;
@@ -1437,13 +1454,13 @@ body {
   white-space: pre-wrap;
   word-break: normal;
 }
-/* line 404, ../../sass/module/tm.scss */
+/* line 420, ../../sass/module/tm.scss */
 .chat-edit .action {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
-/* line 408, ../../sass/module/tm.scss */
+/* line 424, ../../sass/module/tm.scss */
 .chat-edit .action .desc {
   color: #999;
   font-size: 12px;
@@ -1451,20 +1468,20 @@ body {
   margin-right: 7px;
 }
 
-/* line 423, ../../sass/module/tm.scss */
+/* line 439, ../../sass/module/tm.scss */
 .sidebar {
   float: left;
   width: 330px;
   position: relative;
 }
 
-/* line 428, ../../sass/module/tm.scss */
+/* line 444, ../../sass/module/tm.scss */
 .msg-history {
   position: absolute;
   width: 330px;
   height: 640px;
 }
-/* line 432, ../../sass/module/tm.scss */
+/* line 448, ../../sass/module/tm.scss */
 .msg-history .msg-history-hd {
   height: 50px;
   line-height: 50px;
@@ -1483,45 +1500,45 @@ body {
 .msg-history .msg-history-hd:after {
   clear: both;
 }
-/* line 438, ../../sass/module/tm.scss */
+/* line 454, ../../sass/module/tm.scss */
 .msg-history .msg-history-hd h2 {
   display: inline-block;
   font-size: 14px;
   font-weight: normal;
 }
-/* line 443, ../../sass/module/tm.scss */
+/* line 459, ../../sass/module/tm.scss */
 .msg-history .msg-history-hd .iconfont-close {
   float: right;
   font-size: 16px;
   cursor: pointer;
 }
-/* line 449, ../../sass/module/tm.scss */
+/* line 465, ../../sass/module/tm.scss */
 .msg-history .msg-history-bd {
+  height: 525px;
+  padding: 20px 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
-/* line 455, ../../sass/module/tm.scss */
+/* line 473, ../../sass/module/tm.scss */
 .msg-history .record {
-  padding: 30px 0;
+  margin-bottom: 10px;
 }
-/* line 457, ../../sass/module/tm.scss */
+/* line 475, ../../sass/module/tm.scss */
 .msg-history .record .record-time {
   margin: 0 30px;
-  margin-bottom: 7px;
   font-weight: bold;
   line-height: 24px;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 465, ../../sass/module/tm.scss */
+/* line 482, ../../sass/module/tm.scss */
 .msg-history .record .record-lst li {
-  padding: 0 30px;
-  margin-bottom: 10px;
+  padding: 7px 30px;
 }
-/* line 468, ../../sass/module/tm.scss */
+/* line 484, ../../sass/module/tm.scss */
 .msg-history .record .record-lst li:hover {
   background-color: #f2f2f2;
 }
-/* line 472, ../../sass/module/tm.scss */
+/* line 488, ../../sass/module/tm.scss */
 .msg-history .record .record-txt-hd {
   color: #999;
 }
