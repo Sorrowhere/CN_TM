@@ -1432,7 +1432,7 @@ body {
 }
 /* line 370, ../../sass/module/tm.scss */
 .chat-area-bd .msg-out .msg-failed .iconfont-information {
-  color: red;
+  color: #f7411a;
   vertical-align: -1px;
 }
 
