@@ -1,0 +1,25 @@
+// tab scss
+// required: _setting.scss, css3.scss
+@import "../base/lib";
+
+// tab-menu 
+.tab-menu{
+  @include clearfix();
+  >li{
+    float: left;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  .on{
+    background-color: #fff;
+  }
+}
+
+.tab-con{
+  padding: 40px 50px;
+}
