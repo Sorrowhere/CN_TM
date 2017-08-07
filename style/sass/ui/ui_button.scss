@@ -20,7 +20,7 @@ $btnSizeGroup: $btnSizeMini, $btnSizeSmall, $btnSizeMid, $btnSizeBig, $btnSizeBi
 $btnColorRed:    primary      #fff       #e0463e;
 $btnColorYellow: warn         #674800    #ffdb1a;
 $btnColorBlue:   info         #fff       #49e;
-$btnColorGray:   defalut      #666       #f4f4f4;
+$btnColorGray:   default      #666       #f4f4f4;
 $btnColorWhite:  blank        #333       #fff;
 $btnColorGroup:  $btnColorRed $btnColorYellow $btnColorBlue $btnColorGray $btnColorWhite!default;
 
@@ -83,6 +83,11 @@ a.#{$btnBaseClass}:hover{
 		}
 		@if $btnColorClass == 'btn-blank'{
 			border: 1px solid #e0e0e0;
+            &:hover{
+              background: #49e;
+              border-color: #49e;
+              color: #fff;
+            }
 		}
 	}
 }
@@ -124,15 +129,12 @@ a.#{$btnBaseClass}:hover{
 	}
 }
 // button disabled
-.#{$btnDisabledClass}{
-	background-color: #f0f0f0;
-	@include gradient-vertical(#f2f2f2 0,#ddd 100%);
-	border: 1px solid #d8d8d8;
-	border-bottom-color: #bbb;
+.#{$btnDisabledClass},
+.#{$btnDisabledClass}:hover{
+	background-color: #e6e6e6;
 	color: $grayLight;
 	cursor: not-allowed;
 	@include opacity(.8);
-	@include text-shadow(1px 1px 0 #f0f1f2);
 }
 a.#{$btnDisabledClass}{
 	color: $grayLight;

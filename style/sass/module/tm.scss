@@ -601,9 +601,13 @@ body{
 
 // 客服设置
 .pop-service{
+  font-size: 14px;
   .txtarea{
     width: 100%;
     height: 80px;
+  }
+  .choose-group{
+    margin-top: 2px;
   }
 }
 
