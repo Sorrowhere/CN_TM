@@ -70,12 +70,13 @@ a.#{$btnBaseClass}:hover{
 	.#{$btnColorClass}{
 		color: $fontColor;
 		background-color: $backgroundColor;
+        @include transition(all ease .3s);
 		&:link,
 		&:visited{
 			color: $fontColor;
 		}
 		&:hover{
-			background-color: darken($backgroundColor,5%);
+			background-color: darken($backgroundColor,15%);
 			color: $fontColor;
 		}
 		&:active{
