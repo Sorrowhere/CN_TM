@@ -1,6 +1,5 @@
 // pop scss
 // required: _setting.scss, css3.scss
-
 @import "../base/lib";
 
 // variables 
@@ -9,61 +8,62 @@ $maskBaseClass: alpha;
 
 $popBorder: 5px solid #4c4c4c;
 
-
 // mask base style
-.#{$maskBaseClass}{
-	@include mask;
-	@include opacity;
-	zoom: 1;
-	z-index: 998;
-	display: none;
+.#{$maskBaseClass} {
+  @include mask;
+  @include opacity;
+  zoom: 1;
+  z-index: 998;
+  display: none;
 }
 
-.#{$popBaseClass}{
-	display: none;
-	width: 400px;
-	background-color: #fff;
-	border: $popBorder;
-	position: absolute;
-	z-index: 999;
-	.#{$popBaseClass}-hd{
-		padding: 0 10px;
-		height: 34px;
-		background-color: #f5f5f5;
-		border-bottom: 1px solid #e6e6e6;
-		overflow: hidden;
-		@if ite7{*zoom: 1;}
-		h3{
-			float: left;
-			font-size: $f14;
-			line-height: 34px;
-		}
-		.icon-close{
-			float: right;
-			margin-top: 9px;
-			cursor: pointer;
-		}
-	}
-	.#{$popBaseClass}-bd{padding: 10px;}
-	.#{$popBaseClass}-ft{
-		padding: 15px 0 10px;
-		text-align: center;
-		.btn{
-			margin: 0 5px;
-		}
-	}
+.#{$popBaseClass} {
+  display: none;
+  width: 400px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 999;
+  .#{$popBaseClass}-hd {
+    padding: 0 25px;
+    height: 50px;
+    background-color: #49e;
+    color: #fff;
+    overflow: hidden;
+    h3 {
+      float: left;
+      font-size: $f16;
+      font-weight: normal;
+      line-height: 50px;
+    }
+    .iconfont-close {
+      float: right;
+      margin-top: 12px;
+      cursor: pointer;
+    }
+  }
+  .#{$popBaseClass}-ft {
+    padding: 15px 0 10px;
+    text-align: center;
+    .btn {
+      margin: 0 5px;
+    }
+  }
 }
 
-.#{$popBaseClass}-alert{
-	width: 300px;
-	.#{$popBaseClass}-bd{
-		font-size: $f14;
-		padding: 20px;
-	}
+.#{$popBaseClass}-alert {
+  width: 300px;
+  .#{$popBaseClass}-bd {
+    font-size: $f14;
+    padding: 20px;
+  }
 }
 
-.tip-#{$maskBaseClass}{
-	@include mask;
-	@include opacity;
-	z-index: 100;
+.tip-#{$maskBaseClass} {
+  @include mask;
+  @include opacity;
+  z-index: 100;
+}
+
+.#{$popBaseClass}-m {
+  width: 600px;
 }
