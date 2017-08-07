@@ -30,6 +30,10 @@ select{
 	line-height: 20px;
 	padding: 2px 1px;
 }
+
+.required{
+  color: $red;
+}
 // element group
 .field,
 .field-bd{
@@ -77,11 +81,6 @@ select{
 	.form-error{
 		margin-top: 6px;
 		color: $red;
-		padding-left: 20px;
-		& .icon{
-			margin-left: -20px;
-			float: left;
-		}
 		& p{
 			margin: 0;
 		}

@@ -31,4 +31,13 @@ $(function(){
         }
     });
 
+
+    // 弹出层tab
+    var tabMenu = $('.js-tab li');
+    tabMenu.click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        var tabIndex = tabMenu.index(this);
+        $('.tab-con > div').eq(tabIndex).show().siblings().hide();
+    });
+
 })

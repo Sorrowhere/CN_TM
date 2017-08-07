@@ -601,13 +601,82 @@ body{
 
 // 客服设置
 .pop-service{
+  min-height: 430px;
   font-size: 14px;
   .txtarea{
     width: 100%;
     height: 80px;
   }
-  .choose-group{
-    margin-top: 2px;
+  .faq-switch{
+    margin-bottom: 10px;
+    label{
+      margin-right: 30px;
+    }
+  }
+  .faq{
+    .faq-hd{
+      padding: 10px 0;
+      .after-txt{
+        margin-left: 20px;
+        font-size: 12px;
+        color: $grayLight;
+      }
+    }
+    .faq-bd{
+      overflow: hidden;
+      .faq-lst{
+        float: left;
+        width: 370px;
+        height: 140px;
+        margin-right: 10px;
+        border: $baseBorder;
+        li{
+          padding: 0 15px;
+          height: 36px;
+          line-height: 36px;
+          cursor: pointer;
+        }
+        li:hover,
+        .on{
+          background-color: #f2f2f2;
+        }
+
+      }
+      .faq-action{
+        float: left;
+        li{
+          margin-bottom: 10px;
+        }
+        .btn{
+          width: 100px;
+        }
+      }
+      
+
+    }
+  }
+  .faq-set{
+    padding: 40px 50px;
+    .field-tit-ta{
+      line-height: 40px;
+    }
+    .txt{
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+    }
+    .txtarea{
+      height: 150px;
+    }
+  }
+}
+
+// 提示
+.pop-tip{
+  width: 430px;
+  font-size: 14px;
+  .pop-bd{
+    padding: 40px 50px;
   }
 }
 

@@ -30,19 +30,24 @@ select {
   padding: 2px 1px;
 }
 
-/* line 35, ../../sass/ui/ui_form.scss */
+/* line 34, ../../sass/ui/ui_form.scss */
+.required {
+  color: #e04b43;
+}
+
+/* line 39, ../../sass/ui/ui_form.scss */
 .field,
 .field-bd {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 38, ../../sass/ui/ui_form.scss */
+/* line 42, ../../sass/ui/ui_form.scss */
 .field {
   padding: 10px 0 10px 90px;
 }
 
-/* line 41, ../../sass/ui/ui_form.scss */
+/* line 45, ../../sass/ui/ui_form.scss */
 .field-tit {
   float: left;
   width: 90px;
@@ -51,47 +56,41 @@ select {
   line-height: 23px;
 }
 
-/* line 48, ../../sass/ui/ui_form.scss */
+/* line 52, ../../sass/ui/ui_form.scss */
 .field-bd {
   padding-left: 10px;
 }
-/* line 52, ../../sass/ui/ui_form.scss */
+/* line 56, ../../sass/ui/ui_form.scss */
 .field-bd .text-before, .field-bd .text-after {
   color: #999999;
   margin: 5px 0;
 }
-/* line 56, ../../sass/ui/ui_form.scss */
+/* line 60, ../../sass/ui/ui_form.scss */
 .field-bd .text-before {
   margin: 4px 0 6px;
 }
-/* line 61, ../../sass/ui/ui_form.scss */
+/* line 65, ../../sass/ui/ui_form.scss */
 .field-bd .choose-group label {
   margin-right: 30px;
 }
-/* line 66, ../../sass/ui/ui_form.scss */
+/* line 70, ../../sass/ui/ui_form.scss */
 .field-bd .txt-phone-nation {
   width: 30px;
 }
-/* line 69, ../../sass/ui/ui_form.scss */
+/* line 73, ../../sass/ui/ui_form.scss */
 .field-bd .txt-phone-zone {
   width: 70px;
 }
-/* line 72, ../../sass/ui/ui_form.scss */
+/* line 76, ../../sass/ui/ui_form.scss */
 .field-bd .txt-phone-number {
   width: 150px;
 }
-/* line 77, ../../sass/ui/ui_form.scss */
+/* line 81, ../../sass/ui/ui_form.scss */
 .field-bd .form-error {
   margin-top: 6px;
   color: #e04b43;
-  padding-left: 20px;
 }
-/* line 81, ../../sass/ui/ui_form.scss */
-.field-bd .form-error .icon {
-  margin-left: -20px;
-  float: left;
-}
-/* line 85, ../../sass/ui/ui_form.scss */
+/* line 84, ../../sass/ui/ui_form.scss */
 .field-bd .form-error p {
   margin: 0;
 }
