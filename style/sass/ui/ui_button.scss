@@ -132,6 +132,7 @@ a.#{$btnBaseClass}:hover{
 .#{$btnDisabledClass},
 .#{$btnDisabledClass}:hover{
 	background-color: #e6e6e6;
+    border: none;
 	color: $grayLight;
 	cursor: not-allowed;
 	@include opacity(.8);

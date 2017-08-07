@@ -6,6 +6,7 @@ $(function(){
     var $closeRecord = $('.js-close-msg');
     var $msgHistory = $('.js-msg-history');
     $showRecord.click(function(){
+        $(this).toggleClass('on');
 
         if($msgHistory.hasClass('fadeOutL')){
             $msgHistory.removeClass('fadeOutL').addClass('fadeInL');
@@ -16,17 +17,21 @@ $(function(){
 
     $closeRecord.click(function(){
         $msgHistory.removeClass('fadeInL').addClass('fadeOutL');
+        $showRecord.toggleClass('on');
     });
 
 
     // 筛选动画
-    var $searchRecord = $('.js-seach-record');
+    var $searchRecord = $('.js-search-record');
+    var $recordDetail = $searchRecord.parents('.msg-history').find('.msg-history-bd');
     var $filterArea = $('.filter-area');
     $searchRecord.click(function(){
 
         if($filterArea.hasClass('fadeOutB')){
+            $recordDetail.height(525);
             $filterArea.removeClass('fadeOutB').addClass('fadeInB');
         }else{
+            $recordDetail.height(555);
             $filterArea.removeClass('fadeInB').addClass('fadeOutB');
         }
     });

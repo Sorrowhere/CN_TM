@@ -226,25 +226,26 @@ input.btn-xl {
 .disabled,
 .disabled:hover {
   background-color: #e6e6e6;
+  border: none;
   color: #999999;
   cursor: not-allowed;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
 
-/* line 139, ../../sass/ui/ui_button.scss */
+/* line 140, ../../sass/ui/ui_button.scss */
 a.disabled {
   color: #999999;
 }
 
-/* line 143, ../../sass/ui/ui_button.scss */
+/* line 144, ../../sass/ui/ui_button.scss */
 .btn-icon {
   padding-left: 26px;
   padding-right: 10px;
   position: relative;
 }
 
-/* line 148, ../../sass/ui/ui_button.scss */
+/* line 149, ../../sass/ui/ui_button.scss */
 .btn-icon .icon {
   position: absolute;
   left: 10px;
@@ -253,14 +254,14 @@ a.disabled {
   _top: 4px;
 }
 
-/* line 164, ../../sass/ui/ui_button.scss */
+/* line 165, ../../sass/ui/ui_button.scss */
 .btn-drop {
   display: inline-block;
   _display: inline;
   width: 71px;
 }
 
-/* line 169, ../../sass/ui/ui_button.scss */
+/* line 170, ../../sass/ui/ui_button.scss */
 .btn-drop-current {
   cursor: pointer;
   border: 1px solid #bfbfbf;
@@ -271,7 +272,7 @@ a.disabled {
   border-radius: 2px;
 }
 
-/* line 176, ../../sass/ui/ui_button.scss */
+/* line 177, ../../sass/ui/ui_button.scss */
 .btn-drop-current a {
   float: left;
   line-height: 18px;
@@ -279,7 +280,7 @@ a.disabled {
   width: 42px;
 }
 
-/* line 182, ../../sass/ui/ui_button.scss */
+/* line 183, ../../sass/ui/ui_button.scss */
 .btn-drop-arrow {
   float: left;
   width: 16px;
@@ -289,7 +290,7 @@ a.disabled {
   position: relative;
 }
 
-/* line 190, ../../sass/ui/ui_button.scss */
+/* line 191, ../../sass/ui/ui_button.scss */
 .btn-drop-arrow i {
   position: absolute;
   height: 0;
@@ -304,31 +305,31 @@ a.disabled {
   left: 4px;
 }
 
-/* line 203, ../../sass/ui/ui_button.scss */
+/* line 204, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover {
   background-color: #4078bb;
   border-color: #3c7ac7 #4078bd #1f5699;
 }
 
-/* line 207, ../../sass/ui/ui_button.scss */
+/* line 208, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover .btn-drop-arrow {
   border-left: 1px solid #216ca6;
   background-color: transparent;
 }
 
-/* line 211, ../../sass/ui/ui_button.scss */
+/* line 212, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover .btn-drop-arrow i {
   border-color: white #4078bb #4078bb #4078bb;
 }
 
-/* line 216, ../../sass/ui/ui_button.scss */
+/* line 217, ../../sass/ui/ui_button.scss */
 .btn-drop-current:hover a:link,
 .btn-drop-current:hover a:visited,
 .btn-drop-current:hover a:hover {
   color: #fff;
 }
 
-/* line 219, ../../sass/ui/ui_button.scss */
+/* line 220, ../../sass/ui/ui_button.scss */
 .btn-drop-down {
   position: absolute;
   border: 1px solid #cccccc;
@@ -337,12 +338,12 @@ a.disabled {
   width: 69px;
 }
 
-/* line 226, ../../sass/ui/ui_button.scss */
+/* line 227, ../../sass/ui/ui_button.scss */
 .btn-drop-down ul {
   margin: 0 !important;
 }
 
-/* line 229, ../../sass/ui/ui_button.scss */
+/* line 230, ../../sass/ui/ui_button.scss */
 .btn-drop-down a {
   display: block;
   height: 19px;
@@ -350,13 +351,13 @@ a.disabled {
   padding: 0 5px;
 }
 
-/* line 236, ../../sass/ui/ui_button.scss */
+/* line 237, ../../sass/ui/ui_button.scss */
 .btn-drop-down a:link,
 .btn-drop-down a:visited {
   color: #666;
 }
 
-/* line 239, ../../sass/ui/ui_button.scss */
+/* line 240, ../../sass/ui/ui_button.scss */
 .btn-drop-down a:hover {
   color: #333;
   background-color: #dfecf5;

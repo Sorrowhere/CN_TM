@@ -249,6 +249,11 @@
             <!-- S chat-area-bd-->
             <div class="chat-area-bd">
 
+
+                <div class="msg-system">
+                    <img src="img/loading.gif" alt=""/>
+                </div>
+
                 <div class="msg-system">
                     <a href="">查看更多消息</a>
                 </div>
@@ -258,6 +263,7 @@
                     <dd><a href="">如何退货？</a></dd>
                     <dd><a href="">最快几天发货？</a></dd>
                 </dl>
+
 
                 <div class="msg-system">
                     08:20
@@ -272,10 +278,14 @@
                             </div>
                             <div class="content">
                                 欢迎光临！小二已在此恭候多时！小二已在此恭候多时！
+                                <span class="msg-status">
+                                    <img src="img/loading.gif" alt=""/>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div><!-- /msg-in -->
+
 
                 <div class="clearfix">
                     <div class="msg msg-out">
@@ -284,7 +294,7 @@
                                 <img src="img/avatar.jpg" alt=""/>
                             </div>
                             <div class="content">
-                                欢迎光临！小二已在此恭候多时！小二已在此恭候多时！
+                                请问有刺激的图片吗？
                             </div>
                         </div>
                         <div class="msg-failed">
@@ -292,7 +302,39 @@
                             发送失败，点击 <a href="">重新发送</a>
                         </div>
                     </div>
+                </div><!-- /msg-out -->
+
+
+                <div class="clearfix">
+                    <div class="msg msg-in">
+                        <div class="msg-content">
+                            <div class="avatar">
+                                <img src="img/avatar.jpg" alt=""/>
+                            </div>
+                            <div class="content">
+                                <img src="img/avatar.jpg" alt=""/>
+                                <span class="msg-status">
+                                    <img src="img/loading.gif" alt=""/>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div><!-- /msg-in -->
+
+
+                <div class="clearfix">
+                    <div class="msg msg-out">
+                        <div class="msg-content">
+                            <div class="avatar">
+                                <img src="img/avatar.jpg" alt=""/>
+                            </div>
+                            <div class="content">
+                                <img src="img/no-pic.jpg" alt=""/>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div><!-- /msg-out -->
 
 
                 <div class="msg-system msg-system-his">
@@ -321,7 +363,7 @@
                     <span class="toolbar-item">
                         <i class="iconfont iconfont-img"></i>
                     </span>
-                     <span class="toolbar-item flr js-toggle-record">
+                    <span class="toolbar-item flr js-toggle-record">
                         <i class="iconfont iconfont-clock"></i>
                     </span>
                 </div><!-- /toolbar -->
@@ -350,6 +392,8 @@
         <div class="sidebar">
 
 
+
+
             <!-- 历史消息-->
             <div class="msg-history fadeOutL js-msg-history">
 
@@ -360,6 +404,12 @@
 
 
                 <div class="msg-history-bd">
+
+                    <div class="sys-tip" style="display: none">
+                        网络开小差啦，点击 <a href="">重新加载</a>
+                    </div>
+
+
                     <div class="record">
                         <div class="record-time">
                             日期：2017-06-26
@@ -451,7 +501,7 @@
                             <button class="btn btn-s btn-blank">确定</button>
                         </div><!-- /filter-area -->
                         <div class="pager">
-                            <span class="search js-seach-record">
+                            <span class="search js-search-record">
                                 <i class="iconfont iconfont-search"></i>查找
                             </span>
                             <div class="pager-nav">
@@ -652,6 +702,16 @@
     </div>
 </div><!-- /提示2 -->
 
+
+
+
+
+<div class="pop-img"  style="display:block; left: 0%; top: 2000px;">
+    <span class="pop-img-close">
+        <i class="iconfont iconfont-close"></i>
+    </span>
+    <img src="img/avatar.jpg" alt=""/>
+</div>
 
 <!-- E 弹出层 -->
 
