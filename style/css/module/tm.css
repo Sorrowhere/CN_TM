@@ -1431,6 +1431,10 @@ body {
   color: #f7411a;
   vertical-align: -1px;
 }
+.chat-area-bd .msg-out .msg-status {
+  bottom: 7px;
+  left: -30px;
+}
 
 .chat-edit {
   position: relative;
