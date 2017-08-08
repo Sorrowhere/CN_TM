@@ -75,3 +75,13 @@
 .iconfont-arrow-right:before {
   content: "\e787";
 }
+
+/* line 43, ../../sass/base/fonts.scss */
+.iconfont-feedback:before {
+  content: "\e6fa";
+}
+
+/* line 45, ../../sass/base/fonts.scss */
+.iconfont-success:before {
+  content: "\e72d";
+}

@@ -729,6 +729,31 @@ body{
 }
 
 
+.bubble{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 999;
+  margin-left: -150px;
+  width: 400px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  .iconfont{
+    margin-right: 3px;
+    font-size: 32px;
+  }
+  .iconfont-error{
+    color: #f42;
+  }
+  .iconfont-success{
+    color: #4c0;
+  }
+}
+
+
 
 
 
