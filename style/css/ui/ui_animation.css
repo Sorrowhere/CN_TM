@@ -1,48 +1,40 @@
 @charset "UTF-8";
 /* 淡入 */
 @-webkit-keyframes fadeIn {
-  /* line 8, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 9, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
-  /* line 8, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 9, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
-  /* line 8, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 9, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  /* line 8, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 9, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
   }
@@ -50,13 +42,11 @@
 
 /* 右侧淡入 */
 @-webkit-keyframes fadeInR {
-  /* line 14, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(100px);
   }
 
-  /* line 15, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0px);
@@ -64,13 +54,11 @@
 }
 
 @-moz-keyframes fadeInR {
-  /* line 14, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
     -moz-transform: translateX(100px);
   }
 
-  /* line 15, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
     -moz-transform: translateX(0px);
@@ -78,13 +66,11 @@
 }
 
 @-o-keyframes fadeInR {
-  /* line 14, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
     -o-transform: translateX(100px);
   }
 
-  /* line 15, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
     -o-transform: translateX(0px);
@@ -92,13 +78,11 @@
 }
 
 @keyframes fadeInR {
-  /* line 14, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 0;
     transform: translateX(100px);
   }
 
-  /* line 15, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 1;
     transform: translateX(0px);
@@ -107,48 +91,40 @@
 
 /* 淡出 */
 @-webkit-keyframes fadeOut {
-  /* line 20, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 21, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes fadeOut {
-  /* line 20, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 21, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes fadeOut {
-  /* line 20, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 21, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes fadeOut {
-  /* line 20, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 21, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
   }
@@ -156,13 +132,11 @@
 
 /* 下侧淡出 */
 @-webkit-keyframes fadeOutB {
-  /* line 26, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0px);
   }
 
-  /* line 27, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(100px);
@@ -170,13 +144,11 @@
 }
 
 @-moz-keyframes fadeOutB {
-  /* line 26, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
     -moz-transform: translateY(0px);
   }
 
-  /* line 27, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
     -moz-transform: translateY(100px);
@@ -184,13 +156,11 @@
 }
 
 @-o-keyframes fadeOutB {
-  /* line 26, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
     -o-transform: translateY(0px);
   }
 
-  /* line 27, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
     -o-transform: translateY(100px);
@@ -198,13 +168,11 @@
 }
 
 @keyframes fadeOutB {
-  /* line 26, ../../sass/ui/ui_animation.scss */
   0% {
     opacity: 1;
     transform: translateY(0px);
   }
 
-  /* line 27, ../../sass/ui/ui_animation.scss */
   100% {
     opacity: 0;
     transform: translateY(100px);
@@ -213,48 +181,40 @@
 
 /* 闪烁 */
 @-webkit-keyframes flash {
-  /* line 32, ../../sass/ui/ui_animation.scss */
   0%,50%,100% {
     opacity: 1;
   }
 
-  /* line 33, ../../sass/ui/ui_animation.scss */
   25%,75% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes flash {
-  /* line 32, ../../sass/ui/ui_animation.scss */
   0%,50%,100% {
     opacity: 1;
   }
 
-  /* line 33, ../../sass/ui/ui_animation.scss */
   25%,75% {
     opacity: 0;
   }
 }
 
 @-o-keyframes flash {
-  /* line 32, ../../sass/ui/ui_animation.scss */
   0%,50%,100% {
     opacity: 1;
   }
 
-  /* line 33, ../../sass/ui/ui_animation.scss */
   25%,75% {
     opacity: 0;
   }
 }
 
 @keyframes flash {
-  /* line 32, ../../sass/ui/ui_animation.scss */
   0%,50%,100% {
     opacity: 1;
   }
 
-  /* line 33, ../../sass/ui/ui_animation.scss */
   25%,75% {
     opacity: 0;
   }
@@ -262,68 +222,56 @@
 
 /* 弹跳 */
 @-webkit-keyframes bounce {
-  /* line 38, ../../sass/ui/ui_animation.scss */
   0%,20%,50%,80%,100% {
     -webkit-transform: translateY(0);
   }
 
-  /* line 39, ../../sass/ui/ui_animation.scss */
   40% {
     -webkit-transform: translateY(-30px);
   }
 
-  /* line 40, ../../sass/ui/ui_animation.scss */
   60% {
     -webkit-transform: translateY(-15px);
   }
 }
 
 @-moz-keyframes bounce {
-  /* line 38, ../../sass/ui/ui_animation.scss */
   0%,20%,50%,80%,100% {
     -moz-transform: translateY(0);
   }
 
-  /* line 39, ../../sass/ui/ui_animation.scss */
   40% {
     -moz-transform: translateY(-30px);
   }
 
-  /* line 40, ../../sass/ui/ui_animation.scss */
   60% {
     -moz-transform: translateY(-15px);
   }
 }
 
 @-o-keyframes bounce {
-  /* line 38, ../../sass/ui/ui_animation.scss */
   0%,20%,50%,80%,100% {
     -o-transform: translateY(0);
   }
 
-  /* line 39, ../../sass/ui/ui_animation.scss */
   40% {
     -o-transform: translateY(-30px);
   }
 
-  /* line 40, ../../sass/ui/ui_animation.scss */
   60% {
     -o-transform: translateY(-15px);
   }
 }
 
 @keyframes bounce {
-  /* line 38, ../../sass/ui/ui_animation.scss */
   0%,20%,50%,80%,100% {
     transform: translateY(0);
   }
 
-  /* line 39, ../../sass/ui/ui_animation.scss */
   40% {
     transform: translateY(-30px);
   }
 
-  /* line 40, ../../sass/ui/ui_animation.scss */
   60% {
     transform: translateY(-15px);
   }
@@ -331,68 +279,56 @@
 
 /* 震颤 */
 @-webkit-keyframes shake {
-  /* line 45, ../../sass/ui/ui_animation.scss */
   0%,100% {
     -webkit-transform: translateX(0);
   }
 
-  /* line 46, ../../sass/ui/ui_animation.scss */
   10%,30%,50%,70%,90% {
     -webkit-transform: translateX(-10px);
   }
 
-  /* line 47, ../../sass/ui/ui_animation.scss */
   20%,40%,60%,80% {
     -webkit-transform: translateX(10px);
   }
 }
 
 @-moz-keyframes shake {
-  /* line 45, ../../sass/ui/ui_animation.scss */
   0%,100% {
     -moz-transform: translateX(0);
   }
 
-  /* line 46, ../../sass/ui/ui_animation.scss */
   10%,30%,50%,70%,90% {
     -moz-transform: translateX(-10px);
   }
 
-  /* line 47, ../../sass/ui/ui_animation.scss */
   20%,40%,60%,80% {
     -moz-transform: translateX(10px);
   }
 }
 
 @-o-keyframes shake {
-  /* line 45, ../../sass/ui/ui_animation.scss */
   0%,100% {
     -o-transform: translateX(0);
   }
 
-  /* line 46, ../../sass/ui/ui_animation.scss */
   10%,30%,50%,70%,90% {
     -o-transform: translateX(-10px);
   }
 
-  /* line 47, ../../sass/ui/ui_animation.scss */
   20%,40%,60%,80% {
     -o-transform: translateX(10px);
   }
 }
 
 @keyframes shake {
-  /* line 45, ../../sass/ui/ui_animation.scss */
   0%,100% {
     transform: translateX(0);
   }
 
-  /* line 46, ../../sass/ui/ui_animation.scss */
   10%,30%,50%,70%,90% {
     transform: translateX(-10px);
   }
 
-  /* line 47, ../../sass/ui/ui_animation.scss */
   20%,40%,60%,80% {
     transform: translateX(10px);
   }
@@ -400,108 +336,88 @@
 
 /* 振铃 */
 @-webkit-keyframes ring {
-  /* line 52, ../../sass/ui/ui_animation.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 53, ../../sass/ui/ui_animation.scss */
   10%,20% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 54, ../../sass/ui/ui_animation.scss */
   30%,50%,70%,90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 55, ../../sass/ui/ui_animation.scss */
   40%,60%,80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 56, ../../sass/ui/ui_animation.scss */
   100% {
     -webkit-transform: scale(1) rotate(0deg);
   }
 }
 
 @-moz-keyframes ring {
-  /* line 52, ../../sass/ui/ui_animation.scss */
   0% {
     -moz-transform: scale(1);
   }
 
-  /* line 53, ../../sass/ui/ui_animation.scss */
   10%,20% {
     -moz-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 54, ../../sass/ui/ui_animation.scss */
   30%,50%,70%,90% {
     -moz-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 55, ../../sass/ui/ui_animation.scss */
   40%,60%,80% {
     -moz-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 56, ../../sass/ui/ui_animation.scss */
   100% {
     -moz-transform: scale(1) rotate(0deg);
   }
 }
 
 @-o-keyframes ring {
-  /* line 52, ../../sass/ui/ui_animation.scss */
   0% {
     -o-transform: scale(1);
   }
 
-  /* line 53, ../../sass/ui/ui_animation.scss */
   10%,20% {
     -o-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 54, ../../sass/ui/ui_animation.scss */
   30%,50%,70%,90% {
     -o-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 55, ../../sass/ui/ui_animation.scss */
   40%,60%,80% {
     -o-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 56, ../../sass/ui/ui_animation.scss */
   100% {
     -o-transform: scale(1) rotate(0deg);
   }
 }
 
 @keyframes ring {
-  /* line 52, ../../sass/ui/ui_animation.scss */
   0% {
     transform: scale(1);
   }
 
-  /* line 53, ../../sass/ui/ui_animation.scss */
   10%,20% {
     transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 54, ../../sass/ui/ui_animation.scss */
   30%,50%,70%,90% {
     transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 55, ../../sass/ui/ui_animation.scss */
   40%,60%,80% {
     transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 56, ../../sass/ui/ui_animation.scss */
   100% {
     transform: scale(1) rotate(0deg);
   }
@@ -509,108 +425,88 @@
 
 /* 摇摆 */
 @-webkit-keyframes swing {
-  /* line 61, ../../sass/ui/ui_animation.scss */
   20% {
     -webkit-transform: rotate(15deg);
   }
 
-  /* line 62, ../../sass/ui/ui_animation.scss */
   40% {
     -webkit-transform: rotate(-10deg);
   }
 
-  /* line 63, ../../sass/ui/ui_animation.scss */
   60% {
     -webkit-transform: rotate(5deg);
   }
 
-  /* line 64, ../../sass/ui/ui_animation.scss */
   80% {
     -webkit-transform: rotate(-5deg);
   }
 
-  /* line 65, ../../sass/ui/ui_animation.scss */
   100% {
     -webkit-transform: rotate(0deg);
   }
 }
 
 @-moz-keyframes swing {
-  /* line 61, ../../sass/ui/ui_animation.scss */
   20% {
     -moz-transform: rotate(15deg);
   }
 
-  /* line 62, ../../sass/ui/ui_animation.scss */
   40% {
     -moz-transform: rotate(-10deg);
   }
 
-  /* line 63, ../../sass/ui/ui_animation.scss */
   60% {
     -moz-transform: rotate(5deg);
   }
 
-  /* line 64, ../../sass/ui/ui_animation.scss */
   80% {
     -moz-transform: rotate(-5deg);
   }
 
-  /* line 65, ../../sass/ui/ui_animation.scss */
   100% {
     -moz-transform: rotate(0deg);
   }
 }
 
 @-o-keyframes swing {
-  /* line 61, ../../sass/ui/ui_animation.scss */
   20% {
     -o-transform: rotate(15deg);
   }
 
-  /* line 62, ../../sass/ui/ui_animation.scss */
   40% {
     -o-transform: rotate(-10deg);
   }
 
-  /* line 63, ../../sass/ui/ui_animation.scss */
   60% {
     -o-transform: rotate(5deg);
   }
 
-  /* line 64, ../../sass/ui/ui_animation.scss */
   80% {
     -o-transform: rotate(-5deg);
   }
 
-  /* line 65, ../../sass/ui/ui_animation.scss */
   100% {
     -o-transform: rotate(0deg);
   }
 }
 
 @keyframes swing {
-  /* line 61, ../../sass/ui/ui_animation.scss */
   20% {
     transform: rotate(15deg);
   }
 
-  /* line 62, ../../sass/ui/ui_animation.scss */
   40% {
     transform: rotate(-10deg);
   }
 
-  /* line 63, ../../sass/ui/ui_animation.scss */
   60% {
     transform: rotate(5deg);
   }
 
-  /* line 64, ../../sass/ui/ui_animation.scss */
   80% {
     transform: rotate(-5deg);
   }
 
-  /* line 65, ../../sass/ui/ui_animation.scss */
   100% {
     transform: rotate(0deg);
   }
@@ -618,68 +514,56 @@
 
 /* Y轴旋转 */
 @-webkit-keyframes flipY {
-  /* line 70, ../../sass/ui/ui_animation.scss */
   0% {
     -webkit-transform: rotateY(0deg);
   }
 
-  /* line 71, ../../sass/ui/ui_animation.scss */
   50% {
     -webkit-transform: rotateY(180deg);
   }
 
-  /* line 72, ../../sass/ui/ui_animation.scss */
   100% {
     -webkit-transform: rotateY(360deg);
   }
 }
 
 @-moz-keyframes flipY {
-  /* line 70, ../../sass/ui/ui_animation.scss */
   0% {
     -moz-transform: rotateY(0deg);
   }
 
-  /* line 71, ../../sass/ui/ui_animation.scss */
   50% {
     -moz-transform: rotateY(180deg);
   }
 
-  /* line 72, ../../sass/ui/ui_animation.scss */
   100% {
     -moz-transform: rotateY(360deg);
   }
 }
 
 @-o-keyframes flipY {
-  /* line 70, ../../sass/ui/ui_animation.scss */
   0% {
     -o-transform: rotateY(0deg);
   }
 
-  /* line 71, ../../sass/ui/ui_animation.scss */
   50% {
     -o-transform: rotateY(180deg);
   }
 
-  /* line 72, ../../sass/ui/ui_animation.scss */
   100% {
     -o-transform: rotateY(360deg);
   }
 }
 
 @keyframes flipY {
-  /* line 70, ../../sass/ui/ui_animation.scss */
   0% {
     transform: rotateY(0deg);
   }
 
-  /* line 71, ../../sass/ui/ui_animation.scss */
   50% {
     transform: rotateY(180deg);
   }
 
-  /* line 72, ../../sass/ui/ui_animation.scss */
   100% {
     transform: rotateY(360deg);
   }
@@ -687,60 +571,50 @@
 
 /* 进度条 */
 @-webkit-keyframes progressBar {
-  /* line 77, ../../sass/ui/ui_animation.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 78, ../../sass/ui/ui_animation.scss */
   100% {
     background-position: 60px 0;
   }
 }
 
 @-moz-keyframes progressBar {
-  /* line 77, ../../sass/ui/ui_animation.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 78, ../../sass/ui/ui_animation.scss */
   100% {
     background-position: 60px 0;
   }
 }
 
 @-o-keyframes progressBar {
-  /* line 77, ../../sass/ui/ui_animation.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 78, ../../sass/ui/ui_animation.scss */
   100% {
     background-position: 60px 0;
   }
 }
 
 @keyframes progressBar {
-  /* line 77, ../../sass/ui/ui_animation.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 78, ../../sass/ui/ui_animation.scss */
   100% {
     background-position: 60px 0;
   }
 }
 
-/* line 80, ../../sass/ui/ui_animation.scss */
 .progress-bar {
   width: 40%;
   height: 25px;
 }
 
-/* line 84, ../../sass/ui/ui_animation.scss */
 .progress-bar .bar {
   display: block;
   height: 100%;

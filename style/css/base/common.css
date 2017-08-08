@@ -1,20 +1,17 @@
 @charset "UTF-8";
 /*========== normal style ==========*/
-/* line 4, ../../sass/base/common.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 7, ../../sass/base/common.scss */
 body {
   background-color: white;
   color: #4d4d4d;
   font: 12px/1.5 Arial, Helvetica, SimSun, sans-serif;
 }
 
-/* line 15, ../../sass/base/common.scss */
 button,
 input,
 select,
@@ -23,78 +20,63 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 19, ../../sass/base/common.scss */
 button {
   cursor: pointer;
 }
 
-/* line 22, ../../sass/base/common.scss */
 table {
   width: 100%;
 }
 
-/* line 25, ../../sass/base/common.scss */
 img {
   vertical-align: middle;
 }
 
 /*========== text ==========*/
-/* line 30, ../../sass/base/common.scss */
 h1, h2, h3, h4, h5, strong {
   font-weight: bold;
 }
 
-/* line 34, ../../sass/base/common.scss */
 a {
   text-decoration: none;
 }
-/* line 37, ../../sass/base/common.scss */
 a:link, a:visited {
   color: #0066dd;
 }
-/* line 40, ../../sass/base/common.scss */
 a:hover {
   color: #e04b43;
   text-decoration: underline;
 }
 
-/* line 46, ../../sass/base/common.scss */
 ol {
   margin-left: 1.6em;
   *margin-left: 2em;
 }
-/* line 51, ../../sass/base/common.scss */
 ol li {
   list-style-type: decimal;
 }
 
-/* line 55, ../../sass/base/common.scss */
 .fms {
   font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 }
 
-/* line 58, ../../sass/base/common.scss */
 .fcn {
   font-family: SimSun;
 }
 
-/* line 61, ../../sass/base/common.scss */
 .v-sep {
   color: #cccccc;
   margin: 0 5px;
 }
 
-/* line 65, ../../sass/base/common.scss */
 .space {
   margin: 0 3px;
 }
 
 /*=========== solution =========*/
-/* line 70, ../../sass/base/common.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 75, ../../sass/base/common.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: block;
@@ -102,12 +84,10 @@ ol li {
   visibility: hidden;
   font-size: 0;
 }
-/* line 82, ../../sass/base/common.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 88, ../../sass/base/common.scss */
 .sl-vam {
   display: table;
   border-collapse: collapse;
@@ -115,7 +95,6 @@ ol li {
   *overflow: hidden;
 }
 
-/* line 96, ../../sass/base/common.scss */
 .sl-vam-outer {
   display: table-cell;
   vertical-align: middle;
@@ -125,7 +104,6 @@ ol li {
   *left: 50%;
 }
 
-/* line 106, ../../sass/base/common.scss */
 .sl-vam-inner {
   text-align: center;
   margin: 0 auto;
@@ -134,35 +112,29 @@ ol li {
   *left: -50%;
 }
 
-/* line 117, ../../sass/base/common.scss */
 .img-txt, .img-txt .txt {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 119, ../../sass/base/common.scss */
 .img-txt .img {
   float: left;
   margin-right: 10px;
 }
 
-/* line 128, ../../sass/base/common.scss */
 .txt {
   outline: 0;
 }
 
-/* line 133, ../../sass/base/common.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999;
 }
 
-/* line 137, ../../sass/base/common.scss */
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   color: #999;
 }
 
-/* line 141, ../../sass/base/common.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #999;

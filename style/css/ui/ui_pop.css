@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* line 12, ../../sass/ui/ui_pop.scss */
 .alpha {
   width: 100%;
   height: 100%;
@@ -14,7 +13,6 @@
   display: none;
 }
 
-/* line 20, ../../sass/ui/ui_pop.scss */
 .pop {
   display: none;
   width: 400px;
@@ -22,7 +20,6 @@
   position: absolute;
   z-index: 999;
 }
-/* line 26, ../../sass/ui/ui_pop.scss */
 .pop .pop-hd {
   padding: 0 25px;
   height: 50px;
@@ -30,41 +27,34 @@
   color: #fff;
   overflow: hidden;
 }
-/* line 32, ../../sass/ui/ui_pop.scss */
 .pop .pop-hd h3 {
   float: left;
   font-size: 16px;
   font-weight: normal;
   line-height: 50px;
 }
-/* line 38, ../../sass/ui/ui_pop.scss */
 .pop .pop-hd .iconfont-close {
   float: right;
   margin-top: 12px;
   cursor: pointer;
 }
-/* line 44, ../../sass/ui/ui_pop.scss */
 .pop .pop-ft {
   margin-bottom: 40px;
   padding: 15px 0 10px;
   text-align: center;
 }
-/* line 48, ../../sass/ui/ui_pop.scss */
 .pop .pop-ft .btn {
   margin: 0 5px;
 }
 
-/* line 54, ../../sass/ui/ui_pop.scss */
 .pop-alert {
   width: 300px;
 }
-/* line 56, ../../sass/ui/ui_pop.scss */
 .pop-alert .pop-bd {
   font-size: 14px;
   padding: 20px;
 }
 
-/* line 62, ../../sass/ui/ui_pop.scss */
 .tip-alpha {
   width: 100%;
   height: 100%;
@@ -77,7 +67,6 @@
   z-index: 100;
 }
 
-/* line 68, ../../sass/ui/ui_pop.scss */
 .pop-m {
   width: 600px;
 }

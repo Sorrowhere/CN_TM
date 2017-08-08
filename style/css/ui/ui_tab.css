@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* line 61, ../../sass/base/_mixin.scss */
 .tab-menu:before, .tab-menu:after {
   content: " ";
   display: block;
@@ -7,11 +6,9 @@
   visibility: hidden;
   font-size: 0;
 }
-/* line 68, ../../sass/base/_mixin.scss */
 .tab-menu:after {
   clear: both;
 }
-/* line 8, ../../sass/ui/ui_tab.scss */
 .tab-menu > li {
   float: left;
   width: 50%;
@@ -22,12 +19,10 @@
   background-color: #f2f2f2;
   cursor: pointer;
 }
-/* line 18, ../../sass/ui/ui_tab.scss */
 .tab-menu .on {
   background-color: #fff;
 }
 
-/* line 23, ../../sass/ui/ui_tab.scss */
 .tab-con {
   padding: 40px 50px 0;
 }
