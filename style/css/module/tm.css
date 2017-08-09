@@ -1664,7 +1664,7 @@ body {
   padding: 10px 0;
 }
 .pop-service .faq .faq-hd .after-txt {
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 12px;
   color: #999999;
 }
@@ -1697,6 +1697,9 @@ body {
 .pop-service .faq .faq-bd .faq-action .btn {
   width: 100px;
 }
+.pop-service .faq .faq-bd .faq-action .btn-delete {
+  margin-top: 24px;
+}
 .pop-service .faq-set {
   padding: 40px 50px;
 }
@@ -1710,6 +1713,12 @@ body {
 }
 .pop-service .faq-set .txtarea {
   height: 150px;
+}
+.pop-service .faq-set .ta-note {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: right;
+  color: #999999;
 }
 
 .pop-tip {
