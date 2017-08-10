@@ -368,6 +368,12 @@ body{
       }
       .msg-status{
         position: absolute;
+        .iconfont{
+          font-size: 24px;
+        }
+        .iconfont-delete{
+          color: #f42;
+        }
       }
     }
   }
@@ -393,7 +399,7 @@ body{
         @include triangle-left(8px,#ffeecc);
       }
       .msg-status{
-        bottom: 7px;
+        bottom: 17px;
         right: -30px;
       }
     }
@@ -817,7 +823,14 @@ body{
     @include transform(rotate(180deg));
   }
 }
-
+.iconfont-refresh{
+  cursor: pointer;
+  color: #999;
+  @include transition(all ease .5s);
+  &:hover{
+    @include transform(rotate(180deg));
+  }
+}
 
 // 左侧淡入
 .fadeInL{

@@ -70,3 +70,11 @@
 .iconfont-success:before {
   content: "\e72d";
 }
+
+.iconfont-delete:before {
+  content: "\e6f2";
+}
+
+.iconfont-refresh:before {
+  content: "\e71e";
+}

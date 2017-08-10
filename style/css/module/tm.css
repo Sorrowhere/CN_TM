@@ -514,6 +514,14 @@ textarea:-ms-input-placeholder {
   content: "\e72d";
 }
 
+.iconfont-delete:before {
+  content: "\e6f2";
+}
+
+.iconfont-refresh:before {
+  content: "\e71e";
+}
+
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -1389,6 +1397,12 @@ body {
 .chat-area-bd .msg .content .msg-status {
   position: absolute;
 }
+.chat-area-bd .msg .content .msg-status .iconfont {
+  font-size: 24px;
+}
+.chat-area-bd .msg .content .msg-status .iconfont-delete {
+  color: #f42;
+}
 .chat-area-bd .msg-in {
   padding-left: 50px;
   float: left;
@@ -1419,7 +1433,7 @@ body {
   border-right: 8px solid #ffeecc;
 }
 .chat-area-bd .msg-in .content .msg-status {
-  bottom: 7px;
+  bottom: 17px;
   right: -30px;
 }
 .chat-area-bd .msg-out {
@@ -1830,6 +1844,22 @@ body {
   transition: all ease 0.5s;
 }
 .iconfont-close:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.iconfont-refresh {
+  cursor: pointer;
+  color: #999;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.iconfont-refresh:hover {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
