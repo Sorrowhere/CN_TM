@@ -1164,6 +1164,7 @@ body {
   position: absolute;
   top: 32px;
   left: 0;
+  z-index: 19;
   width: 100%;
   box-shadow: 1px 2px 5px 0 #333333;
 }
@@ -1185,8 +1186,12 @@ body {
 }
 
 .nav-view {
+  position: relative;
   height: 528px;
   overflow-y: scroll;
+}
+.nav-view .alpha {
+  z-index: 9;
 }
 .nav-view .nav-view-tip {
   margin-top: 90px;
