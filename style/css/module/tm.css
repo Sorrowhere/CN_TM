@@ -1475,7 +1475,7 @@ body {
   vertical-align: -1px;
 }
 .chat-area-bd .msg-out .msg-status {
-  bottom: 7px;
+  bottom: 10px;
   left: -30px;
 }
 
@@ -1522,6 +1522,17 @@ body {
   position: absolute;
   right: 20px;
   bottom: 20px;
+}
+.chat-edit .action .action-tip {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  padding: 2px 5px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  box-shadow: 1px 2px 3px #999999;
+  color: #666666;
 }
 .chat-edit .action .desc {
   color: #999;
@@ -1852,6 +1863,7 @@ body {
 }
 
 .iconfont-refresh {
+  display: inline-block;
   cursor: pointer;
   color: #999;
   -webkit-transition: all ease 0.5s;
@@ -1860,11 +1872,12 @@ body {
   transition: all ease 0.5s;
 }
 .iconfont-refresh:hover {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
+  font-size: 32px;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .fadeInL {

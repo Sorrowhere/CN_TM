@@ -436,7 +436,7 @@ body{
       }
     }
     .msg-status{
-      bottom: 7px;
+      bottom: 10px;
       left: -30px;
     }
   }
@@ -496,6 +496,18 @@ body{
     position: absolute;
     right: 20px;
     bottom: 20px;
+    .action-tip{
+      position: absolute;
+      top: -30px;
+      right: 0;
+
+      padding: 2px 5px;
+      background-color: #fff;
+      border: $baseBorder;
+      border-radius: 3px;
+      box-shadow: 1px 2px 3px #999;
+      color: $gray;
+    }
     .desc{
       color: #999;
       font-size: 12px;
@@ -824,11 +836,13 @@ body{
   }
 }
 .iconfont-refresh{
+  display: inline-block;
   cursor: pointer;
   color: #999;
   @include transition(all ease .5s);
   &:hover{
-    @include transform(rotate(180deg));
+    font-size: 32px;
+    @include transform(rotate(360deg));
   }
 }
 
