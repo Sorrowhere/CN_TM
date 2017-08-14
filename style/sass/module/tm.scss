@@ -222,7 +222,8 @@ body{
       font-size: 11px;
       color: #fff;
       b{
-        @include scale(0.6);
+        display: inline-block;
+        @include scale(0.9);
       }
     }
   }
