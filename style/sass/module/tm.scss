@@ -316,16 +316,16 @@ body{
   font-size: 14px;
   // 系统消息
   .msg-system{
-    position: relative;
-    margin: 10px auto;
-    max-width: 50%;
-    text-align: center;
+
     font-size: 12px;
-    color: #999;
     clear: both;
   }
   .msg-system-his{
-    margin-top: 20px;
+    position: relative;
+    margin: 20px auto 10px;
+    max-width: 50%;
+    text-align: center;
+    color: #999;
     .line{
       position: absolute;
       top: 8px;
