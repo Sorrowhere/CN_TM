@@ -1030,6 +1030,24 @@ select {
   padding: 40px 50px 0;
 }
 
+.prod-tab {
+  overflow: hidden;
+}
+.prod-tab li {
+  float: left;
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.prod-tab .on {
+  background-color: #fff;
+  color: #333;
+}
+
 body {
   background-color: #666;
   font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, Arial, sans-serif;
@@ -1586,6 +1604,7 @@ body {
 
 .msg-history {
   position: absolute;
+  top: 0;
   width: 330px;
   height: 640px;
   background: #fff;
