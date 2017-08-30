@@ -22,6 +22,10 @@
   overflow-x: hidden;
 }
 
+.com-panel {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
 .com-panel h4 {
   font-weight: normal;
   font-size: 14px;
