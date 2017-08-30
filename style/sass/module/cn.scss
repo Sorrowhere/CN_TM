@@ -15,3 +15,37 @@
     color: #333;
   }
 }
+
+.prod-tab-con{
+  padding: 20px 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+
+// 浏览商品
+//===============================================================================
+// 公司信息
+.com-panel{
+  h4{
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .com-cert{
+    margin-bottom: 5px;
+  }
+  .accnt{
+    overflow: hidden;
+    dt,dd{
+      float: left;
+      line-height: 24px;
+    }
+    dt{
+      color: #999;
+    }
+    dd{
+      min-width: 70px;
+    }
+  }
+}

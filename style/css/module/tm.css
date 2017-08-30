@@ -1048,6 +1048,33 @@ select {
   color: #333;
 }
 
+.prod-tab-con {
+  padding: 20px 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.com-panel h4 {
+  font-weight: normal;
+  font-size: 14px;
+}
+.com-panel .com-cert {
+  margin-bottom: 5px;
+}
+.com-panel .accnt {
+  overflow: hidden;
+}
+.com-panel .accnt dt, .com-panel .accnt dd {
+  float: left;
+  line-height: 24px;
+}
+.com-panel .accnt dt {
+  color: #999;
+}
+.com-panel .accnt dd {
+  min-width: 70px;
+}
+
 body {
   background-color: #666;
   font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, Arial, sans-serif;
