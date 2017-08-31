@@ -1078,6 +1078,70 @@ select {
 .com-panel .accnt dd {
   min-width: 70px;
 }
+.com-panel .accnt dd a {
+  color: #333;
+}
+.com-panel .accnt dd a:hover {
+  color: #e04b43;
+}
+
+.prod-lst {
+  padding: 17px 0 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.prod-lst .prod-hd {
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.prod-lst .prod-hd h3 {
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+.prod-lst .prod-bd {
+  padding-left: 70px;
+  overflow: hidden;
+}
+.prod-lst .prod-bd .prod-pic-wrap {
+  float: left;
+  display: table;
+  width: 60px;
+  margin-left: -70px;
+}
+.prod-lst .prod-bd .prod-pic-wrap .prod-pic {
+  display: table-cell;
+  vertical-align: middle;
+}
+.prod-lst .prod-bd .prod-pic-wrap .prod-pic img {
+  width: 100%;
+}
+.prod-lst .prod-info {
+  float: left;
+  width: 100%;
+}
+.prod-lst .prod-info dt {
+  width: 140px;
+  height: 44px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.prod-lst .prod-info dt a {
+  color: #333;
+}
+.prod-lst .prod-info dt a:hover {
+  color: #e04b43;
+}
+.prod-lst .prod-info dd {
+  overflow: hidden;
+}
+.prod-lst .prod-info dd .prod-price {
+  display: inline-block;
+  margin-top: 4px;
+  color: red;
+}
+.prod-lst .prod-info dd .btn {
+  float: right;
+}
 
 body {
   background-color: #666;
