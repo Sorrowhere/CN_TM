@@ -1086,11 +1086,11 @@ select {
 }
 
 .prod-lst {
-  padding: 17px 0 20px;
+  padding: 16px 0 20px;
   border-bottom: 1px solid #e6e6e6;
 }
 .prod-lst .prod-hd {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   overflow: hidden;
 }
 .prod-lst .prod-hd h3 {
@@ -1121,8 +1121,9 @@ select {
 }
 .prod-lst .prod-info dt {
   width: 140px;
-  height: 44px;
+  height: 38px;
   font-size: 14px;
+  line-height: 18px;
   overflow: hidden;
 }
 .prod-lst .prod-info dt a {
@@ -1136,7 +1137,8 @@ select {
 }
 .prod-lst .prod-info dd .prod-price {
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 1px;
+  font-size: 14px;
   color: red;
 }
 .prod-lst .prod-info dd .btn {

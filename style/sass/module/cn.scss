@@ -60,10 +60,10 @@
 
 // 商品信息
 .prod-lst{
-  padding: 17px 0 20px;
+  padding: 16px 0 20px;
   border-bottom: 1px solid #e6e6e6;
   .prod-hd{
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     overflow: hidden;
     h3{
       float: left;
@@ -93,8 +93,9 @@
     width: 100%;
     dt{
       width: 140px;
-      height: 44px;
+      height: 38px;
       font-size: 14px;
+      line-height: 18px;
       overflow: hidden;
       a{
         color: #333;
@@ -107,7 +108,8 @@
       overflow: hidden;
       .prod-price{
         display: inline-block;
-        margin-top: 4px;
+        margin-top: 1px;
+        font-size: 14px;
         color: red;
       }
       .btn{
