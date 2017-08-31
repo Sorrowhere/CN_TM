@@ -107,6 +107,10 @@ body{
         width: 90px\0;
       }
     }
+
+    .set-load{
+      @include animation(setLoad 2s infinite linear);
+    }
   }
 }
 
@@ -899,12 +903,6 @@ body{
 
 
 // animate
-.iconfont-set{
-  @include transition(all ease 1s);
-  &:hover{
-    @include transform(rotate(180deg));
-  }
-}
 .iconfont-close{
   @include transition(all ease .5s);
   &:hover{
@@ -940,4 +938,11 @@ body{
 .fadeOutB{
   opacity: 0;
   @include transform(translateY(30px));
+}
+
+// 旋转
+@include keyframes(setLoad){
+  0%    { @include transform(rotate(0deg));}
+  50%   { @include transform(rotate(-180deg));}
+  100%  { @include transform(rotate(-360deg));}
 }

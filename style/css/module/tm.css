@@ -1259,6 +1259,11 @@ body {
   white-space: nowrap;
   width: 90px\0;
 }
+.panel .info .set-load {
+  -webkit-animation: setLoad 2s infinite linear;
+  -moz-animation: setLoad 2s infinite linear;
+  animation: setLoad 2s infinite linear;
+}
 
 .header {
   padding: 20px 20px 20px 60px;
@@ -2029,20 +2034,6 @@ body {
   color: #4c0;
 }
 
-.iconfont-set {
-  -webkit-transition: all ease 1s;
-  -moz-transition: all ease 1s;
-  -o-transition: all ease 1s;
-  transition: all ease 1s;
-}
-.iconfont-set:hover {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
 .iconfont-close {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
@@ -2109,4 +2100,60 @@ body {
   -ms-transform: translateY(30px);
   -o-transform: translateY(30px);
   transform: translateY(30px);
+}
+
+@-webkit-keyframes setLoad {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes setLoad {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  50% {
+    -moz-transform: rotate(-180deg);
+  }
+
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-o-keyframes setLoad {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    -o-transform: rotate(-180deg);
+  }
+
+  100% {
+    -o-transform: rotate(-360deg);
+  }
+}
+
+@keyframes setLoad {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
 }

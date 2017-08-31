@@ -21,6 +21,13 @@ $(function(){
     });
 
 
+
+    // 设置加载延迟动画
+    $('.opt .iconfont-set').click(function(){
+       $(this).toggleClass('set-load');
+    });
+
+
     // 筛选动画
     var $searchRecord = $('.js-search-record');
     var $recordDetail = $searchRecord.parents('.msg-history').find('.msg-history-bd');
