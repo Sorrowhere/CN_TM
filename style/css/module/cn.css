@@ -67,6 +67,10 @@
   font-size: 14px;
   font-weight: normal;
 }
+.prod-lst-wrap .prod-hd .order-time {
+  color: #999;
+  float: right;
+}
 .prod-lst-wrap .prod-lst li {
   padding-bottom: 20px;
   margin-bottom: 20px;
