@@ -1042,6 +1042,7 @@ select {
   text-align: center;
   font-size: 14px;
   color: #666;
+  cursor: pointer;
 }
 .prod-tab .on {
   background-color: #fff;
@@ -1050,6 +1051,7 @@ select {
 
 .prod-tab-con {
   padding: 20px 30px;
+  height: 590px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -1085,63 +1087,75 @@ select {
   color: #e04b43;
 }
 
-.prod-lst {
-  padding: 16px 0 20px;
-  border-bottom: 1px solid #e6e6e6;
+.prod-lst-wrap {
+  padding: 16px 0 5px;
 }
-.prod-lst .prod-hd {
+.prod-lst-wrap .prod-hd {
   margin-bottom: 11px;
   overflow: hidden;
 }
-.prod-lst .prod-hd h3 {
+.prod-lst-wrap .prod-hd h3 {
   float: left;
   font-size: 14px;
   font-weight: normal;
 }
-.prod-lst .prod-bd {
+.prod-lst-wrap .prod-lst li {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.prod-lst-wrap .prod-lst li:last-child {
+  margin-bottom: 0;
+}
+.prod-lst-wrap .prod-lst-history li {
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  border-bottom: none;
+}
+.prod-lst-wrap .prod-bd {
   padding-left: 70px;
   overflow: hidden;
 }
-.prod-lst .prod-bd .prod-pic-wrap {
+.prod-lst-wrap .prod-bd .prod-pic-wrap {
   float: left;
   display: table;
   width: 60px;
   margin-left: -70px;
 }
-.prod-lst .prod-bd .prod-pic-wrap .prod-pic {
+.prod-lst-wrap .prod-bd .prod-pic-wrap .prod-pic {
   display: table-cell;
   vertical-align: middle;
 }
-.prod-lst .prod-bd .prod-pic-wrap .prod-pic img {
+.prod-lst-wrap .prod-bd .prod-pic-wrap .prod-pic img {
   width: 100%;
 }
-.prod-lst .prod-info {
+.prod-lst-wrap .prod-info {
   float: left;
   width: 100%;
 }
-.prod-lst .prod-info dt {
+.prod-lst-wrap .prod-info dt {
   width: 140px;
   height: 38px;
   font-size: 14px;
   line-height: 18px;
   overflow: hidden;
 }
-.prod-lst .prod-info dt a {
+.prod-lst-wrap .prod-info dt a {
   color: #333;
 }
-.prod-lst .prod-info dt a:hover {
+.prod-lst-wrap .prod-info dt a:hover {
   color: #e04b43;
 }
-.prod-lst .prod-info dd {
+.prod-lst-wrap .prod-info dd {
   overflow: hidden;
 }
-.prod-lst .prod-info dd .prod-price {
+.prod-lst-wrap .prod-info dd .prod-price {
   display: inline-block;
   margin-top: 1px;
   font-size: 14px;
   color: red;
 }
-.prod-lst .prod-info dd .btn {
+.prod-lst-wrap .prod-info dd .btn {
   float: right;
 }
 
