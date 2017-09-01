@@ -50,6 +50,14 @@ $(function(){
         $(this).addClass('on').siblings().removeClass('on');
         var tabIndex = tabMenu.index(this);
         $('.tab-con > div').eq(tabIndex).show().siblings().hide();
+    });
+
+
+    // 物品弹出层tab
+    var tabMenuProd = $('.js-tab-prod li');
+    tabMenuProd.click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        var tabIndex = tabMenuProd.index(this);
         $('.prod-tab-con > div').eq(tabIndex).show().siblings().hide();
     });
 
