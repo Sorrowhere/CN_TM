@@ -1347,6 +1347,19 @@ body {
   line-height: 30px;
   color: #fff;
 }
+.nav-view .nav-view-offline {
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  line-height: 19px;
+}
+.nav-view .nav-view-offline a {
+  color: #60a9ff;
+}
+.nav-view .nav-view-offline .iconfont-information {
+  color: #f42;
+}
 
 .chat-item {
   width: 100%;
@@ -1981,6 +1994,10 @@ body {
 }
 .pop-tip .pop-bd {
   padding: 40px 50px;
+}
+.pop-tip .iconfont-information {
+  font-size: 18px;
+  color: #fb982a;
 }
 
 .pop-img {

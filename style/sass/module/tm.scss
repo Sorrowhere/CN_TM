@@ -203,6 +203,19 @@ body{
     line-height: 30px;
     color: #fff;
   }
+  .nav-view-offline{
+    padding: 20px 0 ;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#fff;
+    text-align: center;
+    line-height: 19px;
+    a{
+      color:#60a9ff;
+    }
+    .iconfont-information{
+      color:#f42;
+    }
+  }
 }
 .chat-item{
   width: 100%;
@@ -837,6 +850,10 @@ body{
   font-size: 14px;
   .pop-bd{
     padding: 40px 50px;
+  }
+  .iconfont-information{
+    font-size: 18px;
+    color: #fb982a;
   }
 }
 
