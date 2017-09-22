@@ -2,6 +2,21 @@
 麦通内贸站展示厅在线聊天界面
 
 
+### 9.22更新
+- 新增初始化窗口加载层
+
+```
+<div class="init">
+        <img src="img/logo_n.png" alt="" width="400px"/>
+        <br/>
+        <img src="img/progress.gif" alt="" class="init-loading"/>
+
+        <p>加载中，请稍后...</p>
+    </div>
+```
+默认`display:block`，当页面加载结束后`display:none`
+
+
 ### 9.14更新
 - 新增登录失败提示
 
