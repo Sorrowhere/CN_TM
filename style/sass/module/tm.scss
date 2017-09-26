@@ -229,6 +229,9 @@ body{
   }
   .info{
     padding: 2px 0;
+    .nickname{
+      width: 105px;
+    }
   }
   .hd{
     overflow: hidden;
@@ -254,10 +257,7 @@ body{
     color: #88ccff;
     overflow: hidden;
     .msg{
-      @include text-clip(100px);
-      @if($ie == true){
-        width: 90px\0;
-      }
+      @include text-clip(90px);
       float: left;
     }
     .time{
