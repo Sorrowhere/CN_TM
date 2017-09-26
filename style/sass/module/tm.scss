@@ -336,6 +336,10 @@ body{
   border-bottom: $baseBorder;
   overflow-y: scroll;
   font-size: 14px;
+
+  @if($ie8){
+    height: 395px\0;
+  }
   // 系统消息
   .msg-system{
     position: relative;
@@ -474,7 +478,9 @@ body{
 .chat-edit{
   position: relative;
   height: 165px;
-
+  @if($ie8){
+    height: 155px\0;
+  }
   .msg-new-tip{
     position: absolute;
     top: -31px;
@@ -545,6 +551,7 @@ body{
 
     white-space: pre-wrap;
     word-break: normal;
+
   }
 
   // 发送按钮

@@ -1496,6 +1496,7 @@ body {
   border-bottom: 1px solid #e6e6e6;
   overflow-y: scroll;
   font-size: 14px;
+  height: 395px\0;
 }
 .chat-area-bd .msg-system {
   position: relative;
@@ -1637,6 +1638,7 @@ body {
 .chat-edit {
   position: relative;
   height: 165px;
+  height: 155px\0;
 }
 .chat-edit .msg-new-tip {
   position: absolute;
