@@ -775,14 +775,13 @@ body{
   z-index:499;
   width: 100%;
   height: 640px;
-  padding-top: 50px;
+  padding-top: 150px;
   background-color: #fff;
   text-align: center;
 
-  .init-loading{
-    width: 40%;
-  }
+
   p{
+    margin-top: 50px;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
