@@ -1936,6 +1936,13 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
+.init p img {
+  vertical-align: sub;
+}
+.init p .iconfont-information {
+  font-size: 24px;
+  color: #fb982a;
+}
 
 .pop-service {
   min-height: 430px;
