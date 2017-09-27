@@ -209,6 +209,10 @@ body{
     color:#fff;
     text-align: center;
     line-height: 19px;
+    @if($ie8){
+      background-color: #000\0;
+      filter:alpha(opacity=60);
+    }
     a{
       color:#60a9ff;
     }
