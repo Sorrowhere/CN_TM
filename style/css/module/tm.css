@@ -2068,6 +2068,8 @@ body {
   width: 400px;
   padding: 50px;
   background-color: rgba(0, 0, 0, 0.6);
+  background-color: #000000\0;
+  filter: alpha(opacity=60);
   font-size: 16px;
   text-align: center;
   color: #fff;
