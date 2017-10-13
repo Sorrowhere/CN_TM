@@ -1185,6 +1185,10 @@ body {
 }
 
 .wrap {
+  padding-top: 0px;
+}
+
+.wrap-full {
   padding-top: 100px;
 }
 
