@@ -1422,7 +1422,7 @@ body {
   overflow: hidden;
 }
 .chat-item .bd .msg {
-  width: 90px;
+  width: 60px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

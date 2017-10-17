@@ -265,7 +265,7 @@ body{
     color: #88ccff;
     overflow: hidden;
     .msg{
-      @include text-clip(90px);
+      @include text-clip(60px);
       float: left;
     }
     .time{
