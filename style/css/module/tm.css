@@ -1399,6 +1399,7 @@ body {
 }
 .chat-item .hd .num {
   float: right;
+  min-width: 16px;
   height: 16px;
   line-height: 16px;
   margin-top: 2px;
@@ -1411,6 +1412,7 @@ body {
 }
 .chat-item .hd .num b {
   display: inline-block;
+  margin-left: -1px;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);

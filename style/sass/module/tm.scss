@@ -245,6 +245,7 @@ body{
     overflow: hidden;
     .num{
       float: right;
+      min-width:16px;
       height: 16px;
       line-height: 16px;
       margin-top: 2px;
@@ -256,6 +257,7 @@ body{
       color: #fff;
       b{
         display: inline-block;
+        margin-left: -1px;
         @include scale(0.9);
       }
     }
