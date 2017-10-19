@@ -874,7 +874,10 @@ body{
     .txt{
       width: 100%;
       height: 40px;
-      line-height: 40px;
+      padding: 10px 4px;
+      @if($ie8){
+        padding-top: 7px\0;
+      }
     }
     .txtarea{
       height: 150px;
