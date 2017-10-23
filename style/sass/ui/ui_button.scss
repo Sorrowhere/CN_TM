@@ -138,7 +138,8 @@ a.#{$btnBaseClass}:hover{
 	cursor: not-allowed;
 	@include opacity(.8);
 }
-a.#{$btnDisabledClass}{
+a.#{$btnDisabledClass}:link,
+a.#{$btnDisabledClass}:visited{
 	color: $grayLight;
 }
 // button with icon

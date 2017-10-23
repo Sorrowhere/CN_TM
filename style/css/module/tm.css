@@ -739,7 +739,8 @@ input.btn-xl {
   filter: alpha(opacity=80);
 }
 
-a.disabled {
+a.disabled:link,
+a.disabled:visited {
   color: #999999;
 }
 
