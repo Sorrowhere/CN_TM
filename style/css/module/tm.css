@@ -1708,6 +1708,7 @@ body {
 }
 .chat-edit .toolbar .iconfont {
   margin-right: 5px;
+  color: #999;
 }
 .chat-edit .edit-box {
   height: 80px;
