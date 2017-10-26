@@ -23,6 +23,16 @@
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.prod-tab-con .prod-tip {
+  margin-top: 140px;
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+}
+.prod-tab-con .prod-tip .iconfont-information {
+  font-size: 20px;
+  color: #ffb300;
+}
 
 .com-panel {
   padding-bottom: 14px;
