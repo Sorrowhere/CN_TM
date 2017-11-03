@@ -19,12 +19,32 @@
   content: "\e66b";
 }
 
-.iconfont-information:before {
+.iconfont-infomation:before {
   content: "\e66c";
 }
 
 .iconfont-close:before {
   content: "\e761";
+}
+
+.iconfont-delete:before {
+  content: "\e6f2";
+}
+
+.iconfont-feedback:before {
+  content: "\e6fa";
+}
+
+.iconfont-refresh:before {
+  content: "\e71e";
+}
+
+.iconfont-success:before {
+  content: "\e72d";
+}
+
+.iconfont-kefu:before {
+  content: "\e6d1";
 }
 
 .iconfont-set:before {
@@ -61,20 +81,4 @@
 
 .iconfont-arrow-right:before {
   content: "\e787";
-}
-
-.iconfont-feedback:before {
-  content: "\e6fa";
-}
-
-.iconfont-success:before {
-  content: "\e72d";
-}
-
-.iconfont-delete:before {
-  content: "\e6f2";
-}
-
-.iconfont-refresh:before {
-  content: "\e71e";
 }

@@ -380,6 +380,8 @@ body{
       right: 55px;
     }
   }
+
+
   // 预置消息
   .msg-pre{
     display: inline-block;
@@ -532,6 +534,7 @@ body{
   .toolbar{
     padding: 4px 17px;
     .toolbar-item{
+      position: relative;
       display: inline-block;
       width: 24px;
       height: 24px;
@@ -552,6 +555,34 @@ body{
     .iconfont{
       margin-right: 5px;
       color:#999;
+    }
+
+    //二期--转接客服
+    .poptip-service{
+      position: absolute;
+      bottom: 28px;
+      right: -42px;
+      z-index: 9;
+      width: 150px;
+      background: #fff;
+      border: $baseBorder;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      text-align: left;
+      h4{
+        padding: 10px;
+        border-bottom: $baseBorder;
+        font-size: 14px;
+      }
+    }
+    .mate-lst{
+      li{
+        padding: 8px 10px;
+        cursor: pointer;
+        font-size: 14px;
+        &:hover{
+          background-color: #f7f7f7;
+        }
+      }
     }
   }
 
@@ -907,6 +938,15 @@ body{
   .iconfont-information{
     font-size: 18px;
     color: #fb982a;
+  }
+  .mate-txt{
+    margin-top: 30px;
+    font-size: 24px;
+    text-align: center;
+    .iconfont-kefu{
+      font-size:32px;
+      color:#4498ee;
+    }
   }
 }
 

@@ -462,12 +462,32 @@ textarea:-ms-input-placeholder {
   content: "\e66b";
 }
 
-.iconfont-information:before {
+.iconfont-infomation:before {
   content: "\e66c";
 }
 
 .iconfont-close:before {
   content: "\e761";
+}
+
+.iconfont-delete:before {
+  content: "\e6f2";
+}
+
+.iconfont-feedback:before {
+  content: "\e6fa";
+}
+
+.iconfont-refresh:before {
+  content: "\e71e";
+}
+
+.iconfont-success:before {
+  content: "\e72d";
+}
+
+.iconfont-kefu:before {
+  content: "\e6d1";
 }
 
 .iconfont-set:before {
@@ -504,22 +524,6 @@ textarea:-ms-input-placeholder {
 
 .iconfont-arrow-right:before {
   content: "\e787";
-}
-
-.iconfont-feedback:before {
-  content: "\e6fa";
-}
-
-.iconfont-success:before {
-  content: "\e72d";
-}
-
-.iconfont-delete:before {
-  content: "\e6f2";
-}
-
-.iconfont-refresh:before {
-  content: "\e71e";
 }
 
 .btn {
@@ -1699,6 +1703,7 @@ body {
   padding: 4px 17px;
 }
 .chat-edit .toolbar .toolbar-item {
+  position: relative;
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -1719,6 +1724,30 @@ body {
 .chat-edit .toolbar .iconfont {
   margin-right: 5px;
   color: #999;
+}
+.chat-edit .toolbar .poptip-service {
+  position: absolute;
+  bottom: 28px;
+  right: -42px;
+  z-index: 9;
+  width: 150px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+.chat-edit .toolbar .poptip-service h4 {
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+.chat-edit .toolbar .mate-lst li {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.chat-edit .toolbar .mate-lst li:hover {
+  background-color: #f7f7f7;
 }
 .chat-edit .edit-box {
   height: 80px;
@@ -2055,6 +2084,15 @@ body {
 .pop-tip .iconfont-information {
   font-size: 18px;
   color: #fb982a;
+}
+.pop-tip .mate-txt {
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+.pop-tip .mate-txt .iconfont-kefu {
+  font-size: 32px;
+  color: #4498ee;
 }
 
 .pop-img {
