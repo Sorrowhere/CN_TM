@@ -7,6 +7,7 @@
 .header{
   position: relative;
   height: 70px;
+  background-color: #0076be;
 }
 
 .main,.side-wrap {
@@ -17,7 +18,7 @@
 }
 
 .side-wrap {
-  width: 189px;
+  width: 200px;
   background-color: #fff;
   border-right: 1px solid #dadada;
   overflow: auto;
@@ -25,7 +26,7 @@
 }
 
 .main {
-  left: 190px;
+  left: 200px;
   bottom: 0;
   right: 0;
   overflow: auto;
@@ -36,16 +37,18 @@
 /* menu
 ----------------------------------------------------------------*/
 .menu-wrap {
-  padding: 5px 15px;
+  padding: 15px;
   position: relative;
 }
 
 
 .menu-hd {
   position: relative;
+  margin-bottom: 5px;
   color: #4d4d4d;
   font-weight: 700;
   text-align: left;
+  font-size: 14px;
   .iconfont {
     margin: 0 6px 2px 0;
     font-weight: normal;
@@ -64,13 +67,14 @@
 }
 
 .menu-lst{
+  margin-bottom: 5px;
   >li {
     margin-bottom: 4px
   }
   a {
     display: block;
-    height: 24px;
-    line-height: 24px;
+    height: 26px;
+    line-height: 23px;
     padding-left: 26px;
     border: 1px solid #fff;
     border-radius: 3px;
@@ -83,18 +87,29 @@
     &:hover {
       color: #666;
       text-decoration: none;
-      border-color: #e6e6e6;
-      background-color: #f7f7f7
+      border-color: #9fd6fd;
+      background-color: #e0f2fe
     }
   }
 }
 
 .menu-sub{
+  margin-top: 8px;
   .menu-hd{
-    padding-left: 26px;
+    padding-left: 27px;
+    margin-bottom: 8px;
+    font-size: 12px;
     font-weight: normal;
+    .iconfont{
+      position: absolute;
+      top: -2px;
+      right: 0;
+      font-weight: bold;
+      @include rotateX(180deg);
+    }
   }
   .menu-lst a{
     padding-left: 37px;
   }
+
 }
