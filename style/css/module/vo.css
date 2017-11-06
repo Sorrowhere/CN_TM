@@ -555,12 +555,12 @@ textarea:-ms-input-placeholder {
 
 .main, .side-wrap {
   position: absolute;
-  left: 0;
   top: 70px;
   bottom: 0;
 }
 
 .side-wrap {
+  left: 0;
   width: 200px;
   background-color: #fff;
   border-right: 1px solid #dadada;
@@ -570,7 +570,6 @@ textarea:-ms-input-placeholder {
 
 .main {
   left: 200px;
-  bottom: 0;
   right: 0;
   overflow: auto;
   background-color: #fafafa;
@@ -654,6 +653,122 @@ textarea:-ms-input-placeholder {
 }
 .menu-sub .menu-lst a {
   padding-left: 37px;
+}
+
+/* main
+-----------------------------------------------------------------*/
+.main-hd {
+  position: relative;
+  padding: 8px 20px;
+  border-bottom: 1px solid #cccccc;
+  color: #4c4c4c;
+  font-size: 14px;
+}
+.main-hd h2 {
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-bd {
+  width: 1140px;
+  padding: 20px;
+}
+
+/* search
+-----------------------------------------------------------------*/
+.sch {
+  width: 100%;
+  padding: 15px 0 1px 0;
+  background-color: #f2f7fa;
+  border: 1px solid #d3dde7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sch-main {
+  padding-bottom: 5px;
+  width: 1200px;
+}
+.sch-main:before, .sch-main:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.sch-main:after {
+  clear: both;
+}
+
+.sch-lst {
+  float: left;
+  max-width: 990px;
+  padding-left: 20px;
+}
+
+.sch-item {
+  float: left;
+  width: 280px;
+  margin: 0 30px 10px 0;
+  padding-left: 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sch-item-tit {
+  float: left;
+  width: 75px;
+  height: 26px;
+  line-height: 26px;
+  margin-left: -80px;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sch-item-bd {
+  position: relative;
+  width: 100%;
+}
+.sch-item-bd .sch-input {
+  height: 26px;
+  line-height: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sch-item-bd .txt-date {
+  width: 90px;
+}
+.sch-item-bd .icon-delete {
+  background-color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  /*display: none;*/
+}
+.sch-item-bd .icon-delete:hover {
+  background-position: -48px -272px;
+}
+.sch-item-bd .icon-delete:active {
+  background-position: -64px -272px;
+}
+.sch-item-bd .drop-lst {
+  width: 100%;
+  border-top: none;
+}
+.sch-item-bd .m-drop-select,
+.sch-item-bd .drop-content {
+  width: 100%;
+}
+
+.sch-btn {
+  float: left;
 }
 
 .btn {
