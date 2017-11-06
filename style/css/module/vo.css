@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-* des: TM VO interface
+* des: TM VO
 * author: liuyao
 * update: 2017/11/6
 */
@@ -524,6 +524,114 @@ textarea:-ms-input-placeholder {
 
 .iconfont-arrow-right:before {
   content: "\e787";
+}
+
+.iconfont-data:before {
+  content: "\e611";
+}
+
+.iconfont-user:before {
+  content: "\e600";
+}
+
+.iconfont-seting:before {
+  content: "\e60d";
+}
+
+.iconfont-arrow-btm:before {
+  content: "\e601";
+}
+
+/*
+* des: TM layout
+* author: liuyao
+* update: 2017/11/6
+*/
+.header {
+  position: relative;
+  height: 70px;
+}
+
+.main, .side-wrap {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  bottom: 0;
+}
+
+.side-wrap {
+  width: 189px;
+  background-color: #fff;
+  border-right: 1px solid #dadada;
+  overflow: auto;
+  z-index: 99;
+}
+
+.main {
+  left: 190px;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-color: #fafafa;
+}
+
+/* menu
+----------------------------------------------------------------*/
+.menu-wrap {
+  padding: 5px 15px;
+  position: relative;
+}
+
+.menu-hd {
+  position: relative;
+  color: #4d4d4d;
+  font-weight: 700;
+  text-align: left;
+}
+.menu-hd .iconfont {
+  margin: 0 6px 2px 0;
+  font-weight: normal;
+}
+
+.menu {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.menu-wrap div:last-child {
+  border-bottom: none;
+}
+
+.menu-lst > li {
+  margin-bottom: 4px;
+}
+.menu-lst a {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  padding-left: 26px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.menu-lst a:link, .menu-lst a:visited {
+  color: #666666;
+}
+.menu-lst a:hover {
+  color: #666;
+  text-decoration: none;
+  border-color: #e6e6e6;
+  background-color: #f7f7f7;
+}
+
+.menu-sub .menu-hd {
+  padding-left: 26px;
+  font-weight: normal;
+}
+.menu-sub .menu-lst a {
+  padding-left: 37px;
 }
 
 .btn {

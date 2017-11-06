@@ -526,6 +526,22 @@ textarea:-ms-input-placeholder {
   content: "\e787";
 }
 
+.iconfont-data:before {
+  content: "\e611";
+}
+
+.iconfont-user:before {
+  content: "\e600";
+}
+
+.iconfont-seting:before {
+  content: "\e60d";
+}
+
+.iconfont-arrow-btm:before {
+  content: "\e601";
+}
+
 .btn {
   display: inline-block;
   vertical-align: middle;

@@ -1,5 +1,5 @@
 /*
-* des: TM VO interface
+* des: TM VO
 * author: liuyao
 * update: 2017/11/6
 */
@@ -12,8 +12,14 @@
 @import "../base/atom";
 @import "../base/fonts";
 
+
+// import component css
+@import "../component/vo_layout";
+
 // import ui css
 @import "../ui/ui_button";
 @import "../ui/ui_pop";
 @import "../ui/ui_form";
 @import "../ui/ui_tab";
+
+

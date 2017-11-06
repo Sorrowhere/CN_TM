@@ -1,0 +1,100 @@
+/*
+* des: TM layout
+* author: liuyao
+* update: 2017/11/6
+*/
+
+.header{
+  position: relative;
+  height: 70px;
+}
+
+.main,.side-wrap {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  bottom: 0
+}
+
+.side-wrap {
+  width: 189px;
+  background-color: #fff;
+  border-right: 1px solid #dadada;
+  overflow: auto;
+  z-index: 99
+}
+
+.main {
+  left: 190px;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-color: #fafafa
+}
+
+
+/* menu
+----------------------------------------------------------------*/
+.menu-wrap {
+  padding: 5px 15px;
+  position: relative;
+}
+
+
+.menu-hd {
+  position: relative;
+  color: #4d4d4d;
+  font-weight: 700;
+  text-align: left;
+  .iconfont {
+    margin: 0 6px 2px 0;
+    font-weight: normal;
+  }
+}
+
+
+.menu {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb
+}
+
+.menu-wrap div:last-child {
+  border-bottom: none
+}
+
+.menu-lst{
+  >li {
+    margin-bottom: 4px
+  }
+  a {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 26px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    text-decoration: none;
+    &:link,
+    &:visited{
+      color: #666
+    }
+    &:hover {
+      color: #666;
+      text-decoration: none;
+      border-color: #e6e6e6;
+      background-color: #f7f7f7
+    }
+  }
+}
+
+.menu-sub{
+  .menu-hd{
+    padding-left: 26px;
+    font-weight: normal;
+  }
+  .menu-lst a{
+    padding-left: 37px;
+  }
+}
