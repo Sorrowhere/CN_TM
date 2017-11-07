@@ -664,10 +664,28 @@ textarea:-ms-input-placeholder {
   color: #4c4c4c;
   font-size: 14px;
 }
+.main-hd:before, .main-hd:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.main-hd:after {
+  clear: both;
+}
 .main-hd h2 {
+  float: left;
+  margin-right: 10px;
   margin-top: 3px;
   font-size: 14px;
   font-weight: 700;
+}
+.main-hd p {
+  float: left;
+  margin-top: 5px;
+  color: #999999;
+  font-size: 12px;
 }
 
 .main-bd {
@@ -680,6 +698,7 @@ textarea:-ms-input-placeholder {
 .sch {
   width: 100%;
   padding: 15px 0 1px 0;
+  margin-bottom: 30px;
   background-color: #f2f7fa;
   border: 1px solid #d3dde7;
   -webkit-box-sizing: border-box;
@@ -759,7 +778,7 @@ textarea:-ms-input-placeholder {
 }
 
 .sch-rst {
-  margin: 25px 0 5px;
+  margin-bottom: 5px;
   text-align: right;
 }
 .sch-rst strong {
@@ -1649,8 +1668,14 @@ select {
   width: 150px;
 }
 .field-bd .form-error {
+  padding-left: 20px;
   margin-top: 6px;
   color: #e04b43;
+}
+.field-bd .form-error .iconfont {
+  margin-top: -2px;
+  margin-left: -20px;
+  float: left;
 }
 .field-bd .form-error p {
   margin: 0;
@@ -2115,7 +2140,7 @@ body {
 }
 
 .fold {
-  margin: 20px 0;
+  margin-bottom: 30px;
 }
 .fold .fold-hd {
   height: 30px;
@@ -2191,10 +2216,6 @@ body {
   display: block;
 }
 
-.tab {
-  margin-top: 30px;
-}
-
 td {
   background-color: #fff;
 }
@@ -2211,4 +2232,58 @@ td {
 .product a:hover {
   color: #e04b43;
   text-decoration: none;
+}
+
+.main-bd-setting .field {
+  padding-left: 65px;
+}
+.main-bd-setting .field-tit {
+  width: 60px;
+  margin-left: -60px;
+  text-align: left;
+  line-height: 30px;
+}
+.main-bd-setting .txt {
+  width: 540px;
+  height: 30px;
+  line-height: 30px;
+}
+.main-bd-setting .setting-ope {
+  margin-top: 15px;
+}
+
+.set {
+  margin: 10px 0;
+}
+.set:before, .set:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.set:after {
+  clear: both;
+}
+.set p {
+  float: left;
+  margin-left: 10px;
+  line-height: 28px;
+  color: #999999;
+}
+
+.switch {
+  float: left;
+}
+.switch li {
+  float: left;
+  width: 45px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+.switch .on {
+  color: #fff;
+  background-color: #3ea0eb;
 }

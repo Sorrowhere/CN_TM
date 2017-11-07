@@ -102,7 +102,7 @@ body{
 
 // fold
 .fold {
-  margin:  20px 0;
+  margin-bottom: 30px;
   .fold-hd {
     height: 30px;
     line-height: 30px;
@@ -164,9 +164,6 @@ body{
 
 
 // tab
-.tab{
-  margin-top: 30px;
-}
 td{
   background-color: #fff;
 }
@@ -183,5 +180,54 @@ td{
       color:#e04b43;
       text-decoration: none;
     }
+  }
+}
+
+
+// setting
+.main-bd-setting{
+  .field{
+    padding-left: 65px;
+  }
+  .field-tit{
+    width: 60px;
+    margin-left: -60px;
+    text-align: left;
+    line-height: 30px;
+  }
+  .txt{
+    width: 540px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .setting-ope{
+    margin-top: 15px;
+  }
+}
+
+
+.set{
+  margin: 10px 0;
+  @include clearfix();
+  p{
+    float: left;
+    margin-left: 10px;
+    line-height: 28px;
+    color:$grayLight;
+  }
+}
+.switch{
+  float: left;
+  li{
+    float: left;
+    width: 45px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #e4e4e4;
+  }
+  .on{
+    color:#fff;
+    background-color: #3ea0eb;
   }
 }

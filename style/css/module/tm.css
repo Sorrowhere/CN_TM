@@ -1016,8 +1016,14 @@ select {
   width: 150px;
 }
 .field-bd .form-error {
+  padding-left: 20px;
   margin-top: 6px;
   color: #e04b43;
+}
+.field-bd .form-error .iconfont {
+  margin-top: -2px;
+  margin-left: -20px;
+  float: left;
 }
 .field-bd .form-error p {
   margin: 0;

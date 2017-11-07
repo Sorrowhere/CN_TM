@@ -79,8 +79,14 @@ select{
 
 	// error
 	.form-error{
+        padding-left: 20px;
 		margin-top: 6px;
 		color: $red;
+        .iconfont{
+          margin-top: -2px;
+          margin-left: -20px;
+          float: left;
+        }
 		& p{
 			margin: 0;
 		}
