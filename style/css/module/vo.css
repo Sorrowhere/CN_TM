@@ -2251,6 +2251,10 @@ td {
 .main-bd-setting .setting-ope {
   margin-top: 15px;
 }
+.main-bd-setting .tb-hoz {
+  width: 300px;
+  border: 1px solid #e6e6e6;
+}
 
 .set {
   margin: 10px 0;
@@ -2286,4 +2290,46 @@ td {
 .switch .on {
   color: #fff;
   background-color: #3ea0eb;
+}
+
+.bubble {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 999;
+  margin-left: -150px;
+  width: 400px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #000000\0;
+  filter: alpha(opacity=60);
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+.bubble .iconfont {
+  margin-right: 3px;
+  font-size: 32px;
+}
+.bubble .iconfont-error {
+  color: #f42;
+}
+.bubble .iconfont-success {
+  color: #4c0;
+}
+
+.pop-service .faq-set {
+  padding: 40px 50px;
+}
+
+.pop-tip {
+  width: 430px;
+  font-size: 14px;
+}
+.pop-tip .pop-bd {
+  padding: 40px 50px;
+}
+.pop-tip .iconfont-information {
+  font-size: 18px;
+  color: #fb982a;
 }

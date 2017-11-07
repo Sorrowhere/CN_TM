@@ -203,6 +203,10 @@ td{
   .setting-ope{
     margin-top: 15px;
   }
+  .tb-hoz{
+    width: 300px;
+    border: 1px solid #e6e6e6;
+  }
 }
 
 
@@ -229,5 +233,54 @@ td{
   .on{
     color:#fff;
     background-color: #3ea0eb;
+  }
+}
+
+
+
+// bubble
+.bubble{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 999;
+  margin-left: -150px;
+  width: 400px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  @if($ie8){
+    background-color: #000000\0;
+    filter:alpha(opacity=60);
+  }
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  .iconfont{
+    margin-right: 3px;
+    font-size: 32px;
+  }
+  .iconfont-error{
+    color: #f42;
+  }
+  .iconfont-success{
+    color: #4c0;
+  }
+}
+
+// 提示
+.pop-service{
+  .faq-set{
+    padding: 40px 50px;
+  }
+}
+.pop-tip{
+  width: 430px;
+  font-size: 14px;
+  .pop-bd{
+    padding: 40px 50px;
+  }
+  .iconfont-information{
+    font-size: 18px;
+    color: #fb982a;
   }
 }
