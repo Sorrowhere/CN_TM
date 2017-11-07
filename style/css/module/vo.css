@@ -745,19 +745,6 @@ textarea:-ms-input-placeholder {
 .sch-item-bd .txt-date {
   width: 90px;
 }
-.sch-item-bd .icon-delete {
-  background-color: #fff;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  /*display: none;*/
-}
-.sch-item-bd .icon-delete:hover {
-  background-position: -48px -272px;
-}
-.sch-item-bd .icon-delete:active {
-  background-position: -64px -272px;
-}
 .sch-item-bd .drop-lst {
   width: 100%;
   border-top: none;
@@ -769,6 +756,41 @@ textarea:-ms-input-placeholder {
 
 .sch-btn {
   float: left;
+}
+
+.sch-rst {
+  margin: 25px 0 5px;
+  text-align: right;
+}
+.sch-rst strong {
+  color: #e04b43;
+}
+
+/* drop-lst
+----------------------------------------------------------------*/
+.drop-lst {
+  box-sizing: border-box;
+  min-width: 188px;
+  height: 132px;
+  background-color: #FFF;
+  border: 1px solid #cccccc;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  z-index: 199;
+}
+
+.drop-lst span {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  color: #333333;
+}
+
+.drop-lst .highlight, .drop-lst span:hover {
+  text-decoration: none;
+  background-color: #e1edfa;
 }
 
 .btn {
@@ -1278,6 +1300,211 @@ select {
 
 .tab-con {
   padding: 40px 50px 0;
+}
+
+table {
+  width: 100%;
+}
+table th {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+}
+table td {
+  padding: 10px;
+}
+
+.tb-fixed {
+  table-layout: fixed;
+}
+
+.tb th {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #e6e6e6;
+}
+.tb td {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.tb-border {
+  border: 1px solid #d9d9d9;
+}
+.tb-border th, .tb-border td {
+  border: 1px solid #e6e6e6;
+}
+
+/*
+* @des site page style
+* @author liw
+* @update 2013-08-13
+*/
+.page {
+  margin: 25px auto 0;
+  color: #333;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.page a:link,
+.page a:visited {
+  color: #333;
+}
+
+.page a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* page amount */
+.page .pageAmount {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+}
+
+.page .pageAmount a,
+.page .pageAmount span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.page .pageAmount .now,
+.page .pageAmount a:hover {
+  border: 1px solid #dadada;
+  background: #f0f0f0;
+  text-decoration: none;
+  color: #333;
+}
+
+/* page nav */
+.page-nav-lst {
+  float: right;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 10px;
+  word-spacing: -4px;
+  display: table;
+}
+
+.page-nav a,
+.page-nav .lnk {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 9px;
+  margin-left: -1px;
+  text-align: center;
+  font-family: Arial;
+  border: 1px solid #dadada;
+  font-weight: bold;
+  vertical-align: middle;
+  *display: inline;
+  *height: 23px;
+  *line-height: 23px;
+  *zoom: 1;
+  *margin-left: 0;
+  word-spacing: 0;
+  /*clear inline-block margin*/
+}
+
+.page-nav-lst .now,
+.page-nav-lst .now:hover {
+  background: #1770b4;
+  color: #fff;
+  border-color: #1770b4;
+  text-decoration: none;
+}
+
+.page-nav-lst a:hover {
+  background: #f0f0f0;
+  border-color: #dadada;
+  color: #333;
+  text-decoration: none;
+}
+
+.page-nav-lst .now:link,
+.page-nav-lst .now:visited {
+  color: #fff;
+  cursor: default;
+}
+
+.page-nav-lst .now:hover {
+  text-decoration: none;
+}
+
+.page-nav-lst .nextPage,
+.page-nav-lst .prePage,
+.page-nav .pageBtn {
+  background-color: #f6f6f6;
+  border: 1px solid #dadada;
+  font-weight: normal;
+}
+
+.page-nav-lst .nextPage:hover,
+.page-nav-lst .prePage:hover,
+.page-nav .pageBtn:hover {
+  background: #f6f6f6;
+  border-color: #dadada;
+}
+
+.page-nav-lst .prePage {
+  *margin-right: -3px;
+}
+
+.page-nav-form {
+  float: right;
+  line-height: 26px;
+  vertical-align: middle;
+}
+
+.page-nav-form .txt-mini {
+  width: 36px;
+  margin: 0 3px;
+}
+
+.page-nav-form .pageBtn {
+  height: 26px;
+  line-height: 24px;
+  padding: 0 6px;
+  margin: 0;
+  color: #666;
+  outline: none;
+  cursor: pointer;
+}
+
+.page-nav-form .pageBtn:hover {
+  text-decoration: none;
+}
+
+.page-nav-form .text {
+  height: 22px;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+  padding: 0 2px;
+  overflow: hidden;
+}
+
+.page-nav-form .txt {
+  height: 24px;
+  line-height: 24px;
+}
+
+#goToPageSpan {
+  display: inline-block;
+}
+
+/*page-primary*/
+.page-primary .page-nav-lst a.now {
+  border-color: #e41b2e;
+  background-color: #e41b2e;
+}
+
+.page-primary .page-nav-lst a.now:hover {
+  background-color: #e41b2e;
 }
 
 body {

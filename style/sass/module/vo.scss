@@ -21,9 +21,13 @@
 @import "../ui/ui_pop";
 @import "../ui/ui_form";
 @import "../ui/ui_tab";
+@import "../ui/ui_table";
+@import "../ui/ui_pager";
 
 
 body{
   font-family: $fontYaHei;
 }
 
+.data-view{
+}

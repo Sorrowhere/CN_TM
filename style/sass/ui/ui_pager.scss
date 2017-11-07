@@ -34,7 +34,7 @@
   height: 20px;
   line-height: 18px;
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 .page .pageAmount .now,
@@ -147,7 +147,7 @@
 
 .page-nav-form .text {
   height: 22px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   overflow: hidden;
   padding: 0 2px;
   overflow: hidden;
@@ -167,7 +167,6 @@
   border-color: #e41b2e;
   background-color: #e41b2e;
 }
-
 .page-primary .page-nav-lst a.now:hover {
   background-color: #e41b2e;
 }

@@ -119,8 +119,12 @@
                                 <div class="sch-item-bd">
                                     <input type="text" class="txt sch-input" placeholder="">
 
-                                    <div class="drop-lst-wrap input-style-drop-wrap js-suggest" style="display:none">
-                                        <ul class="drop-lst"></ul>
+                                    <div class="drop-lst-wrap input-style-drop-wrap js-suggest" style="display:block">
+                                        <ul class="drop-lst">
+                                            <li>
+                                                <span>123</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </li>
@@ -149,7 +153,6 @@
 
                                 <div class="sch-item-bd js-item-content">
                                     <input type="text" class="txt sch-input">
-                                    <i class="icon icon-delete js-remove-value" style="display: none;"></i>
                                 </div>
                             </li>
                             <li class="sch-item" >
@@ -167,9 +170,82 @@
                             <button type="submit" class="btn btn-s btn-info">查询</button>
                         </div>
                     </div>
+                </div>
                 <!-- E search-->
 
-            </div>
+
+                <div class="sch-rst">
+                    共 <strong>X</strong> 条信息
+                </div>
+
+                <div class="data-view">
+                    <table class="tb tb-border">
+                        <colgroup>
+                            <col width="200"/>
+                            <col width="100"/>
+                            <col width="200"/>
+                            <col width="100"/>
+                            <col width="150"/>
+                            <col width="120"/>
+                            <col width="120"/>
+                            <col width="100"/>
+                        </colgroup>
+                        <tr>
+                            <th>客户名称</th>
+                            <th>客户类型</th>
+                            <th>公司名称</th>
+                            <th>联系电话</th>
+                            <th>联系邮箱</th>
+                            <th>最近对话时间</th>
+                            <th>首次联系时间</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>客户名称</td>
+                            <td>客户类型</td>
+                            <td>公司名称</td>
+                            <td>联系电话</td>
+                            <td>联系邮箱</td>
+                            <td>最近对话时间</td>
+                            <td>首次联系时间</td>
+                            <td>
+                                <a href="" class="mr10">洽谈</a>
+                                <a href="user_detail.html">查看</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <!-- S pager-->
+                <div class="page">
+                    <div class="pageAmount">
+                        <a href="">10</a>
+                        <a href="" class="now">30</a>
+                        <a href="">50</a>
+                    </div>
+                    <div class="page-nav">
+                        <div class="page-nav-form">
+                            <form action="">
+                                <input type="hidden" class="" value="2"> 共
+                                <span id="pageCountNumber" class="ml5">13</span>页
+                                调至第<input type="text" class="txt txt-mini">页
+                                <a href="" class="pageBtn">确定</a>
+                            </form>
+                        </div>
+                        <div class="page-nav-lst">
+                            <a href="" class="prePage" title="翻至上一页">上一页</a>
+                            <a href="" class="now">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="">5</a>
+                            <a href="" class="nextPage" title="翻至下一页">下一页</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- E pager-->
 
 
         </div>
@@ -177,8 +253,9 @@
     <!-- S main-wrap-->
 
 </div>
-<!-- E header-->
+    <!-- E main-wrap-->
 
-
+</div>
+<!-- E content-->
 </body>
 </html>
