@@ -114,21 +114,6 @@
                 <div class="sch-main">
                     <ul class="sch-lst">
                         <li class="sch-item">
-                            <span class="sch-item-tit">公司名称</span>
-
-                            <div class="sch-item-bd">
-                                <input type="text" class="txt sch-input" placeholder="">
-
-                                <div class="drop-lst-wrap input-style-drop-wrap js-suggest" style="display:block">
-                                    <ul class="drop-lst">
-                                        <li>
-                                            <span>123</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="sch-item">
                             <span class="sch-item-tit">最近对话时间</span>
 
                             <div class="sch-item-bd flt-date">
@@ -138,41 +123,92 @@
                             </div>
                         </li>
                         <li class="sch-item">
-                            <span class="sch-item-tit">联系电话</span>
+                            <span class="sch-item-tit">内容</span>
 
-                            <div class="sch-item-bd js-item-content">
-                                <input type="text" class="txt sch-input">
+                            <div class="sch-item-bd">
+                                <input type="text" class="txt sch-input" placeholder="">
 
-                                <div class="drop-lst-wrap input-style-drop-wrap js-suggest" style="display:none">
-                                    <ul class="drop-lst"></ul>
-                                </div>
+
                             </div>
                         </li>
                         <li class="sch-item">
-                            <span class="sch-item-tit">联系邮箱</span>
+                            <span class="sch-item-tit">联系客服</span>
 
                             <div class="sch-item-bd js-item-content">
-                                <input type="text" class="txt sch-input">
-                            </div>
-                        </li>
-                        <li class="sch-item" >
-                            <span class="sch-item-tit">首次联系时间</span>
-
-                            <div class="sch-item-bd flt-date">
-                                <input type="text" class="txt txt-date" readonly="">
-                                <span> - </span>
-                                <input type="text" class="txt txt-date" readonly="">
+                                <select class="sch-input" name="" id="">
+                                    <option value="">管理员</option>
+                                </select>
                             </div>
                         </li>
 
                     </ul>
                     <div class="sch-btn">
                         <button type="submit" class="btn btn-s btn-info">查询</button>
+                        <button type="submit" class="btn btn-s btn-blank">重置</button>
                     </div>
                 </div>
             </div>
             <!-- E search-->
 
+            <div class="msg-wrap">
+
+                <div class="msg-record">
+                    <div class="hd">对话消息</div>
+                    <div class="bd">
+
+                        <dl class="msg">
+                            <dt>老王 2017-10-10 20:00:13</dt>
+                            <dd>你老公今晚加班不？</dd>
+                        </dl>
+
+                        <dl class="msg">
+                            <dt>小红 2017-10-10 20:00:13</dt>
+                            <dd>我家大门常打开，开放怀抱等你</dd>
+                        </dl>
+
+                    </div>
+                    <div class="msg-ft">
+                        <div class="pager-nav">
+                            <i class="iconfont iconfont-pre"></i>
+                            <i class="iconfont iconfont-arrow-left"></i>
+                            第 <input type="text" class="txt-mini"> 页/32页
+                            <i class="iconfont iconfont-arrow-right"></i>
+                            <i class="iconfont iconfont-next"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="user-info">
+                    <div class="hd">客户信息</div>
+                    <div class="bd">
+                        <ul class="info-lst">
+                            <li>
+                                <span class="tit">客户名称：</span>
+                                隔壁老王
+                            </li>
+                            <li>
+                                <span class="tit">公司名称：</span>
+                                绿帽有限公司
+                            </li>
+                            <li>
+                                <span class="tit">客户类型：</span>
+                                优质客户(多次联系)
+                            </li>
+                            <li>
+                                <span class="tit">联系电话：</span>
+                                132222222222
+                            </li>
+                            <li>
+                                <span class="tit">客户邮箱：</span>
+                                123222@tantan.com
+                            </li>
+                        </ul>
+                        <a class="btn btn-xl btn-info" href="">开始洽谈</a>
+                    </div>
+                </div>
+
+            </div>
 
 
 

@@ -671,7 +671,7 @@ textarea:-ms-input-placeholder {
 }
 
 .main-bd {
-  width: 1140px;
+  width: 1200px;
   padding: 20px;
 }
 
@@ -1509,4 +1509,82 @@ table td {
 
 body {
   font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+/* msg-detail
+-------------------------------------------------------------*/
+.msg-wrap {
+  margin: 20px 0;
+}
+.msg-wrap:before, .msg-wrap:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.msg-wrap:after {
+  clear: both;
+}
+
+.msg-record,
+.user-info {
+  height: 534px;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+}
+
+.hd {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+}
+
+.bd {
+  padding: 20px;
+  overflow: auto;
+}
+
+.msg-record {
+  float: left;
+  width: 800px;
+}
+.msg-record .bd {
+  height: 450px;
+}
+.msg-record .msg-ft {
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+.msg-record .msg {
+  margin-bottom: 15px;
+}
+.msg-record .msg dt {
+  margin-bottom: 3px;
+  color: #999999;
+}
+.msg-record .msg dd {
+  font-size: 14px;
+}
+
+.user-info {
+  float: right;
+  width: 320px;
+  margin-left: 20px;
+}
+.user-info .info-lst {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.user-info .info-lst li {
+  line-height: 26px;
+}
+.user-info .info-lst .tit {
+  color: #999999;
+}
+.user-info .btn-xl {
+  width: 100%;
 }

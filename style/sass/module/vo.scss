@@ -29,5 +29,71 @@ body{
   font-family: $fontYaHei;
 }
 
-.data-view{
+
+/* msg-detail
+-------------------------------------------------------------*/
+.msg-wrap{
+  margin: 20px 0;
+  @include clearfix();
+}
+.msg-record,
+.user-info{
+  height: 534px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+
+.hd{
+  height: 38px;
+  line-height: 38px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+.bd{
+  padding: 20px;
+  overflow: auto;
+}
+
+.msg-record{
+  float: left;
+  width: 800px;
+
+  .bd{
+    height: 450px;
+  }
+  .msg-ft{
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  .msg{
+    margin-bottom: 15px;
+    dt{
+      margin-bottom: 3px;
+      color: $grayLight;
+    }
+    dd{
+      font-size: 14px;
+    }
+  }
+}
+.user-info{
+  float: right;
+  width: 320px;
+  margin-left: 20px;
+  .info-lst{
+    margin-bottom: 30px;
+    font-size: 14px;
+    li{
+      line-height: 26px;
+    }
+    .tit{
+      color:$grayLight;
+    }
+  }
+  .btn-xl{
+    width: 100%;
+  }
 }
