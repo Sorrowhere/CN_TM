@@ -17,97 +17,356 @@
 <!-- S content-->
 <div class="content">
 
-    <!-- S side-wrap-->
-    <div class="side-wrap">
-        <div class="menu-wrap">
-            <div class="menu">
-                <div class="menu-hd">
-                    <i class="iconfont iconfont-user"></i>
-                    客户管理
-                </div>
-                <div class="menu-bd">
-                    <ul class="menu-lst">
-                        <li>
-                            <a href="user.html">客户对话信息</a>
-                        </li>
-                    </ul>
-                </div>
-            </div><!-- /menu -->
-            <div class="menu">
-                <div class="menu-hd">
-                    <i class="iconfont iconfont-data"></i>
-                    数据统计
-                </div>
-                <div class="menu-sub">
-                    <div class="menu-hd">
-                        业务统计
-                        <i class="iconfont iconfont-arrow-btm"></i>
-                    </div>
-                    <div class="menu-bd">
-                        <ul class="menu-lst">
-                            <li>
-                                <a href="data_amount.html">对话量</a>
-                            </li>
-                            <li>
-                                <a href="data_time.html">对话时段</a>
-                            </li>
-                            <li>
-                                <a href="data_area.html">客户分布</a>
-                            </li>
-                            <li>
-                                <a href="data_actor.html">客户行为</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- /menu-sub -->
-
-                <div class="menu-sub">
-                    <div class="menu-hd">
-                        客服统计
-                        <i class="iconfont iconfont-arrow-btm"></i>
-                    </div>
-                    <div class="menu-bd">
-                        <ul class="menu-lst">
-                            <li>
-                                <a href="data_service.html">客服业绩</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- /menu-sub -->
-
-            </div><!-- /menu -->
-            <div class="menu">
-                <div class="menu-hd">
-                    <i class="iconfont iconfont-seting"></i>
-                    设置
-                </div>
-                <div class="menu-bd">
-                    <ul class="menu-lst">
-                        <li>
-                            <a href="service.html">客服设置</a>
-                        </li>
-                    </ul>
-                </div>
-            </div><!-- /menu -->
-        </div>
-    </div>
-    <!-- S side-wrap-->
-
-
-    <!-- S main-wrap-->
-    <div class="main-wrap">
-        <div class="main">
-            <div class="main-hd">
-                <h2>标题</h2>
+<!-- S side-wrap-->
+<div class="side-wrap">
+    <div class="menu-wrap">
+        <div class="menu">
+            <div class="menu-hd">
+                <i class="iconfont iconfont-user"></i>
+                客户管理
             </div>
+            <div class="menu-bd">
+                <ul class="menu-lst">
+                    <li>
+                        <a href="user.html">客户对话信息</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /menu -->
+        <div class="menu">
+            <div class="menu-hd">
+                <i class="iconfont iconfont-data"></i>
+                数据统计
+            </div>
+            <div class="menu-sub">
+                <div class="menu-hd">
+                    业务统计
+                    <i class="iconfont iconfont-arrow-btm"></i>
+                </div>
+                <div class="menu-bd">
+                    <ul class="menu-lst">
+                        <li>
+                            <a href="data_amount.html">对话量</a>
+                        </li>
+                        <li>
+                            <a href="data_time.html">对话时段</a>
+                        </li>
+                        <li>
+                            <a href="data_area.html">客户分布</a>
+                        </li>
+                        <li>
+                            <a href="data_actor.html">客户行为</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /menu-sub -->
+
+            <div class="menu-sub">
+                <div class="menu-hd">
+                    客服统计
+                    <i class="iconfont iconfont-arrow-btm"></i>
+                </div>
+                <div class="menu-bd">
+                    <ul class="menu-lst">
+                        <li>
+                            <a href="data_service.html">客服业绩</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /menu-sub -->
+
+        </div>
+        <!-- /menu -->
+        <div class="menu">
+            <div class="menu-hd">
+                <i class="iconfont iconfont-seting"></i>
+                设置
+            </div>
+            <div class="menu-bd">
+                <ul class="menu-lst">
+                    <li>
+                        <a href="service.html">客服设置</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /menu -->
+    </div>
+</div>
+<!-- S side-wrap-->
+
+
+<!-- S main-wrap-->
+<div class="main-wrap">
+    <div class="main">
+        <div class="main-hd">
+            <h2>客服业绩</h2>
+        </div>
+
+
+        <div class="main-bd">
+
+            <!-- S search-->
+            <div class="sch sch-default">
+                <div class="sch-main">
+                    <ul class="sch-lst">
+                        <li class="sch-item">
+                            <span class="sch-item-tit">日期</span>
+
+                            <div class="sch-item-bd js-item-content">
+                                <select class="sch-input" name="" id="">
+                                    <option value="">最近30天</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="sch-item">
+                            <span class="sch-item-tit">接待客服</span>
+
+                            <div class="sch-item-bd js-item-content">
+                                <select class="sch-input" name="" id="">
+                                    <option value="">全部</option>
+                                </select>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="sch-btn">
+                        <button type="submit" class="btn btn-s btn-info">查询</button>
+                    </div>
+                </div>
+            </div>
+            <!-- E search-->
+
+
+
+
+            <ul class="tab tab-primary">
+                <li class="on"><a href="javascript:void(0)">客户量</a></li>
+                <li><a href="javascript:void(0)">对话量</a></li>
+            </ul>
+            <div class="tab-con">
+                <div class="tab-node on">
+                    <div class="chart">
+                        此处应有图表
+                    </div>
+
+                    <table class="tb tb-border">
+                        <colgroup>
+                            <col width="60"/>
+                            <col width="55"/>
+                            <col width="70"/>
+                            <col width="70"/>
+                            <col width="70"/>
+                            <col width="115"/>
+                            <col width="85"/>
+                            <col width="105"/>
+                            <col width="65"/>
+                            <col width="70"/>
+                        </colgroup>
+                        <tr>
+                            <th>客服名称</th>
+                            <th>
+                                客户量
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                接收消息量
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                发送消息量
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                未回复人数
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                平均首次响应时间(分钟)
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                登录时长(分钟)
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                平均日登录时长(分钟)
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                登录次数
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>
+                                接收消息量
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>隔壁老王</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>100</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-node">
+                    <table class="tb tb-border">
+                        <colgroup>
+                            <col width="100"/>
+                            <col />
+                            <col width="150"/>
+                        </colgroup>
+                        <tr>
+                            <th>排名</th>
+                            <th>产品明细</th>
+                            <th>
+                                咨询次数
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="product">
+                                <a href="" target="_blank">
+                                    <img src="../img/pic_default.jpg" alt=""/>
+                                    现货供应
+                                </a>
+                            </td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
         </div>
     </div>
     <!-- S main-wrap-->
 
 </div>
-<!-- E header-->
+<!-- E main-wrap-->
 
-
-
+</div>
+<!-- E content-->
 </body>
 </html>
