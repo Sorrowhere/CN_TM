@@ -552,6 +552,13 @@ textarea:-ms-input-placeholder {
   height: 70px;
   background-color: #0076be;
 }
+.header h1 {
+  width: 200px;
+  padding-left: 10px;
+}
+.header h1 img {
+  width: 100%;
+}
 
 .main, .side-wrap {
   position: absolute;

@@ -8,6 +8,13 @@
   position: relative;
   height: 70px;
   background-color: #0076be;
+  h1{
+    width: 200px;
+    padding-left: 10px;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 .main, .side-wrap {
