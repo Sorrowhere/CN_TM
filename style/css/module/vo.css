@@ -10231,22 +10231,22 @@ body {
 }
 
 .msg-record .bd {
-  height: 450px;
+  height: 650px;
 }
 .msg-record .loading {
   padding-top: 100px;
   font-size: 24px;
   text-align: center;
 }
-.msg-record .msg-ft {
-  padding: 10px;
-  background-color: #f2f2f2;
+.msg-record .msg-more {
+  margin-bottom: 10px;
   text-align: center;
-  cursor: pointer;
+}
+.msg-record .msg-more a {
   color: #06b;
 }
-.msg-record .msg-ft .iconfont-arrow-btm {
-  vertical-align: -1px;
+.msg-record .msg-more a:hover {
+  color: #e04b43;
 }
 .msg-record .msg {
   margin-bottom: 15px;
