@@ -9,7 +9,7 @@
 
 <!-- S header-->
 <div class="header">
-    <h1><img src="../img/logo.png" alt=""/></h1>
+
 </div>
 <!-- E header-->
 
@@ -54,6 +54,9 @@
                             </li>
                             <li>
                                 <a href="data_actor.html">客户行为</a>
+                            </li>
+                            <li>
+                                <a href="hot_product.html">热门咨询产品</a>
                             </li>
                         </ul>
                     </div>
@@ -100,7 +103,7 @@
     <div class="main-wrap">
         <div class="main">
             <div class="main-hd">
-                <h2>客户对话信息</h2>
+                <h2>热门咨询产品TOP10</h2>
             </div>
 
 
@@ -111,36 +114,21 @@
                     <div class="sch-main">
                         <ul class="sch-lst">
                             <li class="sch-item">
-                                <span class="sch-item-tit">公司名称</span>
+                                <span class="sch-item-tit">日期</span>
 
-                                <div class="sch-item-bd">
-                                    <input type="text" class="txt sch-input" placeholder="">
-
-                                    <div class="drop-lst-wrap input-style-drop-wrap js-suggest" style="display:block">
-                                        <ul class="drop-lst">
-                                            <li>
-                                                <span>123</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="sch-item-bd js-item-content">
+                                    <select class="sch-input" name="" id="">
+                                        <option value="">最近30天</option>
+                                    </select>
                                 </div>
                             </li>
+
                             <li class="sch-item">
-                                <span class="sch-item-tit">最近对话时间</span>
-
-                                <div class="sch-item-bd flt-date">
-                                    <input type="text" class="txt txt-date" readonly="">
-                                    <span> - </span>
-                                    <input type="text" class="txt txt-date" readonly="">
-                                </div>
-                            </li>
-                            <li class="sch-item" >
-                                <span class="sch-item-tit">首次联系时间</span>
-
-                                <div class="sch-item-bd flt-date">
-                                    <input type="text" class="txt txt-date" readonly="">
-                                    <span> - </span>
-                                    <input type="text" class="txt txt-date" readonly="">
+                                <span class="sch-item-tit">时间段</span>
+                                <div class="sch-item-bd js-item-content">
+                                    <input class="txt txt-date" type="text"/>
+                                    -
+                                    <input class="txt txt-date" type="text"/>
                                 </div>
                             </li>
 
@@ -153,76 +141,61 @@
                 <!-- E search-->
 
 
-                <div class="sch-rst">
-                    共 <strong>X</strong> 条信息
-                </div>
+
+
 
                 <div class="data-view">
                     <table class="tb tb-border">
                         <colgroup>
-                            <col width=""/>
-                            <col width=""/>
-                            <col width="160"/>
-                            <col width="160"/>
-                            <col width="100"/>
+                            <col width="50">
+                            <col width="">
+                            <col width="160">
                         </colgroup>
-                        <tr>
-                            <th>客户名称</th>
-                            <th>公司名称</th>
-                            <th>最近对话时间</th>
-                            <th>首次联系时间</th>
-                            <th>操作</th>
+                        <tbody><tr>
+                            <th class="tac">排名</th>
+                            <th>产品明细</th>
+                            <th>
+                                咨询次数
+                                <div class="m-poptip">
+                                    <i class="iconfont iconfont-feedback"></i>
+                                    <div class="poptip poptip-warn">
+                                        <div class="poptip-bd">
+                                            弹出提示框
+                                        </div>
+                                        <span class="poptip-close">×</span>
+                                            <span class="arrow arrow-bottom">
+                                                <span class="arrow arrow-in"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </th>
                         </tr>
                         <tr>
-                            <td>客户名称</td>
-                            <td>公司名称</td>
-                            <td>最近对话时间</td>
-                            <td>首次联系时间</td>
+                            <td class="tac">1</td>
                             <td>
-                                <a href="" class="mr10">洽谈</a>
-                                <a href="user_detail.html">查看</a>
+
+                                <dl class="prod-show">
+                                    <dt>
+                                        <img src="../img/avatar.jpg" alt=""/>
+                                    </dt>
+                                    <dd>
+                                        <a href="" target="_blank">产品名称介绍</a>
+                                    </dd>
+                                </dl>
+
                             </td>
+                            <td>12</td>
                         </tr>
-                    </table>
+                        </tbody></table>
                 </div>
+                <!-- /fold -->
 
 
-
-                <!-- S pager-->
-                <div class="page">
-                    <div class="pageAmount">
-                        <a href="">10</a>
-                        <a href="" class="now">30</a>
-                        <a href="">50</a>
-                    </div>
-                    <div class="page-nav">
-                        <div class="page-nav-form">
-                            <form action="">
-                                <input type="hidden" class="" value="2"> 共
-                                <span id="pageCountNumber" class="ml5">13</span>页
-                                调至第<input type="text" class="txt txt-mini">页
-                                <a href="" class="pageBtn">确定</a>
-                            </form>
-                        </div>
-                        <div class="page-nav-lst">
-                            <a href="" class="prePage" title="翻至上一页">上一页</a>
-                            <a href="" class="now">1</a>
-                            <a href="">2</a>
-                            <a href="">3</a>
-                            <a href="">4</a>
-                            <a href="">5</a>
-                            <a href="" class="nextPage" title="翻至下一页">下一页</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- E pager-->
-
-
+            </div>
         </div>
-    </div>
-    <!-- S main-wrap-->
+        <!-- S main-wrap-->
 
-</div>
+    </div>
     <!-- E main-wrap-->
 
 </div>

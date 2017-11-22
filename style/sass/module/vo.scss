@@ -40,7 +40,6 @@ body{
 }
 .msg-record,
 .user-info{
-  height: 534px;
   border: 1px solid #ccc;
   background-color: #fff;
 }
@@ -60,25 +59,37 @@ body{
 }
 
 .msg-record{
-  float: left;
-  width: 800px;
-
   .bd{
     height: 450px;
   }
-  .msg-ft{
+  .loading{
+    padding-top: 100px;
+    font-size: 24px;
+    text-align: center;
+  }.msg-ft{
     padding: 10px;
     background-color: #f2f2f2;
+    text-align: center;
+    cursor: pointer;
+    color:#06b;
+    .iconfont-arrow-btm{
+      vertical-align: -1px;
+    }
   }
   .msg{
     margin-bottom: 15px;
     dt{
       margin-bottom: 3px;
-      color: $grayLight;
     }
     dd{
       font-size: 14px;
     }
+  }
+  .msg-in dt{
+    color: green;
+  }
+  .msg-out dt{
+    color: #06b;
   }
 }
 .user-info{
@@ -98,6 +109,22 @@ body{
   .btn-xl{
     width: 100%;
   }
+}
+
+.prod-show{
+  overflow: hidden;
+  padding-left: 110px;
+  dt{
+    float: left;
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: -110px;
+    text-align: center;
+    img{
+      width: 100%;
+    }
+  }
+
 }
 
 
