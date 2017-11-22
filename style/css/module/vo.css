@@ -10480,6 +10480,10 @@ td {
 .pop-service .faq-set {
   padding: 40px 50px;
 }
+.pop-service .txt,
+.pop-service textarea {
+  width: 100%;
+}
 
 .pop-tip {
   width: 430px;
