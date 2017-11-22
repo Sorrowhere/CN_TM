@@ -583,6 +583,15 @@ body{
           background-color: #f7f7f7;
         }
       }
+      .mate-status-online{
+        color:#7c0;
+      }
+      .mate-status-busy{
+        color:#c03;
+      }
+      .mate-status-afk{
+        color: $grayLight;
+      }
     }
   }
 

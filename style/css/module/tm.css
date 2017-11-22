@@ -1771,6 +1771,15 @@ body {
 .chat-edit .toolbar .mate-lst li:hover {
   background-color: #f7f7f7;
 }
+.chat-edit .toolbar .mate-lst .mate-status-online {
+  color: #7c0;
+}
+.chat-edit .toolbar .mate-lst .mate-status-busy {
+  color: #c03;
+}
+.chat-edit .toolbar .mate-lst .mate-status-afk {
+  color: #999999;
+}
 .chat-edit .edit-box {
   height: 80px;
   overflow-y: auto;
