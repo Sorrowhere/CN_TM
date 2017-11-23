@@ -1620,7 +1620,11 @@ body {
   margin-top: 5px;
 }
 .chat-area-bd .msg .content .transfer .iconfont-user {
+  padding: 3px;
   margin-right: 5px;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: #fff;
   font-size: 24px;
 }
 .chat-area-bd .msg-in {
