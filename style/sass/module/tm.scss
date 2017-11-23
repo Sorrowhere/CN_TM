@@ -420,6 +420,22 @@ body{
           color: #f42;
         }
       }
+      .transfer{
+        dt{
+          font-size: 14px;
+          font-weight: bold;
+        }
+        dd{
+          padding-left: 28px;
+          text-align: right;
+          margin-top: 5px;
+        }
+        .iconfont-user{
+          margin-right: 5px;
+          font-size: 24px;
+        }
+      }
+
     }
   }
 

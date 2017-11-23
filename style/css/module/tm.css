@@ -1610,6 +1610,19 @@ body {
 .chat-area-bd .msg .content .msg-status .iconfont-delete {
   color: #f42;
 }
+.chat-area-bd .msg .content .transfer dt {
+  font-size: 14px;
+  font-weight: bold;
+}
+.chat-area-bd .msg .content .transfer dd {
+  padding-left: 28px;
+  text-align: right;
+  margin-top: 5px;
+}
+.chat-area-bd .msg .content .transfer .iconfont-user {
+  margin-right: 5px;
+  font-size: 24px;
+}
 .chat-area-bd .msg-in {
   padding-left: 50px;
   float: left;
