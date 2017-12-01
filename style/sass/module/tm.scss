@@ -430,6 +430,10 @@ body{
           text-align: right;
           margin-top: 5px;
         }
+        img{
+          max-width: 60px;
+          border-radius: 50%;
+        }
         .iconfont-user{
           padding: 3px;
           margin-right: 5px;
@@ -975,6 +979,10 @@ body{
     .iconfont-user{
       font-size:32px;
       color:#4498ee;
+    }
+    img{
+      max-width: 60px;
+      border-radius: 50%;
     }
   }
 }

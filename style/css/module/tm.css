@@ -1619,6 +1619,10 @@ body {
   text-align: right;
   margin-top: 5px;
 }
+.chat-area-bd .msg .content .transfer img {
+  max-width: 60px;
+  border-radius: 50%;
+}
 .chat-area-bd .msg .content .transfer .iconfont-user {
   padding: 3px;
   margin-right: 5px;
@@ -2141,6 +2145,10 @@ body {
 .pop-tip .mate-txt .iconfont-user {
   font-size: 32px;
   color: #4498ee;
+}
+.pop-tip .mate-txt img {
+  max-width: 60px;
+  border-radius: 50%;
 }
 
 .pop-img {
