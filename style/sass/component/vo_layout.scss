@@ -87,12 +87,13 @@
     &:visited {
       color: #666
     }
-    &:hover {
-      color: #666;
-      text-decoration: none;
-      border-color: #9fd6fd;
-      background-color: #e0f2fe
-    }
+  }
+  .on,
+  a:hover{
+    color: #666;
+    text-decoration: none;
+    border-color: #9fd6fd;
+    background-color: #e0f2fe;
   }
 }
 

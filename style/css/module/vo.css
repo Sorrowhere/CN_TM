@@ -8757,6 +8757,7 @@ textarea:-ms-input-placeholder {
 .menu-lst a:link, .menu-lst a:visited {
   color: #666666;
 }
+.menu-lst .on,
 .menu-lst a:hover {
   color: #666;
   text-decoration: none;
