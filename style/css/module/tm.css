@@ -1610,9 +1610,17 @@ body {
 .chat-area-bd .msg .content .msg-status .iconfont-delete {
   color: #f42;
 }
+.chat-area-bd .msg .content .transfer {
+  min-width: 210px;
+  max-width: 280px;
+}
 .chat-area-bd .msg .content .transfer dt {
   font-size: 14px;
   font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .chat-area-bd .msg .content .transfer dd {
   padding-left: 28px;

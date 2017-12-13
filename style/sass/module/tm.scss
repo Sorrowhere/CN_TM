@@ -421,9 +421,15 @@ body{
         }
       }
       .transfer{
+        min-width: 210px;
+        max-width: 280px;
         dt{
           font-size: 14px;
           font-weight: bold;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
         dd{
           padding-left: 28px;
