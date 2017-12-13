@@ -1615,12 +1615,13 @@ body {
   max-width: 280px;
 }
 .chat-area-bd .msg .content .transfer dt {
-  font-size: 14px;
-  font-weight: bold;
   width: 100%;
+  height: 60px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: bold;
 }
 .chat-area-bd .msg .content .transfer dd {
   padding-left: 28px;
