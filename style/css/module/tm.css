@@ -1808,6 +1808,9 @@ body {
   color: #c03;
 }
 .chat-edit .toolbar .mate-lst .mate-status-afk {
+  color: #666666;
+}
+.chat-edit .toolbar .mate-lst .mate-status-offline {
   color: #999999;
 }
 .chat-edit .edit-box {

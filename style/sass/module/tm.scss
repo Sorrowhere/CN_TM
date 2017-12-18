@@ -621,6 +621,9 @@ body{
         color:#c03;
       }
       .mate-status-afk{
+        color: $gray;
+      }
+      .mate-status-offline{
         color: $grayLight;
       }
     }
