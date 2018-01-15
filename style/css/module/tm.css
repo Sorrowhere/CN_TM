@@ -2172,9 +2172,9 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -2183,6 +2183,9 @@ body {
 }
 .pop-img .pop-img-close:hover {
   background-color: #f42;
+}
+.pop-img .pop-img-close .iconfont-close {
+  font-size: 12px;
 }
 .pop-img img {
   width: 100%;
