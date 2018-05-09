@@ -1329,7 +1329,9 @@ body {
   height: 32px;
   line-height: 32px;
   padding-left: 20px;
+  margin-bottom: 1px;
   background-color: #3387dd;
+  box-shadow: inset 0 0px 7px #4078bb;
 }
 .search-bar input::-webkit-input-placeholder,
 .search-bar textarea::-webkit-input-placeholder {
@@ -1422,7 +1424,7 @@ body {
   clear: both;
 }
 .chat-item:hover {
-  background-color: #3387dd;
+  background-color: #5ba6f0;
 }
 .chat-item .avatar {
   float: left;
@@ -1464,11 +1466,17 @@ body {
   overflow: hidden;
 }
 .chat-item .bd .msg {
-  width: 60px;
+  width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   float: left;
+}
+.chat-item .bd .msg-s {
+  width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .chat-item .bd .time {
   float: right;
@@ -1480,7 +1488,7 @@ body {
 }
 
 .chat-item.on {
-  background-color: #5ba6f0;
+  background-color: #3387dd;
 }
 
 .chat-area {
