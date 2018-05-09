@@ -1421,6 +1421,9 @@ body {
 .chat-item:after {
   clear: both;
 }
+.chat-item:hover {
+  background-color: #3387dd;
+}
 .chat-item .avatar {
   float: left;
   margin-left: -40px;
@@ -1477,10 +1480,7 @@ body {
 }
 
 .chat-item.on {
-  background-color: #ffb600;
-}
-.chat-item.on .bd {
-  color: #ffeebb;
+  background-color: #5ba6f0;
 }
 
 .chat-area {

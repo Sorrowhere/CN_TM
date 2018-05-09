@@ -231,6 +231,9 @@ body{
   padding: 10px 20px 10px 60px;
   cursor: pointer;
   @include clearfix();
+  &:hover{
+    background-color: #3387dd;
+  }
   .avatar{
     float: left;
     margin-left: -40px;
@@ -281,10 +284,7 @@ body{
   }
 }
 .chat-item.on{
-  background-color: #ffb600;
-  .bd{
-    color: #ffeebb;
-  }
+  background-color: #5ba6f0;
 }
 
 
