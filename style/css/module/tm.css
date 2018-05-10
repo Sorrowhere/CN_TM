@@ -1329,9 +1329,7 @@ body {
   height: 32px;
   line-height: 32px;
   padding-left: 20px;
-  margin-bottom: 1px;
   background-color: #3387dd;
-  box-shadow: inset 0 0px 7px #4078bb;
 }
 .search-bar input::-webkit-input-placeholder,
 .search-bar textarea::-webkit-input-placeholder {
@@ -1488,7 +1486,7 @@ body {
 }
 
 .chat-item.on {
-  background-color: #3387dd;
+  background-color: #1a70c7;
 }
 
 .chat-area {
